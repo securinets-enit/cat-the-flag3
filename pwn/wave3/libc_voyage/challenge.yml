@@ -1,0 +1,21 @@
+name: "Libc Voyage"
+author: "MrxFuji"
+attribution: "Written by MrxFuji (Ahmed Salhi)"
+category: pwn
+description: |-
+  There is no win function. Leak libc, calculate the route, and make the second voyage count.
+type: dynamic
+extra:
+  function: linear
+  initial: 300
+  decay: 5
+  minimum: 100
+connection_info: nc localhost 1344
+flags:
+  - SecurinetsENIT{tw0_st4g3_r0p_l1bc_l34k_r3t2l1bc_m4st3ry_9024}
+tags:
+  - ret2libc
+files:
+  - libc_voyage
+  - libc_voyage.c
+version: "0.1"

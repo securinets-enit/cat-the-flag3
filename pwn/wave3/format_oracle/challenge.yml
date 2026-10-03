@@ -1,0 +1,21 @@
+name: "Format Oracle"
+author: "MrxFuji"
+attribution: "Written by MrxFuji (Ahmed Salhi)"
+category: pwn
+description: |-
+  Ask the oracle carefully: its format string can both reveal and rewrite memory.
+type: dynamic
+extra:
+  function: linear
+  initial: 300
+  decay: 5
+  minimum: 100
+connection_info: nc localhost 1343
+flags:
+  - SecurinetsENIT{f0rm4t_str1ng_g0t_0v3rwr1t3_64b1t_null_byt3_8821}
+tags:
+  - format-string
+files:
+  - format_oracle
+  - format_oracle.c
+version: "0.1"

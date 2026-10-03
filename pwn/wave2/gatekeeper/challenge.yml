@@ -1,0 +1,21 @@
+name: "Gatekeeper"
+author: "MrxFuji"
+attribution: "Written by MrxFuji (Ahmed Salhi)"
+category: pwn
+description: |-
+  The gate only opens when the calling convention delivers the right arguments.
+type: dynamic
+extra:
+  function: linear
+  initial: 200
+  decay: 5
+  minimum: 100
+connection_info: nc localhost 1340
+flags:
+  - SecurinetsENIT{x86_64_c4ll1ng_c0nv3nt10n_r0p_g4dg3ts_3819}
+tags:
+  - rop
+files:
+  - gatekeeper
+  - gatekeeper.c
+version: "0.1"

@@ -1,0 +1,21 @@
+name: "Flag Roulette"
+author: "MrxFuji"
+attribution: "Written by MrxFuji (Ahmed Salhi)"
+category: pwn
+description: |-
+  One index too many is enough to change the outcome of the game.
+type: dynamic
+extra:
+  function: linear
+  initial: 100
+  decay: 5
+  minimum: 50
+connection_info: nc localhost 1339
+flags:
+  - SecurinetsENIT{0ff_by_0n3_1nd3x1ng_c0ntr0l_fl0w_9918}
+tags:
+  - off-by-one
+files:
+  - flag_roulette
+  - flag_roulette.c
+version: "0.1"

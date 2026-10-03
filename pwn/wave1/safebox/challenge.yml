@@ -1,0 +1,21 @@
+name: "Safebox"
+author: "MrxFuji"
+attribution: "Written by MrxFuji (Ahmed Salhi)"
+category: pwn
+description: |-
+  The key and lock share one stack object. Overflow the first to control the rest.
+type: dynamic
+extra:
+  function: linear
+  initial: 100
+  decay: 5
+  minimum: 50
+connection_info: nc localhost 1337
+flags:
+  - SecurinetsENIT{st4ck_p4dd1ng_4nd_3nd14nn3ss_m4st3r_9102}
+tags:
+  - stack-overflow
+files:
+  - safebox
+  - safebox.c
+version: "0.1"
