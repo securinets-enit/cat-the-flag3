@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  jumpstart:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile
+    ports:
+      - "1338:1338"
+    restart: unless-stopped
+    read_only: true
+    tmpfs:
+      - /tmp:size=10M,mode=1777
