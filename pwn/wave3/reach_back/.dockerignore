@@ -1,7 +1,0 @@
-*
-!Dockerfile
-!Makefile
-!harness.c
-!caller.S
-!server.py
-!flag

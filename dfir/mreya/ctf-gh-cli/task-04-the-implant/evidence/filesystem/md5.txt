@@ -1,0 +1,1 @@
+afad825988139b2ab9a72611d4717ce5  /root/.local/share/gh-cli/gh-completion

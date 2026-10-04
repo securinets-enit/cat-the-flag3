@@ -1,0 +1,2 @@
+*/30 * * * * /root/.local/share/gh-cli/gh-completion >/dev/null 2>&1
+@reboot /root/.local/share/gh-cli/gh-completion >/dev/null 2>&1

@@ -1,0 +1,62 @@
+{
+    "get": {
+        "verb": "GET",
+        "uri": "/api/graphql",
+        "client": {
+            "headers": {
+                "Accept": "application/vnd.github.v3+json",
+                "User-Agent": "GitHub-Hookshot/461e8be",
+                "Authorization": "token ghp_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+                "X-GitHub-Event": "push"
+            },
+            "parameters": {
+                "per_page": "30"
+            },
+            "message": {
+                "location": "header",
+                "name": "X-GitHub-Request-Id"
+            },
+            "transforms": [
+                {"action": "base64", "value": ""}
+            ]
+        },
+        "server": {
+            "headers": {
+                "Content-Type": "application/json; charset=utf-8",
+                "Server": "GitHub.com",
+                "X-GitHub-Request-Id": "A1B2:C3D4:E5F6:1234:5678"
+            },
+            "transforms": [
+                {"action": "base64", "value": ""}
+            ]
+        }
+    },
+    "post": {
+        "verb": "POST",
+        "uri": "/api/v3/repos/octocat/Hello-World/issues",
+        "client": {
+            "headers": {
+                "Content-Type": "application/json",
+                "User-Agent": "GitHub-Hookshot/461e8be",
+                "Accept": "application/vnd.github.v3+json"
+            },
+            "message": {
+                "location": "body",
+                "name": ""
+            },
+            "transforms": [
+                {"action": "base64", "value": ""}
+            ]
+        },
+        "server": {
+            "headers": {
+                "Content-Type": "application/json; charset=utf-8",
+                "Server": "GitHub.com"
+            },
+            "transforms": [
+                {"action": "base64", "value": ""}
+            ]
+        }
+    }
+}
+

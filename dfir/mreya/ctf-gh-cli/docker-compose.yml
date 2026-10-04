@@ -1,0 +1,21 @@
+services:
+  task-02:
+    build: ./task-02-the-recon
+    container_name: ctf-task-02
+    ports:
+      - "9999:9999"
+    restart: unless-stopped
+
+  task-03:
+    build: ./task-03-the-dropper
+    container_name: ctf-task-03
+    ports:
+      - "9998:9998"
+    restart: unless-stopped
+
+  task-04:
+    build: ./task-04-the-implant
+    container_name: ctf-task-04
+    ports:
+      - "9997:9997"
+    restart: unless-stopped

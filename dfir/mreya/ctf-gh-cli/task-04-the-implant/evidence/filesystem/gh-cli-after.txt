@@ -1,0 +1,4 @@
+total 19512
+drwxr-xr-x 2 root root     4096 Oct  4 16:24 .
+drwxr-xr-x 3 root root     4096 Oct  4 16:24 ..
+-rwxr-xr-x 1 root root 19969992 Oct  4 16:24 gh-completion
