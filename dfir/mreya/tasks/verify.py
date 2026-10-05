@@ -94,6 +94,28 @@ TASKS = {
         "expected_flag": "SecurinetsENIT{5398f82818903750fc0d72e94c5f3304}",
         "timeout": 30,
     },
+
+        "task-05-the-beacon": {
+        "host": "localhost",
+        "port": 9996,
+        "answers": [
+            "50", "192.168.1.141", "34.170.160.245", "tcp", "admin",
+            "gh-actions-runner.xyz",
+            "gh-actions-runner.xyz", "443", "tcp", "9", "10",
+            "automated", "heartbeat", "12",
+            "gh-actions-runner.xyz", "yes",
+            "TLS1.3", "20b279993ae2e137e62b9647c6d768fb",
+            "TLS_AES_128_GCM_SHA256",
+            "gh-actions-runner.xyz", "WE1",
+            ".xyz", "no", "cloudflare",
+            "google trust services", "anyone can get one",
+            "20", "73", "13", "9",
+            "smb", "telegram", "no", "320", "188.114.96.6",
+            "T1071.001", "TA0011", "T1071.004", "T1573",
+        ],
+        "expected_flag": "SecurinetsENIT{4b094f5e62c3ca3257c2571d8ab1d059}",
+        "timeout": 30,
+    },
 }
 
 

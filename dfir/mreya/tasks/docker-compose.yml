@@ -19,3 +19,10 @@ services:
     ports:
       - "9997:9997"
     restart: unless-stopped
+
+  task-05:
+    build: ./task-05-the-beacon
+    container_name: ctf-task-05
+    ports:
+      - "9996:9996"
+    restart: unless-stopped
