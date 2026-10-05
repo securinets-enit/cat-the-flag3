@@ -1,0 +1,10 @@
+$ORIGIN login-aws-amazon.cloud.
+$TTL 300
+
+; Glue records for delegated nameservers
+ns1     IN  A   35.188.95.225
+ns2     IN  A   35.188.95.225
+
+; Delegation of internal subdomain
+internal    IN  NS  ns1.login-aws-amazon.cloud.
+internal    IN  NS  ns2.login-aws-amazon.cloud.
