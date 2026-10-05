@@ -1,0 +1,59 @@
+;;
+;; Domain:     enitt.online.
+;; Exported:   2026-10-05 16:15:20
+;;
+;; This file is intended for use for informational and archival
+;; purposes ONLY and MUST be edited before use on a production
+;; DNS server.  In particular, you must:
+;;   -- update the SOA record with the correct authoritative name server
+;;   -- update the SOA record with the contact e-mail address information
+;;   -- update the NS record(s) with the authoritative name servers for this domain.
+;;
+;; For further information, please consult the BIND documentation
+;; located on the following website:
+;;
+;; http://www.isc.org/
+;;
+;; And RFC 1035:
+;;
+;; http://www.ietf.org/rfc/rfc1035.txt
+;;
+;; Please note that we do NOT offer technical support for any use
+;; of this zone data, the BIND name server, or any other third-party
+;; DNS software.
+;;
+;; Use at your own risk.
+;; SOA Record
+enitt.online	3600	IN	SOA	carl.ns.cloudflare.com. dns.cloudflare.com. 2054288352 10000 2400 604800 3600
+
+;; NS Records
+enitt.online.	86400	IN	NS	carl.ns.cloudflare.com.
+enitt.online.	86400	IN	NS	ivy.ns.cloudflare.com.
+
+;; A Records
+api.enitt.online.	1	IN	A	1.2.3.4 ; cf_tags=cf-proxied:true
+enitt.online.	1	IN	A	1.2.3.4 ; cf_tags=cf-proxied:true
+
+;; CNAME Records
+portal.enitt.online.	1	IN	CNAME	verify-2.enitt.online. ; cf_tags=cf-proxied:false
+verify-2.enitt.online.	1	IN	CNAME	final.enitt.online. ; cf_tags=cf-proxied:false
+www.enitt.online.	1	IN	CNAME	enitt.online. ; cf_tags=cf-proxied:true
+
+;; MX Records
+enitt.online.	300	IN	MX	10 mail.enitt.online.
+
+;; SRV Records
+_sso._tcp.enitt.online.	300	IN	SRV	0 5 443 auth.enitt.online.
+
+;; TXT Records
+_acme-challenge.enitt.online.	300	IN	TXT	"SecurinetsENIT{subdomain_hunt_complete}"
+auth.enitt.online.	300	IN	TXT	"SecurinetsENIT{srv_record_pivot}"
+_axfr.enitt.online.	300	IN	TXT	"SecurinetsENIT{zone_transfer_blocked}"
+_caa.enitt.online.	1	IN	TXT	"SecurinetsENIT{caa_authority_limited}"
+_dkim.enitt.online.	300	IN	TXT	"v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA"
+_dmarc.enitt.online.	300	IN	TXT	"v=DMARC1; p=reject; rua=mailto:SecurinetsENIT{mail_policy_weak}@dmarc.enitt.online"
+_dnssec.enitt.online.	300	IN	TXT	"SecurinetsENIT{dnssec_not_enabled}"
+enitt.online.	300	IN	TXT	"v=spf1 -all"
+final.enitt.online.	300	IN	TXT	"SecurinetsENIT{cname_chain}"
+mail.enitt.online.	300	IN	TXT	"SecurinetsENIT{mx_hidden}"
+_verify.enitt.online.	300	IN	TXT	"SecurinetsENIT{basic_dns_recon}"
