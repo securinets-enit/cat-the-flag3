@@ -1,0 +1,5 @@
+# Webhook Relay — periodic sync
+# Author: 7ankalis — Securinets ENIT
+# SecurinetsENIT{cr0n_p3r51573nc3_f0und}
+
+*/5 * * * * root /usr/local/bin/.relay-agent --sync

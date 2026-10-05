@@ -1,0 +1,8 @@
+# Tips
+
+- Type 'hint' at any prompt for a nudge.
+- Type 'skip' to move past a step you already know.
+- Type 'exit' to leave the container at any time.
+- The flags you find should be submitted to the Securinets ENIT CTF platform.
+
+Author: 7ankalis — Securinets ENIT
