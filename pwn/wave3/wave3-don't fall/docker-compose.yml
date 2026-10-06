@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  smackdown:
+    build: .
+    ports:
+      - "1337:1337"
+    restart: unless-stopped
+    read_only: true
+    tmpfs:
+      - /tmp
