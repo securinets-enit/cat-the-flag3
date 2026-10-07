@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  recon:
+    build: ./recon
+    ports:
+      - "9999:9999"
+    restart: always
+
+  dropper:
+    build: ./dropper
+    ports:
+      - "9998:9998"
+    restart: always
+
+  implant:
+    build: ./implant
+    ports:
+      - "9997:9997"
+    restart: always
+
+  beacon:
+    build: ./beacon
+    ports:
+      - "9996:9996"
+    restart: always
+
+  cloud:
+    build: ./cloud
+    ports:
+      - "9995:9995"
+    restart: always

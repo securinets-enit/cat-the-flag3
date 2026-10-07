@@ -1,6 +1,0 @@
-Recv-Q Send-Q Local Address:Port     Peer Address:PortProcess                                               
-0      0          10.0.0.12:47322  216.239.34.174:443  users:(("google_osconfig",pid=488,fd=8))             
-0      0          10.0.0.12:22     197.21.123.194:7519 users:(("sshd",pid=1434,fd=4),("sshd",pid=1351,fd=4))
-0      0          10.0.0.12:41136 169.254.169.254:80   users:(("google_osconfig",pid=488,fd=3))             
-0      0          10.0.0.12:55466  216.239.38.174:443  users:(("google_guest_ag",pid=2253,fd=18))           
-0      0          10.0.0.12:36556 169.254.169.254:80   users:(("google_guest_ag",pid=2253,fd=3))            

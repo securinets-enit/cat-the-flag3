@@ -1,1 +1,0 @@
-/root/.local/share/gh-cli/gh-completion 

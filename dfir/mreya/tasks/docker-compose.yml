@@ -1,28 +1,38 @@
+version: '3.8'
+
 services:
-  task-02:
-    build: ./task-02-the-recon
-    container_name: ctf-task-02
+  recon:
+    build: ./recon
     ports:
       - "9999:9999"
-    restart: unless-stopped
+    restart: always
 
-  task-03:
-    build: ./task-03-the-dropper
-    container_name: ctf-task-03
+  dropper:
+    build: ./dropper
     ports:
       - "9998:9998"
-    restart: unless-stopped
+    restart: always
 
-  task-04:
-    build: ./task-04-the-implant
-    container_name: ctf-task-04
+  implant:
+    build: ./implant
     ports:
       - "9997:9997"
-    restart: unless-stopped
+    restart: always
 
-  task-05:
-    build: ./task-05-the-beacon
-    container_name: ctf-task-05
+  beacon:
+    build: ./beacon
     ports:
       - "9996:9996"
-    restart: unless-stopped
+    restart: always
+
+  cloud:
+    build: ./cloud
+    ports:
+      - "9995:9995"
+    restart: always
+
+  ssrf:
+    build: ./ssrf
+    ports:
+      - "9994:9994"
+    restart: always

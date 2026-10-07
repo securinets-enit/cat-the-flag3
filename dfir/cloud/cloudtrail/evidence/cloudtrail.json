@@ -1,0 +1,1784 @@
+{
+  "Records": [
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAVQRHQHH5ELHBXRZB6",
+        "arn": "arn:aws:iam::379113716218:user/taha",
+        "accountId": "379113716218",
+        "accessKeyId": "AKIAVQRHQHH5AWKRB6XA",
+        "userName": "taha"
+      },
+      "eventTime": "2026-10-07T10:23:15Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "DeleteUserPolicy",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "196.203.130.8",
+      "userAgent": "aws-cli/2.35.21 md/awscrt#0.35.0 ua/2.1 os/linux#6.14.0-37-generic md/arch#x86_64 lang/python#3.14.6 md/pyimpl#CPython m/Z,E,n,b cfg/retry-mode#standard md/installer#exe sid/f83b51e49e93 md/distrib#ubuntu.24 md/prompt#off md/command#iam.delete-user-policy",
+      "requestParameters": {
+        "userName": "samir.benali",
+        "policyName": "AssumeRoleAccess"
+      },
+      "responseElements": null,
+      "requestID": "6007559c-7a62-4b47-b054-425b0400c84d",
+      "eventID": "2c095a9a-e31b-4d9a-9148-4303f732c197",
+      "readOnly": false,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "379113716218",
+      "eventCategory": "Management",
+      "tlsDetails": {
+        "tlsVersion": "TLSv1.3",
+        "cipherSuite": "TLS_AES_128_GCM_SHA256",
+        "clientProvidedHostHeader": "iam.amazonaws.com"
+      }
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAVQRHQHH5ELHBXRZB6",
+        "arn": "arn:aws:iam::379113716218:user/taha",
+        "accountId": "379113716218",
+        "accessKeyId": "AKIAVQRHQHH5AWKRB6XA",
+        "userName": "taha"
+      },
+      "eventTime": "2026-10-07T10:23:16Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "ListAccessKeys",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "196.203.130.8",
+      "userAgent": "aws-cli/2.35.21 md/awscrt#0.35.0 ua/2.1 os/linux#6.14.0-37-generic md/arch#x86_64 lang/python#3.14.6 md/pyimpl#CPython m/n,Z,E,C,b cfg/retry-mode#standard md/installer#exe sid/f83b51e49e93 md/distrib#ubuntu.24 md/prompt#off md/command#iam.list-access-keys",
+      "requestParameters": {
+        "userName": "samir.benali"
+      },
+      "responseElements": null,
+      "requestID": "c5f0d568-7038-4044-9b09-692803c674bc",
+      "eventID": "6dc667d2-bfe2-4c8a-8086-b3e5c77b8f9b",
+      "readOnly": true,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "379113716218",
+      "eventCategory": "Management",
+      "tlsDetails": {
+        "tlsVersion": "TLSv1.3",
+        "cipherSuite": "TLS_AES_128_GCM_SHA256",
+        "clientProvidedHostHeader": "iam.amazonaws.com"
+      }
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAVQRHQHH5ELHBXRZB6",
+        "arn": "arn:aws:iam::379113716218:user/taha",
+        "accountId": "379113716218",
+        "accessKeyId": "AKIAVQRHQHH5AWKRB6XA",
+        "userName": "taha"
+      },
+      "eventTime": "2026-10-07T10:23:17Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "DeleteAccessKey",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "196.203.130.8",
+      "userAgent": "aws-cli/2.35.21 md/awscrt#0.35.0 ua/2.1 os/linux#6.14.0-37-generic md/arch#x86_64 lang/python#3.14.6 md/pyimpl#CPython m/Z,E,n,b cfg/retry-mode#standard md/installer#exe sid/10a99626b22b md/distrib#ubuntu.24 md/prompt#off md/command#iam.delete-access-key",
+      "requestParameters": {
+        "userName": "samir.benali",
+        "accessKeyId": "AKIAVQRHQHH5NRFOFLRX"
+      },
+      "responseElements": null,
+      "requestID": "3fd61abb-1fae-461b-8711-f52e0e036d7a",
+      "eventID": "8a66ef40-dcfc-4eaf-a45c-2c731d103806",
+      "readOnly": false,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "379113716218",
+      "eventCategory": "Management",
+      "tlsDetails": {
+        "tlsVersion": "TLSv1.3",
+        "cipherSuite": "TLS_AES_128_GCM_SHA256",
+        "clientProvidedHostHeader": "iam.amazonaws.com"
+      }
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAVQRHQHH5ELHBXRZB6",
+        "arn": "arn:aws:iam::379113716218:user/taha",
+        "accountId": "379113716218",
+        "accessKeyId": "AKIAVQRHQHH5AWKRB6XA",
+        "userName": "taha"
+      },
+      "eventTime": "2026-10-07T10:23:18Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "DeleteUser",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "196.203.130.8",
+      "userAgent": "aws-cli/2.35.21 md/awscrt#0.35.0 ua/2.1 os/linux#6.14.0-37-generic md/arch#x86_64 lang/python#3.14.6 md/pyimpl#CPython m/Z,E,n,b cfg/retry-mode#standard md/installer#exe sid/f83b51e49e93 md/distrib#ubuntu.24 md/prompt#off md/command#iam.delete-user",
+      "requestParameters": {
+        "userName": "samir.benali"
+      },
+      "responseElements": null,
+      "requestID": "0ccd6891-2df5-4212-95bd-4189dad5d54a",
+      "eventID": "55e86542-51ee-477c-8db7-f4a95d5acaf9",
+      "readOnly": false,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "379113716218",
+      "eventCategory": "Management",
+      "tlsDetails": {
+        "tlsVersion": "TLSv1.3",
+        "cipherSuite": "TLS_AES_128_GCM_SHA256",
+        "clientProvidedHostHeader": "iam.amazonaws.com"
+      }
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAVQRHQHH5ELHBXRZB6",
+        "arn": "arn:aws:iam::379113716218:user/taha",
+        "accountId": "379113716218",
+        "accessKeyId": "AKIAVQRHQHH5AWKRB6XA",
+        "userName": "taha"
+      },
+      "eventTime": "2026-10-07T10:23:22Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "DetachUserPolicy",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "196.203.130.8",
+      "userAgent": "aws-cli/2.35.21 md/awscrt#0.35.0 ua/2.1 os/linux#6.14.0-37-generic md/arch#x86_64 lang/python#3.14.6 md/pyimpl#CPython m/Z,E,n,b cfg/retry-mode#standard md/installer#exe sid/f83b51e49e93 md/distrib#ubuntu.24 md/prompt#off md/command#iam.detach-user-policy",
+      "requestParameters": {
+        "userName": "backup-service",
+        "policyArn": "arn:aws:iam::aws:policy/ReadOnlyAccess"
+      },
+      "responseElements": null,
+      "requestID": "9768f361-7d60-4860-a6bb-a61752ce718c",
+      "eventID": "4a86e269-e206-439a-8696-b0bdb4bad023",
+      "readOnly": false,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "379113716218",
+      "eventCategory": "Management",
+      "tlsDetails": {
+        "tlsVersion": "TLSv1.3",
+        "cipherSuite": "TLS_AES_128_GCM_SHA256",
+        "clientProvidedHostHeader": "iam.amazonaws.com"
+      }
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAVQRHQHH5ELHBXRZB6",
+        "arn": "arn:aws:iam::379113716218:user/taha",
+        "accountId": "379113716218",
+        "accessKeyId": "AKIAVQRHQHH5AWKRB6XA",
+        "userName": "taha"
+      },
+      "eventTime": "2026-10-07T10:23:24Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "ListAccessKeys",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "196.203.130.8",
+      "userAgent": "aws-cli/2.35.21 md/awscrt#0.35.0 ua/2.1 os/linux#6.14.0-37-generic md/arch#x86_64 lang/python#3.14.6 md/pyimpl#CPython m/n,Z,E,C,b cfg/retry-mode#standard md/installer#exe sid/f83b51e49e93 md/distrib#ubuntu.24 md/prompt#off md/command#iam.list-access-keys",
+      "requestParameters": {
+        "userName": "backup-service"
+      },
+      "responseElements": null,
+      "requestID": "b9658435-40b5-4e61-b5ac-66a284fa8b85",
+      "eventID": "6ca27c32-3857-4812-91bf-7a0a6db345bc",
+      "readOnly": true,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "379113716218",
+      "eventCategory": "Management",
+      "tlsDetails": {
+        "tlsVersion": "TLSv1.3",
+        "cipherSuite": "TLS_AES_128_GCM_SHA256",
+        "clientProvidedHostHeader": "iam.amazonaws.com"
+      }
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAVQRHQHH5ELHBXRZB6",
+        "arn": "arn:aws:iam::379113716218:user/taha",
+        "accountId": "379113716218",
+        "accessKeyId": "AKIAVQRHQHH5AWKRB6XA",
+        "userName": "taha"
+      },
+      "eventTime": "2026-10-07T10:23:26Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "DeleteAccessKey",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "196.203.130.8",
+      "userAgent": "aws-cli/2.35.21 md/awscrt#0.35.0 ua/2.1 os/linux#6.14.0-37-generic md/arch#x86_64 lang/python#3.14.6 md/pyimpl#CPython m/Z,E,n,b cfg/retry-mode#standard md/installer#exe sid/10a99626b22b md/distrib#ubuntu.24 md/prompt#off md/command#iam.delete-access-key",
+      "requestParameters": {
+        "userName": "backup-service",
+        "accessKeyId": "AKIAVQRHQHH5KEKJDRJF"
+      },
+      "responseElements": null,
+      "requestID": "20fd83a9-feea-4050-9eb6-e91a72c07d86",
+      "eventID": "61d4d04b-e9a7-4505-a4a4-e562d6e137b7",
+      "readOnly": false,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "379113716218",
+      "eventCategory": "Management",
+      "tlsDetails": {
+        "tlsVersion": "TLSv1.3",
+        "cipherSuite": "TLS_AES_128_GCM_SHA256",
+        "clientProvidedHostHeader": "iam.amazonaws.com"
+      }
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAVQRHQHH5ELHBXRZB6",
+        "arn": "arn:aws:iam::379113716218:user/taha",
+        "accountId": "379113716218",
+        "accessKeyId": "AKIAVQRHQHH5AWKRB6XA",
+        "userName": "taha"
+      },
+      "eventTime": "2026-10-07T10:23:28Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "DeleteAccessKey",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "196.203.130.8",
+      "userAgent": "aws-cli/2.35.21 md/awscrt#0.35.0 ua/2.1 os/linux#6.14.0-37-generic md/arch#x86_64 lang/python#3.14.6 md/pyimpl#CPython m/Z,E,n,b cfg/retry-mode#standard md/installer#exe sid/10a99626b22b md/distrib#ubuntu.24 md/prompt#off md/command#iam.delete-access-key",
+      "requestParameters": {
+        "userName": "backup-service",
+        "accessKeyId": "AKIAVQRHQHH5MXJKLNIQ"
+      },
+      "responseElements": null,
+      "requestID": "3948d3e1-b17b-483a-a2f0-45be729539a5",
+      "eventID": "3988d0f4-38e2-448e-9cf5-6122b0026395",
+      "readOnly": false,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "379113716218",
+      "eventCategory": "Management",
+      "tlsDetails": {
+        "tlsVersion": "TLSv1.3",
+        "cipherSuite": "TLS_AES_128_GCM_SHA256",
+        "clientProvidedHostHeader": "iam.amazonaws.com"
+      }
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAVQRHQHH5ELHBXRZB6",
+        "arn": "arn:aws:iam::379113716218:user/taha",
+        "accountId": "379113716218",
+        "accessKeyId": "AKIAVQRHQHH5AWKRB6XA",
+        "userName": "taha"
+      },
+      "eventTime": "2026-10-07T10:23:34Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "DeleteUser",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "196.203.130.8",
+      "userAgent": "aws-cli/2.35.21 md/awscrt#0.35.0 ua/2.1 os/linux#6.14.0-37-generic md/arch#x86_64 lang/python#3.14.6 md/pyimpl#CPython m/Z,E,n,b cfg/retry-mode#standard md/installer#exe sid/f83b51e49e93 md/distrib#ubuntu.24 md/prompt#off md/command#iam.delete-user",
+      "requestParameters": {
+        "userName": "backup-service"
+      },
+      "responseElements": null,
+      "requestID": "af10f1a9-47e9-4029-b932-4b226a1f556b",
+      "eventID": "59a96cb0-49b2-4387-9825-9b81b2742088",
+      "readOnly": false,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "379113716218",
+      "eventCategory": "Management",
+      "tlsDetails": {
+        "tlsVersion": "TLSv1.3",
+        "cipherSuite": "TLS_AES_128_GCM_SHA256",
+        "clientProvidedHostHeader": "iam.amazonaws.com"
+      }
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAVQRHQHH5ELHBXRZB6",
+        "arn": "arn:aws:iam::379113716218:user/taha",
+        "accountId": "379113716218",
+        "accessKeyId": "AKIAVQRHQHH5AWKRB6XA",
+        "userName": "taha"
+      },
+      "eventTime": "2026-10-07T10:23:36Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "DetachRolePolicy",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "196.203.130.8",
+      "userAgent": "aws-cli/2.35.21 md/awscrt#0.35.0 ua/2.1 os/linux#6.14.0-37-generic md/arch#x86_64 lang/python#3.14.6 md/pyimpl#CPython m/Z,E,n,b cfg/retry-mode#standard md/installer#exe sid/f83b51e49e93 md/distrib#ubuntu.24 md/prompt#off md/command#iam.detach-role-policy",
+      "requestParameters": {
+        "roleName": "OrganizationAccountAccessRole",
+        "policyArn": "arn:aws:iam::aws:policy/AdministratorAccess"
+      },
+      "responseElements": null,
+      "requestID": "af8d5625-b96d-4d0e-aa8e-33497938156f",
+      "eventID": "ca7ca1e8-8cfa-4178-8cf9-3c853ed6803a",
+      "readOnly": false,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "379113716218",
+      "eventCategory": "Management",
+      "tlsDetails": {
+        "tlsVersion": "TLSv1.3",
+        "cipherSuite": "TLS_AES_128_GCM_SHA256",
+        "clientProvidedHostHeader": "iam.amazonaws.com"
+      }
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAVQRHQHH5ELHBXRZB6",
+        "arn": "arn:aws:iam::379113716218:user/taha",
+        "accountId": "379113716218",
+        "accessKeyId": "AKIAVQRHQHH5AWKRB6XA",
+        "userName": "taha"
+      },
+      "eventTime": "2026-10-07T10:23:37Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "DeleteRole",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "196.203.130.8",
+      "userAgent": "aws-cli/2.35.21 md/awscrt#0.35.0 ua/2.1 os/linux#6.14.0-37-generic md/arch#x86_64 lang/python#3.14.6 md/pyimpl#CPython m/Z,E,n,b cfg/retry-mode#standard md/installer#exe sid/f83b51e49e93 md/distrib#ubuntu.24 md/prompt#off md/command#iam.delete-role",
+      "requestParameters": {
+        "roleName": "OrganizationAccountAccessRole"
+      },
+      "responseElements": null,
+      "requestID": "c667c01a-ac2a-4c92-bc17-6b44bb61d089",
+      "eventID": "64136567-3cbf-4e81-b4c0-6c91a87d3278",
+      "readOnly": false,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "379113716218",
+      "eventCategory": "Management",
+      "tlsDetails": {
+        "tlsVersion": "TLSv1.3",
+        "cipherSuite": "TLS_AES_128_GCM_SHA256",
+        "clientProvidedHostHeader": "iam.amazonaws.com"
+      }
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAVQRHQHH5ELHBXRZB6",
+        "arn": "arn:aws:iam::379113716218:user/taha",
+        "accountId": "379113716218",
+        "accessKeyId": "AKIAVQRHQHH5AWKRB6XA",
+        "userName": "taha"
+      },
+      "eventTime": "2026-10-07T10:23:41Z",
+      "eventSource": "cloudtrail.amazonaws.com",
+      "eventName": "StopLogging",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "196.203.130.8",
+      "userAgent": "aws-cli/2.35.21 md/awscrt#0.35.0 ua/2.1 os/linux#6.14.0-37-generic md/arch#x86_64 lang/python#3.14.6 md/pyimpl#CPython m/Z,E,n,b cfg/retry-mode#standard md/installer#exe sid/f83b51e49e93 md/distrib#ubuntu.24 md/prompt#off md/command#cloudtrail.stop-logging",
+      "requestParameters": {
+        "name": "management-events"
+      },
+      "responseElements": null,
+      "requestID": "b629d127-6ef0-413a-912b-37ac0054ebca",
+      "eventID": "8f3d2404-8412-47b8-b2b4-d54189a922a5",
+      "readOnly": false,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "379113716218",
+      "eventCategory": "Management",
+      "tlsDetails": {
+        "tlsVersion": "TLSv1.3",
+        "cipherSuite": "TLS_AES_128_GCM_SHA256",
+        "clientProvidedHostHeader": "cloudtrail.us-east-1.amazonaws.com"
+      }
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAVQRHQHH5ELHBXRZB6",
+        "arn": "arn:aws:iam::379113716218:user/taha",
+        "accountId": "379113716218",
+        "accessKeyId": "AKIAVQRHQHH5AWKRB6XA",
+        "userName": "taha"
+      },
+      "eventTime": "2026-10-07T10:23:43Z",
+      "eventSource": "cloudtrail.amazonaws.com",
+      "eventName": "DeleteTrail",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "196.203.130.8",
+      "userAgent": "aws-cli/2.35.21 md/awscrt#0.35.0 ua/2.1 os/linux#6.14.0-37-generic md/arch#x86_64 lang/python#3.14.6 md/pyimpl#CPython m/Z,E,n,b cfg/retry-mode#standard md/installer#exe sid/f83b51e49e93 md/distrib#ubuntu.24 md/prompt#off md/command#cloudtrail.delete-trail",
+      "requestParameters": {
+        "name": "management-events"
+      },
+      "responseElements": null,
+      "requestID": "2ebb129d-3411-498b-a050-409efb725b8f",
+      "eventID": "fc22296e-2de0-4134-a705-7cd6735dc890",
+      "readOnly": false,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "379113716218",
+      "eventCategory": "Management",
+      "tlsDetails": {
+        "tlsVersion": "TLSv1.3",
+        "cipherSuite": "TLS_AES_128_GCM_SHA256",
+        "clientProvidedHostHeader": "cloudtrail.us-east-1.amazonaws.com"
+      }
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAVQRHQHH5ELHBXRZB6",
+        "arn": "arn:aws:iam::379113716218:user/taha",
+        "accountId": "379113716218",
+        "accessKeyId": "AKIAVQRHQHH5AWKRB6XA",
+        "userName": "taha"
+      },
+      "eventTime": "2026-10-07T10:24:36Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "DeleteBucket",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "196.203.130.8",
+      "userAgent": "[aws-cli/2.35.21 md/awscrt#0.35.0 ua/2.1 os/linux#6.14.0-37-generic md/arch#x86_64 lang/python#3.14.6 md/pyimpl#CPython m/Z,E,n,b cfg/retry-mode#standard md/installer#exe sid/f83b51e49e93 md/distrib#ubuntu.24 md/prompt#off md/command#s3.rb]",
+      "requestParameters": {
+        "bucketName": "securinets-enit-internal-1791300669",
+        "Host": "securinets-enit-internal-1791300669.s3.us-east-1.amazonaws.com"
+      },
+      "responseElements": null,
+      "additionalEventData": {
+        "SignatureVersion": "SigV4",
+        "CipherSuite": "TLS_CHACHA20_POLY1305_SHA256",
+        "bytesTransferredIn": 0,
+        "startTime": 1791368675931,
+        "AuthenticationMethod": "AuthHeader",
+        "endTime": 1791368676135,
+        "x-amz-id-2": "DTeiQL0x9Q4Hsn5Etp93P70RUaLy91nBxRM0iuvNTKEG4CH3USJyRPJjM1RWwaJ9AMH0CjtDkSf9Y5pY87hNVp9ANC/fcJuc",
+        "httpStatusCode": 204,
+        "bytesTransferredOut": 0
+      },
+      "requestID": "XKAZ8H0ABNY56NBB",
+      "eventID": "96b7a164-515e-4f2f-aa7a-3156c91e8e82",
+      "readOnly": false,
+      "resources": [
+        {
+          "accountId": "379113716218",
+          "type": "AWS::S3::Bucket",
+          "ARN": "arn:aws:s3:::securinets-enit-internal-1791300669"
+        }
+      ],
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "379113716218",
+      "eventCategory": "Management",
+      "tlsDetails": {
+        "tlsVersion": "TLSv1.3",
+        "cipherSuite": "TLS_CHACHA20_POLY1305_SHA256",
+        "clientProvidedHostHeader": "securinets-enit-internal-1791300669.s3.us-east-1.amazonaws.com"
+      }
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAVQRHQHH5ELHBXRZB6",
+        "arn": "arn:aws:iam::379113716218:user/taha",
+        "accountId": "379113716218",
+        "accessKeyId": "AKIAVQRHQHH5AWKRB6XA",
+        "userName": "taha"
+      },
+      "eventTime": "2026-10-07T10:24:50Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "DeleteBucket",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "196.203.130.8",
+      "userAgent": "[aws-cli/2.35.21 md/awscrt#0.35.0 ua/2.1 os/linux#6.14.0-37-generic md/arch#x86_64 lang/python#3.14.6 md/pyimpl#CPython m/Z,E,n,b cfg/retry-mode#standard md/installer#exe sid/f83b51e49e93 md/distrib#ubuntu.24 md/prompt#off md/command#s3.rb]",
+      "requestParameters": {
+        "bucketName": "securinets-enit-source-1791300669",
+        "Host": "securinets-enit-source-1791300669.s3.us-east-1.amazonaws.com"
+      },
+      "responseElements": null,
+      "additionalEventData": {
+        "SignatureVersion": "SigV4",
+        "CipherSuite": "TLS_AES_128_GCM_SHA256",
+        "bytesTransferredIn": 0,
+        "startTime": 1791368690489,
+        "AuthenticationMethod": "AuthHeader",
+        "endTime": 1791368690705,
+        "x-amz-id-2": "qEm2mKW+zS9HiwvK7K+0wkOTl+1OiDbtqMy8zH3aWDAbEOgAhj8zUFXr0dNPe0ycGpgJHGGPf2g=",
+        "httpStatusCode": 204,
+        "bytesTransferredOut": 0
+      },
+      "requestID": "ZV90021NC7NXJ5T6",
+      "eventID": "02d11141-b29d-4f95-8ff0-330c4c52b853",
+      "readOnly": false,
+      "resources": [
+        {
+          "accountId": "379113716218",
+          "type": "AWS::S3::Bucket",
+          "ARN": "arn:aws:s3:::securinets-enit-source-1791300669"
+        }
+      ],
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "379113716218",
+      "eventCategory": "Management",
+      "tlsDetails": {
+        "tlsVersion": "TLSv1.3",
+        "cipherSuite": "TLS_AES_128_GCM_SHA256",
+        "clientProvidedHostHeader": "securinets-enit-source-1791300669.s3.us-east-1.amazonaws.com"
+      }
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAVQRHQHH5ELHBXRZB6",
+        "arn": "arn:aws:iam::379113716218:user/taha",
+        "accountId": "379113716218",
+        "accessKeyId": "AKIAVQRHQHH5AWKRB6XA",
+        "userName": "taha"
+      },
+      "eventTime": "2026-10-07T10:25:23Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "DeleteUserPolicy",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "196.203.130.8",
+      "userAgent": "aws-cli/2.35.21 md/awscrt#0.35.0 ua/2.1 os/linux#6.14.0-37-generic md/arch#x86_64 lang/python#3.14.6 md/pyimpl#CPython m/Z,E,n,b cfg/retry-mode#standard md/installer#exe sid/f83b51e49e93 md/distrib#ubuntu.24 md/prompt#off md/command#iam.delete-user-policy",
+      "errorCode": "NoSuchEntityException",
+      "errorMessage": "The user with name samir.benali cannot be found.",
+      "requestParameters": {
+        "userName": "samir.benali",
+        "policyName": "AssumeRoleAccess"
+      },
+      "responseElements": null,
+      "requestID": "7e1ea5f3-e32f-456a-aa36-78f57f192945",
+      "eventID": "c039ebde-9d90-462e-a50a-c9bfe9906091",
+      "readOnly": false,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "379113716218",
+      "eventCategory": "Management",
+      "tlsDetails": {
+        "tlsVersion": "TLSv1.3",
+        "cipherSuite": "TLS_AES_128_GCM_SHA256",
+        "clientProvidedHostHeader": "iam.amazonaws.com"
+      }
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAVQRHQHH5ELHBXRZB6",
+        "arn": "arn:aws:iam::379113716218:user/taha",
+        "accountId": "379113716218",
+        "accessKeyId": "AKIAVQRHQHH5AWKRB6XA",
+        "userName": "taha"
+      },
+      "eventTime": "2026-10-07T10:25:25Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "ListAccessKeys",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "196.203.130.8",
+      "userAgent": "aws-cli/2.35.21 md/awscrt#0.35.0 ua/2.1 os/linux#6.14.0-37-generic md/arch#x86_64 lang/python#3.14.6 md/pyimpl#CPython m/n,Z,E,C,b cfg/retry-mode#standard md/installer#exe sid/f83b51e49e93 md/distrib#ubuntu.24 md/prompt#off md/command#iam.list-access-keys",
+      "errorCode": "NoSuchEntityException",
+      "errorMessage": "The user with name samir.benali cannot be found.",
+      "requestParameters": {
+        "userName": "samir.benali"
+      },
+      "responseElements": null,
+      "requestID": "ed07c0d1-70e0-492d-810e-9b98728fd80b",
+      "eventID": "69859876-cbb8-4f0d-a56b-fda4f19a9010",
+      "readOnly": true,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "379113716218",
+      "eventCategory": "Management",
+      "tlsDetails": {
+        "tlsVersion": "TLSv1.3",
+        "cipherSuite": "TLS_AES_128_GCM_SHA256",
+        "clientProvidedHostHeader": "iam.amazonaws.com"
+      }
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAVQRHQHH5ELHBXRZB6",
+        "arn": "arn:aws:iam::379113716218:user/taha",
+        "accountId": "379113716218",
+        "accessKeyId": "AKIAVQRHQHH5AWKRB6XA",
+        "userName": "taha"
+      },
+      "eventTime": "2026-10-07T10:25:26Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "DeleteUser",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "196.203.130.8",
+      "userAgent": "aws-cli/2.35.21 md/awscrt#0.35.0 ua/2.1 os/linux#6.14.0-37-generic md/arch#x86_64 lang/python#3.14.6 md/pyimpl#CPython m/Z,E,n,b cfg/retry-mode#standard md/installer#exe sid/f83b51e49e93 md/distrib#ubuntu.24 md/prompt#off md/command#iam.delete-user",
+      "errorCode": "NoSuchEntityException",
+      "errorMessage": "The user with name samir.benali cannot be found.",
+      "requestParameters": {
+        "userName": "samir.benali"
+      },
+      "responseElements": null,
+      "requestID": "e1eb46f5-e98a-4b56-a2b9-ce2e6a0983a6",
+      "eventID": "42775014-90e9-4624-85e8-346fc066f449",
+      "readOnly": false,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "379113716218",
+      "eventCategory": "Management",
+      "tlsDetails": {
+        "tlsVersion": "TLSv1.3",
+        "cipherSuite": "TLS_AES_128_GCM_SHA256",
+        "clientProvidedHostHeader": "iam.amazonaws.com"
+      }
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAVQRHQHH5ELHBXRZB6",
+        "arn": "arn:aws:iam::379113716218:user/taha",
+        "accountId": "379113716218",
+        "accessKeyId": "AKIAVQRHQHH5AWKRB6XA",
+        "userName": "taha"
+      },
+      "eventTime": "2026-10-07T10:25:28Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "CreateUser",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "196.203.130.8",
+      "userAgent": "aws-cli/2.35.21 md/awscrt#0.35.0 ua/2.1 os/linux#6.14.0-37-generic md/arch#x86_64 lang/python#3.14.6 md/pyimpl#CPython m/Z,E,n,b cfg/retry-mode#standard md/installer#exe sid/f83b51e49e93 md/distrib#ubuntu.24 md/prompt#off md/command#iam.create-user",
+      "requestParameters": {
+        "userName": "samir.benali"
+      },
+      "responseElements": {
+        "user": {
+          "path": "/",
+          "userName": "samir.benali",
+          "userId": "AIDAVQRHQHH5D5WJYVWIG",
+          "arn": "arn:aws:iam::379113716218:user/samir.benali",
+          "createDate": "2026-10-07T10:25:28Z"
+        }
+      },
+      "requestID": "7a4a72b2-3b55-4c9d-8198-1fa1a5742423",
+      "eventID": "a0153c6c-c74f-4a0a-89e4-b25b437e8b63",
+      "readOnly": false,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "379113716218",
+      "eventCategory": "Management",
+      "tlsDetails": {
+        "tlsVersion": "TLSv1.3",
+        "cipherSuite": "TLS_AES_128_GCM_SHA256",
+        "clientProvidedHostHeader": "iam.amazonaws.com"
+      }
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAVQRHQHH5ELHBXRZB6",
+        "arn": "arn:aws:iam::379113716218:user/taha",
+        "accountId": "379113716218",
+        "accessKeyId": "AKIAVQRHQHH5AWKRB6XA",
+        "userName": "taha"
+      },
+      "eventTime": "2026-10-07T10:25:30Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "CreateAccessKey",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "196.203.130.8",
+      "userAgent": "aws-cli/2.35.21 md/awscrt#0.35.0 ua/2.1 os/linux#6.14.0-37-generic md/arch#x86_64 lang/python#3.14.6 md/pyimpl#CPython m/Z,E,n,b cfg/retry-mode#standard md/installer#exe sid/f83b51e49e93 md/distrib#ubuntu.24 md/prompt#off md/command#iam.create-access-key",
+      "requestParameters": {
+        "userName": "samir.benali"
+      },
+      "responseElements": {
+        "accessKey": {
+          "userName": "samir.benali",
+          "accessKeyId": "AKIAVQRHQHH5BBB7WXZ6",
+          "status": "Active",
+          "createDate": "2026-10-07T10:25:30Z"
+        }
+      },
+      "requestID": "4b3c90f3-df36-44ed-a308-a6f86287c045",
+      "eventID": "e0cad67f-83fc-40fa-84b2-d88717cfe38a",
+      "readOnly": false,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "379113716218",
+      "eventCategory": "Management",
+      "tlsDetails": {
+        "tlsVersion": "TLSv1.3",
+        "cipherSuite": "TLS_AES_128_GCM_SHA256",
+        "clientProvidedHostHeader": "iam.amazonaws.com"
+      }
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAVQRHQHH5ELHBXRZB6",
+        "arn": "arn:aws:iam::379113716218:user/taha",
+        "accountId": "379113716218",
+        "accessKeyId": "AKIAVQRHQHH5AWKRB6XA",
+        "userName": "taha"
+      },
+      "eventTime": "2026-10-07T10:25:31Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "CreateBucket",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "196.203.130.8",
+      "userAgent": "[aws-cli/2.35.21 md/awscrt#0.35.0 ua/2.1 os/linux#6.14.0-37-generic md/arch#x86_64 lang/python#3.14.6 md/pyimpl#CPython m/Z,E,n,b cfg/retry-mode#standard md/installer#exe sid/f83b51e49e93 md/distrib#ubuntu.24 md/prompt#off md/command#s3.mb]",
+      "requestParameters": {
+        "bucketName": "securinets-enit-internal-1791368728",
+        "Host": "securinets-enit-internal-1791368728.s3.us-east-1.amazonaws.com"
+      },
+      "responseElements": null,
+      "additionalEventData": {
+        "SignatureVersion": "SigV4",
+        "CipherSuite": "TLS_AES_128_GCM_SHA256",
+        "bytesTransferredIn": 0,
+        "startTime": 1791368731777,
+        "AuthenticationMethod": "AuthHeader",
+        "endTime": 1791368731966,
+        "x-amz-id-2": "aMQ70PbImzctZC3LtQXPbhwH4l0uIqJUksKlegOkQyUXrQetjpN1XhipwFvqGzLSciDgO+gnyKU=",
+        "httpStatusCode": 200,
+        "bytesTransferredOut": 0
+      },
+      "requestID": "C4VC58E0FGG26X9F",
+      "eventID": "9dde069e-fdec-42e9-9bb6-2cf3f6d324a1",
+      "readOnly": false,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "379113716218",
+      "eventCategory": "Management",
+      "tlsDetails": {
+        "tlsVersion": "TLSv1.3",
+        "cipherSuite": "TLS_AES_128_GCM_SHA256",
+        "clientProvidedHostHeader": "securinets-enit-internal-1791368728.s3.us-east-1.amazonaws.com"
+      }
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAVQRHQHH5ELHBXRZB6",
+        "arn": "arn:aws:iam::379113716218:user/taha",
+        "accountId": "379113716218",
+        "accessKeyId": "AKIAVQRHQHH5AWKRB6XA",
+        "userName": "taha"
+      },
+      "eventTime": "2026-10-07T10:25:34Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "CreateBucket",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "196.203.130.8",
+      "userAgent": "[aws-cli/2.35.21 md/awscrt#0.35.0 ua/2.1 os/linux#6.14.0-37-generic md/arch#x86_64 lang/python#3.14.6 md/pyimpl#CPython m/Z,E,n,b cfg/retry-mode#standard md/installer#exe sid/f83b51e49e93 md/distrib#ubuntu.24 md/prompt#off md/command#s3.mb]",
+      "requestParameters": {
+        "bucketName": "securinets-enit-source-1791368728",
+        "Host": "securinets-enit-source-1791368728.s3.us-east-1.amazonaws.com"
+      },
+      "responseElements": null,
+      "additionalEventData": {
+        "SignatureVersion": "SigV4",
+        "CipherSuite": "TLS_AES_128_GCM_SHA256",
+        "bytesTransferredIn": 0,
+        "startTime": 1791368734528,
+        "AuthenticationMethod": "AuthHeader",
+        "endTime": 1791368734710,
+        "x-amz-id-2": "nkoNimc0MYENtYN6VJo5GFrP/hX+j5hvJhotApEceAjT6zC6YY/OMEEfFCgh0dFAWMVKoAFx/YVBzSOwiQsn44AtrBZfBSvY",
+        "httpStatusCode": 200,
+        "bytesTransferredOut": 0
+      },
+      "requestID": "36YK34VY00T2DNMY",
+      "eventID": "40d618c6-325a-4019-9fae-7cf72d9e6632",
+      "readOnly": false,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "379113716218",
+      "eventCategory": "Management",
+      "tlsDetails": {
+        "tlsVersion": "TLSv1.3",
+        "cipherSuite": "TLS_AES_128_GCM_SHA256",
+        "clientProvidedHostHeader": "securinets-enit-source-1791368728.s3.us-east-1.amazonaws.com"
+      }
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAVQRHQHH5ELHBXRZB6",
+        "arn": "arn:aws:iam::379113716218:user/taha",
+        "accountId": "379113716218",
+        "accessKeyId": "AKIAVQRHQHH5AWKRB6XA",
+        "userName": "taha"
+      },
+      "eventTime": "2026-10-07T10:25:36Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "DetachRolePolicy",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "196.203.130.8",
+      "userAgent": "aws-cli/2.35.21 md/awscrt#0.35.0 ua/2.1 os/linux#6.14.0-37-generic md/arch#x86_64 lang/python#3.14.6 md/pyimpl#CPython m/Z,E,n,b cfg/retry-mode#standard md/installer#exe sid/f83b51e49e93 md/distrib#ubuntu.24 md/prompt#off md/command#iam.detach-role-policy",
+      "errorCode": "NoSuchEntityException",
+      "errorMessage": "The role with name OrganizationAccountAccessRole cannot be found.",
+      "requestParameters": {
+        "roleName": "OrganizationAccountAccessRole",
+        "policyArn": "arn:aws:iam::aws:policy/AdministratorAccess"
+      },
+      "responseElements": null,
+      "requestID": "ac446ada-b27d-4cbd-a066-aab6b55fa085",
+      "eventID": "a96b87a9-3c30-45d8-8510-997299c6d921",
+      "readOnly": false,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "379113716218",
+      "eventCategory": "Management",
+      "tlsDetails": {
+        "tlsVersion": "TLSv1.3",
+        "cipherSuite": "TLS_AES_128_GCM_SHA256",
+        "clientProvidedHostHeader": "iam.amazonaws.com"
+      }
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAVQRHQHH5ELHBXRZB6",
+        "arn": "arn:aws:iam::379113716218:user/taha",
+        "accountId": "379113716218",
+        "accessKeyId": "AKIAVQRHQHH5AWKRB6XA",
+        "userName": "taha"
+      },
+      "eventTime": "2026-10-07T10:25:38Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "DeleteRole",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "196.203.130.8",
+      "userAgent": "aws-cli/2.35.21 md/awscrt#0.35.0 ua/2.1 os/linux#6.14.0-37-generic md/arch#x86_64 lang/python#3.14.6 md/pyimpl#CPython m/Z,E,n,b cfg/retry-mode#standard md/installer#exe sid/f83b51e49e93 md/distrib#ubuntu.24 md/prompt#off md/command#iam.delete-role",
+      "errorCode": "NoSuchEntityException",
+      "errorMessage": "The role with name OrganizationAccountAccessRole cannot be found.",
+      "requestParameters": {
+        "roleName": "OrganizationAccountAccessRole"
+      },
+      "responseElements": null,
+      "requestID": "bfebac3f-8aec-42e8-8f9f-82442bcb8e17",
+      "eventID": "e267d3ae-b25c-4d0a-9103-ff85b21b31fb",
+      "readOnly": false,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "379113716218",
+      "eventCategory": "Management",
+      "tlsDetails": {
+        "tlsVersion": "TLSv1.3",
+        "cipherSuite": "TLS_AES_128_GCM_SHA256",
+        "clientProvidedHostHeader": "iam.amazonaws.com"
+      }
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAVQRHQHH5ELHBXRZB6",
+        "arn": "arn:aws:iam::379113716218:user/taha",
+        "accountId": "379113716218",
+        "accessKeyId": "AKIAVQRHQHH5AWKRB6XA",
+        "userName": "taha"
+      },
+      "eventTime": "2026-10-07T10:25:39Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "CreateRole",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "196.203.130.8",
+      "userAgent": "aws-cli/2.35.21 md/awscrt#0.35.0 ua/2.1 os/linux#6.14.0-37-generic md/arch#x86_64 lang/python#3.14.6 md/pyimpl#CPython m/Z,E,n,b cfg/retry-mode#standard md/installer#exe sid/f83b51e49e93 md/distrib#ubuntu.24 md/prompt#off md/command#iam.create-role",
+      "requestParameters": {
+        "roleName": "OrganizationAccountAccessRole",
+        "assumeRolePolicyDocument": "{\n  \"Version\": \"2012-10-17\",\n  \"Statement\": [\n    {\n      \"Effect\": \"Allow\",\n      \"Principal\": {\n        \"AWS\": \"arn:aws:iam::379113716218:user/samir.benali\"\n      },\n      \"Action\": \"sts:AssumeRole\"\n    }\n  ]\n}\n"
+      },
+      "responseElements": {
+        "role": {
+          "path": "/",
+          "roleName": "OrganizationAccountAccessRole",
+          "roleId": "AROAVQRHQHH5GONEAWSXD",
+          "arn": "arn:aws:iam::379113716218:role/OrganizationAccountAccessRole",
+          "createDate": "2026-10-07T10:25:39Z",
+          "assumeRolePolicyDocument": "%7B%0A%20%20%22Version%22%3A%20%222012-10-17%22%2C%0A%20%20%22Statement%22%3A%20%5B%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%22Effect%22%3A%20%22Allow%22%2C%0A%20%20%20%20%20%20%22Principal%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%22AWS%22%3A%20%22arn%3Aaws%3Aiam%3A%3A379113716218%3Auser%2Fsamir.benali%22%0A%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%22Action%22%3A%20%22sts%3AAssumeRole%22%0A%20%20%20%20%7D%0A%20%20%5D%0A%7D%0A"
+        }
+      },
+      "requestID": "6e35988d-d7ff-4b35-a542-70743b85d11f",
+      "eventID": "031f1cfb-d6ca-441f-afc3-a74d45534342",
+      "readOnly": false,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "379113716218",
+      "eventCategory": "Management",
+      "tlsDetails": {
+        "tlsVersion": "TLSv1.3",
+        "cipherSuite": "TLS_AES_128_GCM_SHA256",
+        "clientProvidedHostHeader": "iam.amazonaws.com"
+      }
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAVQRHQHH5ELHBXRZB6",
+        "arn": "arn:aws:iam::379113716218:user/taha",
+        "accountId": "379113716218",
+        "accessKeyId": "AKIAVQRHQHH5AWKRB6XA",
+        "userName": "taha"
+      },
+      "eventTime": "2026-10-07T10:25:40Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "AttachRolePolicy",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "196.203.130.8",
+      "userAgent": "aws-cli/2.35.21 md/awscrt#0.35.0 ua/2.1 os/linux#6.14.0-37-generic md/arch#x86_64 lang/python#3.14.6 md/pyimpl#CPython m/Z,E,n,b cfg/retry-mode#standard md/installer#exe sid/f83b51e49e93 md/distrib#ubuntu.24 md/prompt#off md/command#iam.attach-role-policy",
+      "requestParameters": {
+        "roleName": "OrganizationAccountAccessRole",
+        "policyArn": "arn:aws:iam::aws:policy/AdministratorAccess"
+      },
+      "responseElements": null,
+      "requestID": "0070a254-fb68-4e5b-b566-3354819e8759",
+      "eventID": "14d603e7-bbb0-4a47-b81e-3291d664a53a",
+      "readOnly": false,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "379113716218",
+      "eventCategory": "Management",
+      "tlsDetails": {
+        "tlsVersion": "TLSv1.3",
+        "cipherSuite": "TLS_AES_128_GCM_SHA256",
+        "clientProvidedHostHeader": "iam.amazonaws.com"
+      }
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAVQRHQHH5ELHBXRZB6",
+        "arn": "arn:aws:iam::379113716218:user/taha",
+        "accountId": "379113716218",
+        "accessKeyId": "AKIAVQRHQHH5AWKRB6XA",
+        "userName": "taha"
+      },
+      "eventTime": "2026-10-07T10:25:41Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "PutUserPolicy",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "196.203.130.8",
+      "userAgent": "aws-cli/2.35.21 md/awscrt#0.35.0 ua/2.1 os/linux#6.14.0-37-generic md/arch#x86_64 lang/python#3.14.6 md/pyimpl#CPython m/Z,E,n,b cfg/retry-mode#standard md/installer#exe sid/f83b51e49e93 md/distrib#ubuntu.24 md/prompt#off md/command#iam.put-user-policy",
+      "requestParameters": {
+        "userName": "samir.benali",
+        "policyName": "AssumeRoleAccess",
+        "policyDocument": "{\n  \"Version\": \"2012-10-17\",\n  \"Statement\": [\n    {\n      \"Effect\": \"Allow\",\n      \"Action\": \"sts:AssumeRole\",\n      \"Resource\": \"arn:aws:iam::379113716218:role/OrganizationAccountAccessRole\"\n    }\n  ]\n}\n"
+      },
+      "responseElements": null,
+      "requestID": "6510763d-796f-4c4d-91e0-fc4a616a4a87",
+      "eventID": "865df7bd-9238-4021-9bd8-986ce834ce86",
+      "readOnly": false,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "379113716218",
+      "eventCategory": "Management",
+      "tlsDetails": {
+        "tlsVersion": "TLSv1.3",
+        "cipherSuite": "TLS_AES_128_GCM_SHA256",
+        "clientProvidedHostHeader": "iam.amazonaws.com"
+      }
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAVQRHQHH5ELHBXRZB6",
+        "arn": "arn:aws:iam::379113716218:user/taha",
+        "accountId": "379113716218",
+        "accessKeyId": "AKIAVQRHQHH5AWKRB6XA",
+        "userName": "taha"
+      },
+      "eventTime": "2026-10-07T10:25:42Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "DeleteUser",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "196.203.130.8",
+      "userAgent": "aws-cli/2.35.21 md/awscrt#0.35.0 ua/2.1 os/linux#6.14.0-37-generic md/arch#x86_64 lang/python#3.14.6 md/pyimpl#CPython m/Z,E,n,b cfg/retry-mode#standard md/installer#exe sid/f83b51e49e93 md/distrib#ubuntu.24 md/prompt#off md/command#iam.delete-user",
+      "errorCode": "NoSuchEntityException",
+      "errorMessage": "The user with name backup-service cannot be found.",
+      "requestParameters": {
+        "userName": "backup-service"
+      },
+      "responseElements": null,
+      "requestID": "f1c7fffc-fa34-4de0-8fd2-89ae0f6abf06",
+      "eventID": "902b0cf1-e230-41a5-8844-53263ba92516",
+      "readOnly": false,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "379113716218",
+      "eventCategory": "Management",
+      "tlsDetails": {
+        "tlsVersion": "TLSv1.3",
+        "cipherSuite": "TLS_AES_128_GCM_SHA256",
+        "clientProvidedHostHeader": "iam.amazonaws.com"
+      }
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAVQRHQHH5ELHBXRZB6",
+        "arn": "arn:aws:iam::379113716218:user/taha",
+        "accountId": "379113716218",
+        "accessKeyId": "AKIAVQRHQHH5AWKRB6XA",
+        "userName": "taha"
+      },
+      "eventTime": "2026-10-07T10:25:43Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "CreateUser",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "196.203.130.8",
+      "userAgent": "aws-cli/2.35.21 md/awscrt#0.35.0 ua/2.1 os/linux#6.14.0-37-generic md/arch#x86_64 lang/python#3.14.6 md/pyimpl#CPython m/Z,E,n,b cfg/retry-mode#standard md/installer#exe sid/f83b51e49e93 md/distrib#ubuntu.24 md/prompt#off md/command#iam.create-user",
+      "requestParameters": {
+        "userName": "backup-service"
+      },
+      "responseElements": {
+        "user": {
+          "path": "/",
+          "userName": "backup-service",
+          "userId": "AIDAVQRHQHH5EPGFKW4UU",
+          "arn": "arn:aws:iam::379113716218:user/backup-service",
+          "createDate": "2026-10-07T10:25:43Z"
+        }
+      },
+      "requestID": "2a4a89a5-9595-4a3e-898c-e011bec3f87e",
+      "eventID": "c6bc2918-805f-4f61-b2b8-7e3fee9f0485",
+      "readOnly": false,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "379113716218",
+      "eventCategory": "Management",
+      "tlsDetails": {
+        "tlsVersion": "TLSv1.3",
+        "cipherSuite": "TLS_AES_128_GCM_SHA256",
+        "clientProvidedHostHeader": "iam.amazonaws.com"
+      }
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAVQRHQHH5ELHBXRZB6",
+        "arn": "arn:aws:iam::379113716218:user/taha",
+        "accountId": "379113716218",
+        "accessKeyId": "AKIAVQRHQHH5AWKRB6XA",
+        "userName": "taha"
+      },
+      "eventTime": "2026-10-07T10:25:44Z",
+      "eventSource": "cloudtrail.amazonaws.com",
+      "eventName": "GetTrail",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "196.203.130.8",
+      "userAgent": "aws-cli/2.35.21 md/awscrt#0.35.0 ua/2.1 os/linux#6.14.0-37-generic md/arch#x86_64 lang/python#3.14.6 md/pyimpl#CPython m/Z,E,n,b cfg/retry-mode#standard md/installer#exe sid/f83b51e49e93 md/distrib#ubuntu.24 md/prompt#off md/command#cloudtrail.get-trail",
+      "errorCode": "TrailNotFoundException",
+      "errorMessage": "Unknown trail: management-events for the user: 379113716218",
+      "requestParameters": {
+        "name": "management-events"
+      },
+      "responseElements": null,
+      "requestID": "bba81744-8a04-446c-b151-54c976b66186",
+      "eventID": "e8d3fa1f-73dd-4bb5-9625-d927393f6c89",
+      "readOnly": true,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "379113716218",
+      "eventCategory": "Management",
+      "tlsDetails": {
+        "tlsVersion": "TLSv1.3",
+        "cipherSuite": "TLS_AES_128_GCM_SHA256",
+        "clientProvidedHostHeader": "cloudtrail.us-east-1.amazonaws.com"
+      }
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAVQRHQHH5ELHBXRZB6",
+        "arn": "arn:aws:iam::379113716218:user/taha",
+        "accountId": "379113716218",
+        "accessKeyId": "AKIAVQRHQHH5AWKRB6XA",
+        "userName": "taha"
+      },
+      "eventTime": "2026-10-07T10:25:47Z",
+      "eventSource": "cloudtrail.amazonaws.com",
+      "eventName": "CreateTrail",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "196.203.130.8",
+      "userAgent": "aws-cli/2.35.21 md/awscrt#0.35.0 ua/2.1 os/linux#6.14.0-37-generic md/arch#x86_64 lang/python#3.14.6 md/pyimpl#CPython m/Z,E,n,b cfg/retry-mode#standard md/installer#exe sid/f83b51e49e93 md/distrib#ubuntu.24 md/prompt#off md/command#cloudtrail.create-trail",
+      "errorCode": "InsufficientS3BucketPolicyException",
+      "errorMessage": "Incorrect S3 bucket policy is detected for bucket: securinets-enit-source-1791368728",
+      "requestParameters": {
+        "name": "management-events",
+        "s3BucketName": "securinets-enit-source-1791368728",
+        "isMultiRegionTrail": true
+      },
+      "responseElements": null,
+      "requestID": "47b3665b-fcbc-4ace-81bb-9ccd0453311c",
+      "eventID": "f996ab9d-7dfa-4d5a-ac6c-f9167130acfe",
+      "readOnly": false,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "379113716218",
+      "eventCategory": "Management",
+      "tlsDetails": {
+        "tlsVersion": "TLSv1.3",
+        "cipherSuite": "TLS_AES_128_GCM_SHA256",
+        "clientProvidedHostHeader": "cloudtrail.us-east-1.amazonaws.com"
+      }
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAVQRHQHH5ELHBXRZB6",
+        "arn": "arn:aws:iam::379113716218:user/taha",
+        "accountId": "379113716218",
+        "accessKeyId": "AKIAVQRHQHH5AWKRB6XA",
+        "userName": "taha"
+      },
+      "eventTime": "2026-10-07T10:26:31Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "CreateUser",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "196.203.130.8",
+      "userAgent": "aws-cli/2.35.21 md/awscrt#0.35.0 ua/2.1 os/linux#6.14.0-37-generic md/arch#x86_64 lang/python#3.14.6 md/pyimpl#CPython m/Z,E,n,b cfg/retry-mode#standard md/installer#exe sid/f83b51e49e93 md/distrib#ubuntu.24 md/prompt#off md/command#iam.create-user",
+      "errorCode": "EntityAlreadyExistsException",
+      "errorMessage": "User with name backup-service already exists.",
+      "requestParameters": {
+        "userName": "backup-service"
+      },
+      "responseElements": null,
+      "requestID": "7d95f91c-2492-4bd4-97f0-14041931c88b",
+      "eventID": "e3bd7d55-9aec-4439-997c-b6dff746c664",
+      "readOnly": false,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "379113716218",
+      "eventCategory": "Management",
+      "tlsDetails": {
+        "tlsVersion": "TLSv1.3",
+        "cipherSuite": "TLS_AES_128_GCM_SHA256",
+        "clientProvidedHostHeader": "iam.amazonaws.com"
+      }
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAVQRHQHH5ELHBXRZB6",
+        "arn": "arn:aws:iam::379113716218:user/taha",
+        "accountId": "379113716218",
+        "accessKeyId": "AKIAVQRHQHH5AWKRB6XA",
+        "userName": "taha"
+      },
+      "eventTime": "2026-10-07T10:26:52Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "PutBucketPolicy",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "196.203.130.8",
+      "userAgent": "[aws-cli/2.35.21 md/awscrt#0.35.0 ua/2.1 os/linux#6.14.0-37-generic md/arch#x86_64 lang/python#3.14.6 md/pyimpl#CPython m/n,W,Z,E,b cfg/retry-mode#standard md/installer#exe sid/f83b51e49e93 md/distrib#ubuntu.24 md/prompt#off md/command#s3api.put-bucket-policy]",
+      "requestParameters": {
+        "bucketPolicy": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Sid": "AWSCloudTrailAclCheck",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "cloudtrail.amazonaws.com"
+              },
+              "Action": "s3:GetBucketAcl",
+              "Resource": "arn:aws:s3:::securinets-enit-source-1791368728"
+            },
+            {
+              "Sid": "AWSCloudTrailWrite",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "cloudtrail.amazonaws.com"
+              },
+              "Action": "s3:PutObject",
+              "Resource": "arn:aws:s3:::securinets-enit-source-1791368728/AWSLogs/379113716218/*",
+              "Condition": {
+                "StringEquals": {
+                  "s3:x-amz-acl": "bucket-owner-full-control"
+                }
+              }
+            }
+          ]
+        },
+        "bucketName": "securinets-enit-source-1791368728",
+        "Host": "securinets-enit-source-1791368728.s3.us-east-1.amazonaws.com",
+        "policy": ""
+      },
+      "responseElements": null,
+      "additionalEventData": {
+        "SignatureVersion": "SigV4",
+        "CipherSuite": "TLS_AES_128_GCM_SHA256",
+        "bytesTransferredIn": 644,
+        "startTime": 1791368812402,
+        "AuthenticationMethod": "AuthHeader",
+        "endTime": 1791368812502,
+        "x-amz-id-2": "bmImIFDCGFBD+fhzDHB4M2X2E5FBHD0ObKffkSmWrYxoV+yOFSR9QLffE9njJfKKPaJGMerAlQ0=",
+        "httpStatusCode": 204,
+        "bytesTransferredOut": 0
+      },
+      "requestID": "YMBWH2EZNABWRB0D",
+      "eventID": "03f88b35-f947-446f-adc9-706d46ffd220",
+      "readOnly": false,
+      "resources": [
+        {
+          "accountId": "379113716218",
+          "type": "AWS::S3::Bucket",
+          "ARN": "arn:aws:s3:::securinets-enit-source-1791368728"
+        }
+      ],
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "379113716218",
+      "eventCategory": "Management",
+      "tlsDetails": {
+        "tlsVersion": "TLSv1.3",
+        "cipherSuite": "TLS_AES_128_GCM_SHA256",
+        "clientProvidedHostHeader": "securinets-enit-source-1791368728.s3.us-east-1.amazonaws.com"
+      }
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAVQRHQHH5ELHBXRZB6",
+        "arn": "arn:aws:iam::379113716218:user/taha",
+        "accountId": "379113716218",
+        "accessKeyId": "AKIAVQRHQHH5AWKRB6XA",
+        "userName": "taha"
+      },
+      "eventTime": "2026-10-07T10:27:03Z",
+      "eventSource": "cloudtrail.amazonaws.com",
+      "eventName": "CreateTrail",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "196.203.130.8",
+      "userAgent": "aws-cli/2.35.21 md/awscrt#0.35.0 ua/2.1 os/linux#6.14.0-37-generic md/arch#x86_64 lang/python#3.14.6 md/pyimpl#CPython m/Z,E,n,b cfg/retry-mode#standard md/installer#exe sid/f83b51e49e93 md/distrib#ubuntu.24 md/prompt#off md/command#cloudtrail.create-trail",
+      "requestParameters": {
+        "name": "management-events",
+        "s3BucketName": "securinets-enit-source-1791368728",
+        "isMultiRegionTrail": true
+      },
+      "responseElements": {
+        "name": "management-events",
+        "s3BucketName": "securinets-enit-source-1791368728",
+        "includeGlobalServiceEvents": true,
+        "isMultiRegionTrail": true,
+        "trailARN": "arn:aws:cloudtrail:us-east-1:379113716218:trail/management-events",
+        "logFileValidationEnabled": false,
+        "isOrganizationTrail": false,
+        "recursiveLogging": true
+      },
+      "requestID": "9f002253-82e8-4fbe-b8f8-c2aff6ed1e4d",
+      "eventID": "943f5cb7-be94-44d1-bbad-571d5db43a64",
+      "readOnly": false,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "379113716218",
+      "eventCategory": "Management",
+      "tlsDetails": {
+        "tlsVersion": "TLSv1.3",
+        "cipherSuite": "TLS_AES_128_GCM_SHA256",
+        "clientProvidedHostHeader": "cloudtrail.us-east-1.amazonaws.com"
+      }
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "AWSService",
+        "invokedBy": "cloudtrail.amazonaws.com"
+      },
+      "eventTime": "2026-10-07T10:27:03Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "GetBucketAcl",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "cloudtrail.amazonaws.com",
+      "userAgent": "cloudtrail.amazonaws.com",
+      "requestParameters": {
+        "bucketName": "securinets-enit-source-1791368728",
+        "Host": "securinets-enit-source-1791368728.s3.us-east-1.amazonaws.com",
+        "acl": ""
+      },
+      "responseElements": null,
+      "additionalEventData": {
+        "SignatureVersion": "SigV4",
+        "CipherSuite": "TLS_AES_128_GCM_SHA256",
+        "bytesTransferredIn": 0,
+        "startTime": 1791368823229,
+        "AuthenticationMethod": "AuthHeader",
+        "endTime": 1791368823250,
+        "x-amz-id-2": "S6Gz6XXeAKstko7CwHtCAofTfX8nimQP33wBb5yY+cdyKxoyBgfwVDcoA6it9o6hnKJWAPW1KixxdPbdxEzJ0nuYT8CY0Ht8",
+        "httpStatusCode": 200,
+        "bytesTransferredOut": 480
+      },
+      "requestID": "9F4R9G9K3ZJPV0Z4",
+      "eventID": "ced17752-8cf9-387b-aa5b-8aa6d01b9666",
+      "readOnly": true,
+      "resources": [
+        {
+          "accountId": "379113716218",
+          "type": "AWS::S3::Bucket",
+          "ARN": "arn:aws:s3:::securinets-enit-source-1791368728"
+        }
+      ],
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "379113716218",
+      "sharedEventID": "0a5a436f-a4f9-4ba1-b9b6-0d753b627809",
+      "vpcEndpointId": "cloudtrail.amazonaws.com",
+      "vpcEndpointAccountId": "cloudtrail.amazonaws.com",
+      "eventCategory": "Management"
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAVQRHQHH5ELHBXRZB6",
+        "arn": "arn:aws:iam::379113716218:user/taha",
+        "accountId": "379113716218",
+        "accessKeyId": "AKIAVQRHQHH5AWKRB6XA",
+        "userName": "taha"
+      },
+      "eventTime": "2026-10-07T10:27:06Z",
+      "eventSource": "cloudtrail.amazonaws.com",
+      "eventName": "StartLogging",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "196.203.130.8",
+      "userAgent": "aws-cli/2.35.21 md/awscrt#0.35.0 ua/2.1 os/linux#6.14.0-37-generic md/arch#x86_64 lang/python#3.14.6 md/pyimpl#CPython m/Z,E,n,b cfg/retry-mode#standard md/installer#exe sid/f83b51e49e93 md/distrib#ubuntu.24 md/prompt#off md/command#cloudtrail.start-logging",
+      "requestParameters": {
+        "name": "management-events"
+      },
+      "responseElements": null,
+      "requestID": "b14f3994-87d5-48ac-bfe7-9ab412ee0999",
+      "eventID": "7788e7b1-6749-4fe8-8093-013942efa169",
+      "readOnly": false,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "379113716218",
+      "eventCategory": "Management",
+      "tlsDetails": {
+        "tlsVersion": "TLSv1.3",
+        "cipherSuite": "TLS_AES_128_GCM_SHA256",
+        "clientProvidedHostHeader": "cloudtrail.us-east-1.amazonaws.com"
+      }
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAVQRHQHH5ELHBXRZB6",
+        "arn": "arn:aws:iam::379113716218:user/taha",
+        "accountId": "379113716218",
+        "accessKeyId": "AKIAVQRHQHH5AWKRB6XA",
+        "userName": "taha"
+      },
+      "eventTime": "2026-10-07T10:27:08Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "CreateUser",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "196.203.130.8",
+      "userAgent": "aws-cli/2.35.21 md/awscrt#0.35.0 ua/2.1 os/linux#6.14.0-37-generic md/arch#x86_64 lang/python#3.14.6 md/pyimpl#CPython m/Z,E,n,b cfg/retry-mode#standard md/installer#exe sid/f83b51e49e93 md/distrib#ubuntu.24 md/prompt#off md/command#iam.create-user",
+      "errorCode": "EntityAlreadyExistsException",
+      "errorMessage": "User with name backup-service already exists.",
+      "requestParameters": {
+        "userName": "backup-service"
+      },
+      "responseElements": null,
+      "requestID": "e3a91d95-f856-48ad-a884-fcbce035a993",
+      "eventID": "0a39e0d3-dd82-4d7d-8c0c-97de44e074b1",
+      "readOnly": false,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "379113716218",
+      "eventCategory": "Management",
+      "tlsDetails": {
+        "tlsVersion": "TLSv1.3",
+        "cipherSuite": "TLS_AES_128_GCM_SHA256",
+        "clientProvidedHostHeader": "iam.amazonaws.com"
+      }
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAVQRHQHH5ELHBXRZB6",
+        "arn": "arn:aws:iam::379113716218:user/taha",
+        "accountId": "379113716218",
+        "accessKeyId": "AKIAVQRHQHH5AWKRB6XA",
+        "userName": "taha"
+      },
+      "eventTime": "2026-10-07T10:27:10Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "AttachUserPolicy",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "196.203.130.8",
+      "userAgent": "aws-cli/2.35.21 md/awscrt#0.35.0 ua/2.1 os/linux#6.14.0-37-generic md/arch#x86_64 lang/python#3.14.6 md/pyimpl#CPython m/Z,E,n,b cfg/retry-mode#standard md/installer#exe sid/f83b51e49e93 md/distrib#ubuntu.24 md/prompt#off md/command#iam.attach-user-policy",
+      "requestParameters": {
+        "userName": "backup-service",
+        "policyArn": "arn:aws:iam::aws:policy/ReadOnlyAccess"
+      },
+      "responseElements": null,
+      "requestID": "4e0244a7-9eef-434d-866c-b6ea212380c2",
+      "eventID": "f48a7069-2d17-4845-b256-feb93c327be9",
+      "readOnly": false,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "379113716218",
+      "eventCategory": "Management",
+      "tlsDetails": {
+        "tlsVersion": "TLSv1.3",
+        "cipherSuite": "TLS_AES_128_GCM_SHA256",
+        "clientProvidedHostHeader": "iam.amazonaws.com"
+      }
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAVQRHQHH5D5WJYVWIG",
+        "arn": "arn:aws:iam::379113716218:user/samir.benali",
+        "accountId": "379113716218",
+        "accessKeyId": "AKIAVQRHQHH5BBB7WXZ6",
+        "userName": "samir.benali"
+      },
+      "eventTime": "2026-10-07T10:27:22Z",
+      "eventSource": "sts.amazonaws.com",
+      "eventName": "GetCallerIdentity",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "196.203.130.8",
+      "userAgent": "aws-cli/2.35.21 md/awscrt#0.35.0 ua/2.1 os/linux#6.14.0-37-generic md/arch#x86_64 lang/python#3.14.6 md/pyimpl#CPython m/g,E,Z,b cfg/retry-mode#standard md/installer#exe sid/f83b51e49e93 md/distrib#ubuntu.24 md/prompt#off md/command#sts.get-caller-identity",
+      "requestParameters": null,
+      "responseElements": null,
+      "additionalEventData": {
+        "ExtendedRequestId": "MTp1cy1lYXN0LTE6UzoxNzkxMzY4ODQyODE5OlI6cjhJRnZYU2c=",
+        "RequestDetails": {
+          "awsServingRegion": "us-east-1",
+          "endpointType": "regional"
+        }
+      },
+      "requestID": "f9f67c3d-889a-479f-95b4-44dcf6a11464",
+      "eventID": "1d76e364-d497-4f24-a084-bac0b88d056f",
+      "readOnly": true,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "379113716218",
+      "eventCategory": "Management",
+      "tlsDetails": {
+        "tlsVersion": "TLSv1.3",
+        "cipherSuite": "TLS_AES_128_GCM_SHA256",
+        "clientProvidedHostHeader": "sts.us-east-1.amazonaws.com",
+        "keyExchange": "X25519MLKEM768"
+      }
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAVQRHQHH5D5WJYVWIG",
+        "arn": "arn:aws:iam::379113716218:user/samir.benali",
+        "accountId": "379113716218",
+        "accessKeyId": "AKIAVQRHQHH5BBB7WXZ6",
+        "userName": "samir.benali"
+      },
+      "eventTime": "2026-10-07T10:27:25Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "ListAttachedUserPolicies",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "196.203.130.8",
+      "userAgent": "aws-cli/2.35.21 md/awscrt#0.35.0 ua/2.1 os/linux#6.14.0-37-generic md/arch#x86_64 lang/python#3.14.6 md/pyimpl#CPython m/Z,g,E,C,b cfg/retry-mode#standard md/installer#exe sid/f83b51e49e93 md/distrib#ubuntu.24 md/prompt#off md/command#iam.list-attached-user-policies",
+      "errorCode": "AccessDenied",
+      "errorMessage": "User: arn:aws:iam::379113716218:user/samir.benali is not authorized to perform: iam:ListAttachedUserPolicies on resource: user samir.benali because no identity-based policy allows the iam:ListAttachedUserPolicies action. Go to https://us-east-1.console.aws.amazon.com/iam/home?region=us-east-1#/authorization-details/a7t0jmzobuklb6ekxthn9oo7y for complete details, or call the GetRequestAuthorizationDetails API with the following authorization id: a7t0jmzobuklb6ekxthn9oo7y",
+      "requestParameters": null,
+      "responseElements": null,
+      "requestID": "1054e7a9-9178-4717-9b98-0b81afc42b3e",
+      "eventID": "9e8c23b9-4ac6-467e-8a7f-3e6597258418",
+      "readOnly": true,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "379113716218",
+      "eventCategory": "Management",
+      "tlsDetails": {
+        "tlsVersion": "TLSv1.3",
+        "cipherSuite": "TLS_AES_128_GCM_SHA256",
+        "clientProvidedHostHeader": "iam.amazonaws.com"
+      }
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAVQRHQHH5D5WJYVWIG",
+        "arn": "arn:aws:iam::379113716218:user/samir.benali",
+        "accountId": "379113716218",
+        "accessKeyId": "AKIAVQRHQHH5BBB7WXZ6",
+        "userName": "samir.benali"
+      },
+      "eventTime": "2026-10-07T10:27:29Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "ListBuckets",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "196.203.130.8",
+      "userAgent": "[aws-cli/2.35.21 md/awscrt#0.35.0 ua/2.1 os/linux#6.14.0-37-generic md/arch#x86_64 lang/python#3.14.6 md/pyimpl#CPython m/Z,g,E,C,b cfg/retry-mode#standard md/installer#exe sid/f83b51e49e93 md/distrib#ubuntu.24 md/prompt#off md/command#s3.ls]",
+      "errorCode": "AccessDenied",
+      "errorMessage": "User: arn:aws:iam::379113716218:user/samir.benali is not authorized to perform: s3:ListAllMyBuckets because no identity-based policy allows the s3:ListAllMyBuckets action",
+      "requestParameters": {
+        "Host": "s3.us-east-1.amazonaws.com"
+      },
+      "responseElements": null,
+      "additionalEventData": {
+        "SignatureVersion": "SigV4",
+        "CipherSuite": "TLS_AES_128_GCM_SHA256",
+        "bytesTransferredIn": 0,
+        "startTime": 1791368849402,
+        "AuthenticationMethod": "AuthHeader",
+        "endTime": 1791368849413,
+        "x-amz-id-2": "Nu2DfjBemRIQc4WL6+zpbB5zUH3iVQTDasys0fTb07f5D5BL2AAD8End4ZtBDbGak66LiP0Mb79FB71/o9hTyLIy3mDQCowD",
+        "httpStatusCode": 403,
+        "bytesTransferredOut": 420
+      },
+      "requestID": "CPC23TM2Y891MTXK",
+      "eventID": "0a12e99d-10ad-4735-bd3f-f4dd30e4e5ee",
+      "readOnly": true,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "379113716218",
+      "eventCategory": "Management",
+      "tlsDetails": {
+        "tlsVersion": "TLSv1.3",
+        "cipherSuite": "TLS_AES_128_GCM_SHA256",
+        "clientProvidedHostHeader": "s3.us-east-1.amazonaws.com"
+      }
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAVQRHQHH5D5WJYVWIG",
+        "arn": "arn:aws:iam::379113716218:user/samir.benali",
+        "accountId": "379113716218",
+        "accessKeyId": "AKIAVQRHQHH5BBB7WXZ6",
+        "userName": "samir.benali"
+      },
+      "eventTime": "2026-10-07T10:27:33Z",
+      "eventSource": "sts.amazonaws.com",
+      "eventName": "AssumeRole",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "196.203.130.8",
+      "userAgent": "aws-cli/2.35.21 md/awscrt#0.35.0 ua/2.1 os/linux#6.14.0-37-generic md/arch#x86_64 lang/python#3.14.6 md/pyimpl#CPython m/g,E,Z,b cfg/retry-mode#standard md/installer#exe sid/f83b51e49e93 md/distrib#ubuntu.24 md/prompt#off md/command#sts.assume-role",
+      "requestParameters": {
+        "roleArn": "arn:aws:iam::379113716218:role/OrganizationAccountAccessRole",
+        "roleSessionName": "attacker-session-2026"
+      },
+      "responseElements": {
+        "credentials": {
+          "accessKeyId": "ASIAVQRHQHH5JHZFPER5",
+          "sessionToken": "IQoJb3JpZ2luX2VjEEMaCXVzLWVhc3QtMSJGMEQCIGCQ41FcL5HqAp72d3clhRNV+0YGLRWrVUMHJtVPOXI5AiByYdxWQltl++U3utsSO1ks7/12VWxvHNz8Qglpi3jq4iqiAggMEAAaDDM3OTExMzcxNjIxOCIMO67woE7PcR5D8KVDKv8B+9xEp9JFRMMOSI6Nt7tDm4ERnMGNYoeWejYACbnpAkaFphNiiXTT9vK8ZUwhRk9ZpH1iqeBTLqvRXfor6wjdiKlw4yqgCTaFGPu9cc/au0yA0epdREF8ud3zsS403XcsRHC0hVDHCjvYWP18HUG4oRsYb9cvheeWDSHp63+dMv5ED0CGCeEJIBc6DrK/Gjcoazf7R6YDat697B2hzksoTwTlpjaUa013PkmM8622EPCMzcXvkNaBA+L5vBDMf4736AuuUg/gjm1jQ6DuBdp3+Tn/muVfE+wcbqnAWQO8CRbMPQlRAPok2clhjjDWrexuWC97OL1jZrmf2Jua60/UMJW9mNYGOp4B4EKjVt5z5bo1kgmJhhhB7U3MAkIW/fJ3+us0uvK9TrpjbNrLzGMzYTr+lPqnEgIXNylAlA4uJty2kyYyRFEA+Glkp9lt2cHsk044YZ5THRk+Mzp49wnK8giksI1sMcQaG1kEyPlUhyhSCMLL+6yK5IKKayLc2LL+8fuBKbVP2Ehho/dCuAKBWAWXB6qMcimghSgC3m7mD/fcEmwmkyo=",
+          "expiration": "2026-10-07T11:27:33Z"
+        },
+        "assumedRoleUser": {
+          "assumedRoleId": "AROAVQRHQHH5GONEAWSXD:attacker-session-2026",
+          "arn": "arn:aws:sts::379113716218:assumed-role/OrganizationAccountAccessRole/attacker-session-2026"
+        },
+        "packedPolicySize": 18,
+        "sessionTokenUtilization": 18,
+        "sessionTokenSize": 744
+      },
+      "additionalEventData": {
+        "ExtendedRequestId": "MTp1cy1lYXN0LTE6UzoxNzkxMzY4ODUzNDM0OlI6R2hjTllSMDg=",
+        "RequestDetails": {
+          "endpointType": "regional",
+          "awsServingRegion": "us-east-1"
+        }
+      },
+      "requestID": "b0e28ea1-a245-41a2-8a89-a68526ab0736",
+      "eventID": "3b9ecf43-e001-4837-9347-bc25f01b03d8",
+      "readOnly": true,
+      "resources": [
+        {
+          "accountId": "379113716218",
+          "type": "AWS::IAM::Role",
+          "ARN": "arn:aws:iam::379113716218:role/OrganizationAccountAccessRole"
+        }
+      ],
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "379113716218",
+      "eventCategory": "Management",
+      "tlsDetails": {
+        "tlsVersion": "TLSv1.3",
+        "cipherSuite": "TLS_AES_128_GCM_SHA256",
+        "clientProvidedHostHeader": "sts.us-east-1.amazonaws.com",
+        "keyExchange": "X25519MLKEM768"
+      }
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROAVQRHQHH5GONEAWSXD:attacker-session-2026",
+        "arn": "arn:aws:sts::379113716218:assumed-role/OrganizationAccountAccessRole/attacker-session-2026",
+        "accountId": "379113716218",
+        "accessKeyId": "ASIAVQRHQHH5JHZFPER5",
+        "sessionContext": {
+          "sessionIssuer": {
+            "type": "Role",
+            "principalId": "AROAVQRHQHH5GONEAWSXD",
+            "arn": "arn:aws:iam::379113716218:role/OrganizationAccountAccessRole",
+            "accountId": "379113716218",
+            "userName": "OrganizationAccountAccessRole"
+          },
+          "attributes": {
+            "creationDate": "2026-10-07T10:27:33Z",
+            "mfaAuthenticated": "false"
+          }
+        }
+      },
+      "eventTime": "2026-10-07T10:28:10Z",
+      "eventSource": "cloudtrail.amazonaws.com",
+      "eventName": "StopLogging",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "196.203.130.8",
+      "userAgent": "aws-cli/2.35.21 md/awscrt#0.35.0 ua/2.1 os/linux#6.14.0-37-generic md/arch#x86_64 lang/python#3.14.6 md/pyimpl#CPython m/g,E,Z,b cfg/retry-mode#standard md/installer#exe sid/f83b51e49e93 md/distrib#ubuntu.24 md/prompt#off md/command#cloudtrail.stop-logging",
+      "requestParameters": {
+        "name": "management-events"
+      },
+      "responseElements": null,
+      "requestID": "d1005c59-b756-4985-93d7-9c0aa21e3917",
+      "eventID": "f137f6ec-194e-4184-9a27-75cc5b4b0b7f",
+      "readOnly": false,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "379113716218",
+      "eventCategory": "Management",
+      "tlsDetails": {
+        "tlsVersion": "TLSv1.3",
+        "cipherSuite": "TLS_AES_128_GCM_SHA256",
+        "clientProvidedHostHeader": "cloudtrail.us-east-1.amazonaws.com"
+      }
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "AWSService",
+        "invokedBy": "cloudtrail.amazonaws.com"
+      },
+      "eventTime": "2026-10-07T10:28:11Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "GetBucketAcl",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "cloudtrail.amazonaws.com",
+      "userAgent": "cloudtrail.amazonaws.com",
+      "requestParameters": {
+        "bucketName": "securinets-enit-source-1791368728",
+        "Host": "securinets-enit-source-1791368728.s3.us-east-1.amazonaws.com",
+        "acl": ""
+      },
+      "responseElements": null,
+      "additionalEventData": {
+        "SignatureVersion": "SigV4",
+        "CipherSuite": "TLS_AES_128_GCM_SHA256",
+        "bytesTransferredIn": 0,
+        "startTime": 1791368891201,
+        "AuthenticationMethod": "AuthHeader",
+        "endTime": 1791368891224,
+        "x-amz-id-2": "vnIQrhgxmH+v0BDHZy4apDRhGiaooChhTD72w5cRZPSyGfjVihwoMTmvqBlHnemMAAjP6KNMYr2F9t0lHdg6v3/ukD6FA2Ba",
+        "httpStatusCode": 200,
+        "bytesTransferredOut": 480
+      },
+      "requestID": "0ST1X8WFCKN4Q9GP",
+      "eventID": "6e293285-9a9b-3429-83eb-1298029c3ea1",
+      "readOnly": true,
+      "resources": [
+        {
+          "accountId": "379113716218",
+          "type": "AWS::S3::Bucket",
+          "ARN": "arn:aws:s3:::securinets-enit-source-1791368728"
+        }
+      ],
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "379113716218",
+      "sharedEventID": "fe682e14-47db-4016-867a-9bfc6a6c8408",
+      "vpcEndpointId": "cloudtrail.amazonaws.com",
+      "vpcEndpointAccountId": "cloudtrail.amazonaws.com",
+      "eventCategory": "Management"
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROAVQRHQHH5GONEAWSXD:attacker-session-2026",
+        "arn": "arn:aws:sts::379113716218:assumed-role/OrganizationAccountAccessRole/attacker-session-2026",
+        "accountId": "379113716218",
+        "accessKeyId": "ASIAVQRHQHH5JHZFPER5",
+        "sessionContext": {
+          "sessionIssuer": {
+            "type": "Role",
+            "principalId": "AROAVQRHQHH5GONEAWSXD",
+            "arn": "arn:aws:iam::379113716218:role/OrganizationAccountAccessRole",
+            "accountId": "379113716218",
+            "userName": "OrganizationAccountAccessRole"
+          },
+          "attributes": {
+            "creationDate": "2026-10-07T10:27:33Z",
+            "mfaAuthenticated": "false"
+          }
+        }
+      },
+      "eventTime": "2026-10-07T10:28:18Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "CreateAccessKey",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "196.203.130.8",
+      "userAgent": "aws-cli/2.35.21 md/awscrt#0.35.0 ua/2.1 os/linux#6.14.0-37-generic md/arch#x86_64 lang/python#3.14.6 md/pyimpl#CPython m/g,E,Z,b cfg/retry-mode#standard md/installer#exe sid/f83b51e49e93 md/distrib#ubuntu.24 md/prompt#off md/command#iam.create-access-key",
+      "requestParameters": {
+        "userName": "backup-service"
+      },
+      "responseElements": {
+        "accessKey": {
+          "userName": "backup-service",
+          "accessKeyId": "AKIAVQRHQHH5G2ZCYGFC",
+          "status": "Active",
+          "createDate": "2026-10-07T10:28:18Z"
+        }
+      },
+      "requestID": "4e4d6d24-6d84-41ee-89a1-70e242d810f0",
+      "eventID": "5b5ccd0f-3336-48b5-b2cb-1297d418fc2f",
+      "readOnly": false,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "379113716218",
+      "eventCategory": "Management",
+      "tlsDetails": {
+        "tlsVersion": "TLSv1.3",
+        "cipherSuite": "TLS_AES_128_GCM_SHA256",
+        "clientProvidedHostHeader": "iam.amazonaws.com"
+      }
+    }
+  ]
+}

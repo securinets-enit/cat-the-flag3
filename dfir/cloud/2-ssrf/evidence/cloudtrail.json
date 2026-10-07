@@ -1,0 +1,122 @@
+{
+  "Records": [
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROAVQRHQHH5PA2SGKREG:i-0f0e6e66a8e18b4ad",
+        "arn": "arn:aws:sts::379113716218:assumed-role/webapp-preview-role/i-0f0e6e66a8e18b4ad",
+        "accountId": "379113716218",
+        "accessKeyId": "ASIAVQRHQHH5BVZZQTKH",
+        "sessionContext": {
+          "sessionIssuer": {
+            "type": "Role",
+            "principalId": "AROAVQRHQHH5PA2SGKREG",
+            "arn": "arn:aws:iam::379113716218:role/webapp-preview-role",
+            "accountId": "379113716218",
+            "userName": "webapp-preview-role"
+          },
+          "attributes": {
+            "creationDate": "2026-10-07T14:34:44Z",
+            "mfaAuthenticated": "false"
+          },
+          "ec2RoleDelivery": "1.0"
+        },
+        "inScopeOf": {
+          "issuerType": "AWS::EC2::Instance",
+          "credentialsIssuedTo": "arn:aws:ec2:us-east-1:379113716218:instance/i-0f0e6e66a8e18b4ad"
+        }
+      },
+      "eventTime": "2026-10-07T14:37:42Z",
+      "eventSource": "sts.amazonaws.com",
+      "eventName": "GetCallerIdentity",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "154.108.154.113",
+      "userAgent": "aws-cli/2.35.21 md/awscrt#0.35.0 ua/2.1 os/linux#6.14.0-37-generic md/arch#x86_64 lang/python#3.14.6 md/pyimpl#CPython m/g,E,Z,b cfg/retry-mode#standard md/installer#exe sid/3314bdbefef1 md/distrib#ubuntu.24 md/prompt#off md/command#sts.get-caller-identity",
+      "requestParameters": null,
+      "responseElements": null,
+      "additionalEventData": {
+        "ExtendedRequestId": "MTp1cy1lYXN0LTE6UzoxNzkxMzgzODYyNDg4OlI6MW1ud0NBeVQ=",
+        "RequestDetails": {
+          "awsServingRegion": "us-east-1",
+          "endpointType": "regional"
+        }
+      },
+      "requestID": "1106c083-be05-4abc-9cac-7373ffa5e1e2",
+      "eventID": "b4a42b75-e21f-4164-be94-c5897d9eeaaf",
+      "readOnly": true,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "379113716218",
+      "eventCategory": "Management",
+      "tlsDetails": {
+        "tlsVersion": "TLSv1.3",
+        "cipherSuite": "TLS_AES_128_GCM_SHA256",
+        "clientProvidedHostHeader": "sts.us-east-1.amazonaws.com",
+        "keyExchange": "X25519MLKEM768"
+      }
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROAVQRHQHH5PA2SGKREG:i-0f0e6e66a8e18b4ad",
+        "arn": "arn:aws:sts::379113716218:assumed-role/webapp-preview-role/i-0f0e6e66a8e18b4ad",
+        "accountId": "379113716218",
+        "accessKeyId": "ASIAVQRHQHH5BVZZQTKH",
+        "sessionContext": {
+          "sessionIssuer": {
+            "type": "Role",
+            "principalId": "AROAVQRHQHH5PA2SGKREG",
+            "arn": "arn:aws:iam::379113716218:role/webapp-preview-role",
+            "accountId": "379113716218",
+            "userName": "webapp-preview-role"
+          },
+          "attributes": {
+            "creationDate": "2026-10-07T14:34:44Z",
+            "mfaAuthenticated": "false"
+          },
+          "ec2RoleDelivery": "1.0"
+        },
+        "inScopeOf": {
+          "issuerType": "AWS::EC2::Instance",
+          "credentialsIssuedTo": "arn:aws:ec2:us-east-1:379113716218:instance/i-0f0e6e66a8e18b4ad"
+        }
+      },
+      "eventTime": "2026-10-07T14:37:50Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "ListBuckets",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "154.108.154.113",
+      "userAgent": "[aws-cli/2.35.21 md/awscrt#0.35.0 ua/2.1 os/linux#6.14.0-37-generic md/arch#x86_64 lang/python#3.14.6 md/pyimpl#CPython m/Z,g,E,C,b cfg/retry-mode#standard md/installer#exe sid/3314bdbefef1 md/distrib#ubuntu.24 md/prompt#off md/command#s3.ls]",
+      "requestParameters": {
+        "Host": "s3.us-east-1.amazonaws.com"
+      },
+      "responseElements": null,
+      "additionalEventData": {
+        "SignatureVersion": "SigV4",
+        "CipherSuite": "TLS_AES_128_GCM_SHA256",
+        "bytesTransferredIn": 0,
+        "startTime": 1791383870379,
+        "AuthenticationMethod": "AuthHeader",
+        "endTime": 1791383870405,
+        "x-amz-id-2": "Z/KiyFthADn88j1FzWmppzkBFUXpJ/OZiNiqmO5WdkO+6ukLTwXjGxofGaJ8AHZ8hYqgWpf7p+BJCvCY1Dz/nzARreuArKgV",
+        "turnAroundTime": 22,
+        "httpStatusCode": 200,
+        "bytesTransferredOut": 617
+      },
+      "requestID": "GAWQ83ZDQCJP7066",
+      "eventID": "bb11f586-4824-4986-873d-8c87b975bde2",
+      "readOnly": true,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "379113716218",
+      "eventCategory": "Management",
+      "tlsDetails": {
+        "tlsVersion": "TLSv1.3",
+        "cipherSuite": "TLS_AES_128_GCM_SHA256",
+        "clientProvidedHostHeader": "s3.us-east-1.amazonaws.com"
+      }
+    }
+  ]
+}

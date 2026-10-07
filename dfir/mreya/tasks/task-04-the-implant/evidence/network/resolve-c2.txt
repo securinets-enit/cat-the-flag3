@@ -1,8 +1,0 @@
-gh-actions-runner.xyz: 104.21.15.97                         -- link: ens4
-                       172.67.162.26                        -- link: ens4
-                       2606:4700:3033::6815:f61             -- link: ens4
-                       2606:4700:3033::ac43:a21a            -- link: ens4
-
--- Information acquired via protocol DNS in 5.3ms.
--- Data is authenticated: no; Data was acquired via local or encrypted transport: no
--- Data from: cache network

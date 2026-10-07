@@ -1,1 +1,0 @@
-/root/.local/share/gh-cli/gh-completion: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=166eaffe02e79f5d2a87597a7dab2f44ccd71946, for GNU/Linux 3.2.0, stripped

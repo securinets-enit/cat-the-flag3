@@ -1,0 +1,5 @@
+2026-10-07 14:36:08,532 remote_addr=127.0.0.1 "GET /health?" ua="curl/7.81.0"
+2026-10-07 14:36:15,923 remote_addr=127.0.0.1 "GET /health?" ua="curl/7.81.0"
+2026-10-07 14:37:33,838 remote_addr=127.0.0.1 "GET /preview?url=http://169.254.169.254/latest/meta-data/" ua="curl/8.5.0"
+2026-10-07 14:37:34,187 remote_addr=127.0.0.1 "GET /preview?url=http://169.254.169.254/latest/meta-data/iam/security-credentials/" ua="curl/8.5.0"
+2026-10-07 14:37:34,708 remote_addr=127.0.0.1 "GET /preview?url=http://169.254.169.254/latest/meta-data/iam/security-credentials/webapp-preview-role" ua="curl/8.5.0"
