@@ -1,0 +1,10 @@
+{
+  "model": "dream-checkpoint-final-FINAL-v3",
+  "checkpoint_saved": "Every day might strike as the same, but Turning Points are remembred for life.",
+  "reproducibility": "exact",
+  "layer": "secret_mask_head",
+  "mask_algorithm": "python random.Random(seed).randrange(256) per byte",
+  "cipher_hex": "95c548acc48362faeb06399b6bc6599db62be87f0c84a867765e762e763a922c2f891d2377c1dfbf3201e24e4bd952",
+  "ai_note": "Publishing the seed is safe because random means random.",
+  "seed_derivation": "int(sha256(date_string).hexdigest()[:8], 16), date given as YYYY-MM-DD"
+}

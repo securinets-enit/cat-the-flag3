@@ -1,0 +1,5 @@
+# Solver requirements
+# Python 3.8+ standard library is sufficient for solve.py (ssl, socket, heapq, base64, unicodedata)
+# Optional packages for development / testing:
+cryptography>=41.0.0
+pyfiglet>=0.8.post1
