@@ -4,11 +4,11 @@ Challenges are grouped by release wave. Every challenge directory is self-contai
 
 ## Wave 1
 
-`baby_win`, `flag_roulette`, `jumpstart`, `safebox`
+`baby_win`, `black_flash`, `flag_roulette`, `jumpstart`, `safebox`
 
 ## Wave 2
 
-`canary_vault`, `gatekeeper`, `pie_slicer`
+`canary_vault`, `gatekeeper`, `nah`, `pie_slicer`
 
 ## Wave 3
 

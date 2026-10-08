@@ -1,0 +1,21 @@
+name: "NAH"
+author: "r3t0x"
+attribution: 'Written by [r3t0x](https://r3t0x.me/)'
+category: pwn
+description: |-
+  Jujutsu High sealed a special-grade cursed object behind its newest barrier. You are a Grade 4 sorcerer with no clearance, no technique, and somehow terminal access. The higher-ups are certain you cannot retrieve it. They are famously competent.
+type: dynamic
+extra:
+  function: linear
+  initial: 200
+  decay: 5
+  minimum: 100
+connection_info: nc localhost 1347
+flags:
+  - SecurinetsENIT{n4h_1d_4uth0r1z3_fd_256}
+tags:
+  - integer-truncation
+  - file-descriptors
+files:
+  - main
+version: "0.1"

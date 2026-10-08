@@ -1,0 +1,21 @@
+name: "Black Flash"
+author: "r3t0x"
+attribution: 'Written by [r3t0x](https://r3t0x.me/)'
+category: pwn
+description: |-
+  Jujutsu High's cursed-tool shop is running a Black Flash Sale. Your wallet is weak, the minimum order is absurd, and accounting insists its math is flawless. Surely you can afford nothing.
+type: dynamic
+extra:
+  function: linear
+  initial: 100
+  decay: 5
+  minimum: 50
+connection_info: nc localhost 1348
+flags:
+  - SecurinetsENIT{bl4ck_fl4sh_s4l3_wr4pp3d_4r0und}
+tags:
+  - integer-overflow
+files:
+  - main
+  - main.c
+version: "0.1"
