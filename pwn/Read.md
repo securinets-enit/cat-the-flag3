@@ -8,8 +8,8 @@ Challenges are grouped by release wave. Every challenge directory is self-contai
 
 ## Wave 2
 
-`canary_vault`, `gatekeeper`, `nah`, `pie_slicer`
+`canary_vault`, `gatekeeper`, `libc_voyage`, `nah`, `pie_slicer`
 
 ## Wave 3
 
-`descriptor`, `format_oracle`, `iron_chamber`, `libc_voyage`, `reach_back`
+`descriptor`, `format_oracle`, `iron_chamber`, `reach_back`
