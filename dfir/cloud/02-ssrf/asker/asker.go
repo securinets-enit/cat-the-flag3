@@ -42,6 +42,7 @@ var questions = []question{
 func main() {
 	reader := bufio.NewReader(os.Stdin)
 
+	fmt.Print(bannerHeader)
 	fmt.Println("Hello future Threat Hunter. This is an SSRF-to-IMDS cloud challenge.")
 	fmt.Println("You have a web access log and CloudTrail events.")
 	fmt.Println("Reconstruct the attack, then answer the questions.")
@@ -78,6 +79,27 @@ func main() {
 		fmt.Println("Error reading flag.txt:", err)
 		return
 	}
-	fmt.Println("\nHere is your flag:")
-	fmt.Println(string(flagContent))
+	printFlag(strings.TrimSpace(string(flagContent)))
 }
+
+// --- BEGIN GENERATED BANNER (tools/banner.py) ---
+
+const bannerHeader = "\n\u001b[1m\u001b[31m   ▄▄▄    ▄▄  ▄▄▄▄▄▄▄       ▄▄▄▄▄▄▄ ▄    ▄ ▄▄▄▄▄▄\u001b[0m   \u001b[36m  |~~~~~~~~~|\u001b[0m\n\u001b[1m\u001b[31m ▄▀   ▀   ██     █             █    █    █ █     \u001b[0m   \u001b[36m  |  ENIT   |\u001b[0m\n\u001b[1m\u001b[31m █       █  █    █             █    █▄▄▄▄█ █▄▄▄▄▄\u001b[0m   \u001b[36m  |~~~~~~~~~|\u001b[0m\n\u001b[1m\u001b[31m █       █▄▄█    █             █    █    █ █     \u001b[0m   \u001b[36m  |\u001b[0m\n\u001b[1m\u001b[31m  ▀▄▄▄▀ █    █   █             █    █    █ █▄▄▄▄▄\u001b[0m   \u001b[36m  |   /\\_/\\\u001b[0m\n\u001b[1m\u001b[31m ▄▄▄▄▄▄ ▄        ▄▄     ▄▄▄                 ▄▄▄▄ \u001b[0m   \u001b[36m  |__( o.o )\u001b[0m\n\u001b[1m\u001b[31m █      █        ██   ▄▀   ▀        ▄   ▄  ▀   ▀█\u001b[0m   \u001b[36m  |    > ^ <\u001b[0m\n\u001b[1m\u001b[31m █▄▄▄▄▄ █       █  █  █   ▄▄        ▀▄ ▄▀    ▄▄▄▀\u001b[0m   \u001b[36m  |   /     \\\u001b[0m\n\u001b[1m\u001b[31m █      █       █▄▄█  █    █         █▄█       ▀█\u001b[0m   \u001b[36m  |  (_|   |_)\u001b[0m\n\u001b[1m\u001b[31m █      █▄▄▄▄▄ █    █  ▀▄▄▄▀          █    ▀▄▄▄█▀\u001b[0m   \u001b[36m~~^~~~~~~~~~~~~~\u001b[0m\n\n\u001b[32m╔════════════════════════════════════════════════════════════════════════╗\u001b[0m\n\u001b[32m║\u001b[0m\u001b[35m\u001b[1m                  Securinets ENIT  //  DFIR  //  Cloud                  \u001b[0m\u001b[32m║\u001b[0m\n\u001b[32m╠════════════════════════════════════════════════════════════════════════╣\u001b[0m\n\u001b[32m║\u001b[0m  \u001b[2mChallenge  \u001b[0m\u001b[33m\u001b[1mSSRF to IMDS\u001b[0m                                               \u001b[32m║\u001b[0m\n\u001b[32m║\u001b[0m  \u001b[2mDifficulty \u001b[0m\u001b[33m\u001b[1mMedium\u001b[0m                                                     \u001b[32m║\u001b[0m\n\u001b[32m║\u001b[0m  \u001b[2mAuthor     \u001b[0m\u001b[36m\u001b[1mTaha\u001b[0m                                                       \u001b[32m║\u001b[0m\n\u001b[32m╚════════════════════════════════════════════════════════════════════════╝\u001b[0m\n\n"
+
+// printFlag shows the flag inside a box matching the header's style.
+func printFlag(flag string) {
+	const green, yellow, bold, reset = "\x1b[32m", "\x1b[33m", "\x1b[1m", "\x1b[0m"
+	inner := len([]rune(flag)) + 6
+	label := " Here is your flag "
+	fill := inner - 2 - len(label)
+	if fill < 0 {
+		fill = 0
+	}
+	fmt.Println()
+	fmt.Println(green + "╔══" + label + strings.Repeat("═", fill) + "╗" + reset)
+	fmt.Println(green + "║" + reset + "   " + yellow + bold + flag + reset + "   " + green + "║" + reset)
+	fmt.Println(green + "╚" + strings.Repeat("═", inner) + "╝" + reset)
+	fmt.Println("   Securinets ENIT // Cat the Flag v3")
+}
+
+// --- END GENERATED BANNER ---
