@@ -9,6 +9,11 @@ services:
     tmpfs:
       - /var/cache/nginx
       - /var/run
+    cap_drop: ["ALL"]
+    cap_add: ["CHOWN", "SETUID", "SETGID"]
+    security_opt: ["no-new-privileges:true"]
+    pids_limit: 100
+    mem_limit: 128m
     depends_on:
       - proxy-acl-backend
     restart: unless-stopped
@@ -22,8 +27,13 @@ services:
     read_only: true
     tmpfs:
       - /tmp
-    pids_limit: 50
-    mem_limit: 64m
     cap_drop: ["ALL"]
     security_opt: ["no-new-privileges:true"]
+    pids_limit: 50
+    mem_limit: 64m
     restart: unless-stopped
+
+networks:
+  default:
+    driver_opts:
+      com.docker.network.bridge.enable_ip_masquerade: "false"

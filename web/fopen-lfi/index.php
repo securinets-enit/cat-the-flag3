@@ -1,4 +1,9 @@
 <?php
+// Re-entry guard: a nested include of this script (e.g. ?page=../index)
+// would recurse infinitely and exhaust the worker. Bail out on nested entry.
+if (defined('FOPEN_LFI_MAIN')) { return; }
+define('FOPEN_LFI_MAIN', 1);
+
 $flag = 'SecurinetsENIT{tr4v3rs4l_1s_th3_d00r_y0u_alw4ys_kn0ck}';
 
 $page = isset($_GET['page']) ? $_GET['page'] : 'about';

@@ -1,4 +1,9 @@
 <?php
+// Re-entry guard: including this script within itself (e.g. ?page=index.php)
+// recurses infinitely and exhausts the worker. Bail out on nested entry.
+if (defined('QUILLPAD_MAIN')) { return; }
+define('QUILLPAD_MAIN', 1);
+
 $page = isset($_GET['page']) ? (string)$_GET['page'] : 'home';
 
 $blocked = '/(php:\/\/|data:|expect:|phar:|zip:|glob:|ftp:|http:)/i';

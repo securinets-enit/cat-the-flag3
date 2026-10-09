@@ -5,7 +5,13 @@ services:
     build: .
     ports:
       - "8010:8010"
+    cap_drop: ["ALL"]
+    security_opt: ["no-new-privileges:true"]
     pids_limit: 100
     mem_limit: 256m
-    security_opt: ["no-new-privileges:true"]
     restart: unless-stopped
+
+networks:
+  default:
+    driver_opts:
+      com.docker.network.bridge.enable_ip_masquerade: "false"

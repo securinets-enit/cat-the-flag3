@@ -1,4 +1,9 @@
 <?php
+// Re-entry guard: a nested include of this script (e.g. ?page=index.php)
+// would recurse infinitely and exhaust the worker. Bail out on nested entry.
+if (defined('FILTER_CHAIN_MAIN')) { return; }
+define('FILTER_CHAIN_MAIN', 1);
+
 $page = isset($_GET['page']) ? (string)$_GET['page'] : 'home';
 
 $blocked = '/(data:|expect:|php:\/\/input|php:\/\/fd|\/var\/log|\/proc\/self|phar:|zip:)/i';

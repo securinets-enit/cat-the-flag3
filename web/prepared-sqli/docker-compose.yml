@@ -5,6 +5,14 @@ services:
     build: .
     ports:
       - "8008:80"
+    read_only: true
+    tmpfs:
+      - /tmp
+      - /run
+      - /var/run
+    cap_drop: ["ALL"]
+    cap_add: ["SETUID", "SETGID"]
+    security_opt: ["no-new-privileges:true"]
     depends_on:
       - prepared-sqli-db
     pids_limit: 100
@@ -22,6 +30,14 @@ services:
       MYSQL_PASSWORD: webapp_pw_2024
     expose:
       - "3306"
+    cap_drop: ["ALL"]
+    cap_add: ["CHOWN", "DAC_OVERRIDE", "FOWNER", "SETGID", "SETUID"]
+    security_opt: ["no-new-privileges:true"]
     pids_limit: 100
     mem_limit: 512m
     restart: unless-stopped
+
+networks:
+  default:
+    driver_opts:
+      com.docker.network.bridge.enable_ip_masquerade: "false"

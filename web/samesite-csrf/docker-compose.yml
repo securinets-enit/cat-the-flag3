@@ -5,9 +5,16 @@ services:
     build: .
     ports:
       - "8007:8007"
-    cap_add: ["NET_ADMIN"]
+    cap_drop: ["ALL"]
+    cap_add: ["NET_ADMIN", "NET_RAW", "SETUID", "SETGID", "CHOWN", "DAC_OVERRIDE", "FOWNER"]
+    security_opt: ["no-new-privileges:true"]
     pids_limit: 200
     mem_limit: 512m
     restart: unless-stopped
     # environment:
     #   PUBLIC_ORIGIN: "http://<HOST_IP>:8007"
+
+networks:
+  default:
+    driver_opts:
+      com.docker.network.bridge.enable_ip_masquerade: "false"
