@@ -7,6 +7,7 @@
 | Silent Beacon | `silent-beacon/` | Ahmed Salhi | Medium | File | `silent-beacon/dist/` |
 | Don't Whisper | `dont_whisper/` | MrXFuji | Medium | Web service, port 8005 | URL only |
 | Captcha: Rats in a Maze | `captcha-maze/` | MrXFuji | Hard | TLS service, port 5000 | Host and port only |
+| AZERTY Cat | `azerty-cat/` | r3t0x | Easy (100) | File | `azerty-cat/dist/` |
 
 Flag format: `SecurinetsENIT{...}`
 

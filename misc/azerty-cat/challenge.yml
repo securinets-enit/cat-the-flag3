@@ -1,0 +1,25 @@
+name: "AZERTY Cat"
+author: "r3t0x"
+attribution: 'Written by [r3t0x](https://r3t0x.me/)'
+category: misc
+description: |-
+  My friend left her PC on and her cat Mimi took a walk across the keyboard.
+  Mimi didn't type much, but she managed to switch the keyboard layout to English.
+
+  My friend didn't notice and typed me the flag by hand anyway. All I got is this.
+
+  Flag format: `SecurinetsENIT{...}`
+type: standard
+value: 100
+flags:
+  - SecurinetsENIT{4ZERTY_m4k3s_m3_w4nn4_qu1t_m30w}
+files:
+  - dist/message.txt
+hints:
+  - content: |-
+      She typed on a French keyboard, but the computer thought it was a US one. Compare the two layouts key by key.
+    cost: 10
+tags:
+  - easy
+  - keyboard
+version: "0.1"
