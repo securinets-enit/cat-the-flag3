@@ -19,7 +19,7 @@ She'll happily run your Python... as long as you don't say any of the words she 
 | nothing | Players only get the `nc` command |
 | `challenge.yml` | CTFd import (ctfcli). Update `connection_info` with the real host |
 | `src/jail.py`, `Dockerfile`, `docker-compose.yml` | Deployment |
-| `flag.txt`, `solve.py`, `writeup.md` | Organizers only |
+| `flag.txt`, `solve.py` | Organizers only |
 
 ## Deployment
 

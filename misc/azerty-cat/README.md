@@ -18,7 +18,7 @@ My friend didn't notice and typed me the flag by hand anyway. All I got is this.
 |---|---|
 | `dist/message.txt` | Players |
 | `challenge.yml` | CTFd import (ctfcli) |
-| `flag.txt`, `gen.py`, `solve.py`, `writeup.md` | Organizers only |
+| `flag.txt`, `gen.py`, `solve.py` | Organizers only |
 
 ## Regenerating
 
