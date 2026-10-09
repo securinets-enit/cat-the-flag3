@@ -1,0 +1,18 @@
+name: "Infinite Void"
+author: "r3t0x"
+attribution: 'Written by [r3t0x](https://r3t0x.me/)'
+category: pwn
+description: |-
+  Unlimited knowledge is included. Exporting it requires the premium plan, which your team apparently could not afford.
+type: dynamic
+extra:
+  function: linear
+  initial: 700
+  decay: 5
+  minimum: 200
+connection_info: nc localhost 1351
+flags:
+  - SecurinetsENIT{1nf1n1t3_v01d_h4s_0n3_b1t_0f_b4ndw1dth}
+files:
+  - main
+version: "0.1"
