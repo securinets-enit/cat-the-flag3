@@ -46,7 +46,7 @@ app.get('/api/v1/notes/:noteId', (req, res) => {
 app.get('/api/v1/admin/flag', (req, res) => {
   res.json({
     title: "Flag Captured!",
-    content: "CTF{c2p7_w4f_byp4ss_v14_url_p4rs3r_3xp1017}"
+    content: "SecurinetsENIT{8fa6aaebe5fa691d383f6d22a1585d32}"
   });
 });
 
