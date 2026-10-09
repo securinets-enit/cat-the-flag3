@@ -31,5 +31,5 @@ python3 solve.py localhost 1337   # should print the flag
 ```
 
 Players get real code execution, so the container is locked down: a new
-process per connection killed after 10 s, non-root user, read-only
+process per connection killed after 60 s, non-root user, read-only
 filesystem, no Linux capabilities, 64 processes and 128 MB max.

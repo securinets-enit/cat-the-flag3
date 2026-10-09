@@ -14,5 +14,5 @@ USER ctf
 WORKDIR /app
 EXPOSE 1337
 
-# One fresh Python process per connection, killed after 10 seconds
-CMD ["socat", "-T10", "TCP-LISTEN:1337,reuseaddr,fork", "EXEC:timeout -s KILL 10 python3 -u /app/jail.py,stderr"]
+# One fresh Python process per connection, killed after 60 seconds
+CMD ["socat", "-T60", "TCP-LISTEN:1337,reuseaddr,fork", "EXEC:timeout -s KILL 60 python3 -u /app/jail.py,stderr"]

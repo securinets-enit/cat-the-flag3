@@ -29,6 +29,6 @@ docker compose up --build -d
 python3 solve.py localhost 1338   # should print the flag
 ```
 
-Same lockdown as v1: a new process per connection killed after 10 s,
+Same lockdown as v1: a new process per connection killed after 60 s,
 non-root user, read-only filesystem, no Linux capabilities,
 64 processes and 128 MB max.

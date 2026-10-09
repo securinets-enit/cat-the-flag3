@@ -10,6 +10,7 @@
 | AZERTY Cat | `azerty-cat/` | r3t0x | Easy (100) | File | `azerty-cat/dist/` |
 | Cat Jail v1 | `cat-jail-v1/` | r3t0x | Easy–medium (200) | nc service, port 1337 | Host and port only |
 | Cat Jail v2 | `cat-jail-v2/` | r3t0x | Hard (400) | nc service, port 1338 | Host and port only |
+| Cat Jail v3: Paws Off | `cat-jail-v3/` | r3t0x | Very hard (600) | nc service, port 1346 | Host and port only |
 | Scattered Kittens | `scattered-kittens/` | r3t0x | Easy (100) | File | `scattered-kittens/dist/` |
 | Mimi's Budget | `mimi-budget/` | r3t0x | Easy–medium (150) | File | `mimi-budget/dist/` |
 | Meowdle | `meowdle/` | r3t0x | Medium (250) | nc service, port 1339 | `meowdle/dist/words.txt` + host and port |
@@ -41,6 +42,9 @@ cd misc/cat-jail-v1 && docker compose up --build -d
 
 # Cat Jail v2 (nc on 1338)
 cd misc/cat-jail-v2 && docker compose up --build -d
+
+# Cat Jail v3 (nc on 1346)
+cd misc/cat-jail-v3 && docker compose up --build -d
 
 # Meowdle (nc on 1339)
 cd misc/meowdle && docker compose up --build -d
