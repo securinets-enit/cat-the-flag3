@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  fopen-lfi:
+    build: .
+    ports:
+      - "8001:80"
+    read_only: true
+    tmpfs:
+      - /tmp
+      - /run
+      - /var/run
+    restart: unless-stopped

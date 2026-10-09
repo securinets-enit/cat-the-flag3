@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="/style.css"><title>Vaultline - Staff Sign-in</title></head>
+<body>
+<header class="topbar">
+  <a class="brand" href="/">
+    <span class="logo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v10"/><path d="m8 9 4 4 4-4"/><path d="M4 15v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3"/></svg></span>
+    <span class="brand-name">Vaultline<span class="brand-tld">.net</span></span>
+  </a>
+  <nav class="topnav"><a href="/files/">Files</a><a href="/ssrf.html">Submit a link</a><a href="/login.html">Staff</a></nav>
+</header>
+<main class="shell">
+<header class="site-header">
+  <p class="kicker">Internal access</p>
+  <h1>Staff sign-in</h1>
+  <p class="lede">Company Downloads administration portal.</p>
+</header>
+<section class="panel login-panel">
+  <form action="/login-submit" method="post">
+    <label for="username">Username</label>
+    <input id="username" name="username" type="text" autocomplete="username" placeholder="staff@example.test">
+    <label for="password">Password</label>
+    <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Password">
+    <button type="submit">Sign in</button>
+  </form>
+  <p class="notice">The identity service is offline. No credentials are accepted.</p>
+  <p><a href="/ssrf.html">Submit a link for admin review</a></p>
+</section>
+</main>
+</body>
+</html>

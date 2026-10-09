@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  mirage:
+    build: .
+    ports:
+      - "8010:8010"
+    pids_limit: 100
+    mem_limit: 256m
+    security_opt: ["no-new-privileges:true"]
+    restart: unless-stopped

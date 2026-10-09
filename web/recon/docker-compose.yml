@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  recon:
+    build: .
+    ports:
+      - "8000:80"
+    restart: unless-stopped

@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="/style.css"><title>Vaultline - Security Review</title></head>
+<body>
+<header class="topbar">
+  <a class="brand" href="/">
+    <span class="logo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v10"/><path d="m8 9 4 4 4-4"/><path d="M4 15v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3"/></svg></span>
+    <span class="brand-name">Vaultline<span class="brand-tld">.net</span></span>
+  </a>
+  <nav class="topnav"><a href="/files/">Files</a><a href="/ssrf.html">Submit a link</a><a href="/login.html">Staff</a></nav>
+</header>
+<main class="shell">
+<header class="site-header">
+  <p class="kicker">Security review queue</p>
+  <h1>Submit a link</h1>
+  <p class="lede">An administrator reviews unusual links submitted by staff.</p>
+</header>
+<section class="panel">
+  <form action="/ssrf/submit" method="get">
+    <label for="url">URL to review</label>
+    <input id="url" name="url" type="url" placeholder="http://internal.example.test/health" required>
+    <button type="submit">Submit for review</button>
+  </form>
+  <p class="notice"><strong>Review status:</strong> submissions are visible to the server logs. The automated fetch service is currently paused.</p>
+  <p><a href="/">Return to downloads</a> · <a href="/login.html">Staff sign-in</a></p>
+</section>
+</main>
+</body>
+</html>

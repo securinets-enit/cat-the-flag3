@@ -1,0 +1,8 @@
+node_modules
+npm-debug.log
+.git
+# organizer docs — never ship into the image
+README.md
+writeup.md
+hints.md
+solve

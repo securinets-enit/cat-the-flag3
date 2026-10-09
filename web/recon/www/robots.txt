@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /assets/
+Disallow: /internal-notes-9f2a1c/

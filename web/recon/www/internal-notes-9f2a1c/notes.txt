@@ -1,0 +1,5 @@
+Internal staging notes
+=======================
+- Migrate DB before Friday.
+- Rotate the CI token.
+- Launch flag: SecurinetsENIT{r0b0ts_txt_1s_n0t_4_s3cur1ty_c0ntr0l}

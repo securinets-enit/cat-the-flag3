@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  upload-htaccess:
+    build: .
+    ports:
+      - "8006:80"
+    pids_limit: 100
+    mem_limit: 256m
+    restart: unless-stopped

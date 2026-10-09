@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  proxy-acl:
+    build: .
+    ports:
+      - "8005:80"
+    read_only: true
+    tmpfs:
+      - /var/cache/nginx
+      - /var/run
+    depends_on:
+      - proxy-acl-backend
+    restart: unless-stopped
+
+  proxy-acl-backend:
+    build:
+      context: .
+      dockerfile: backend.Dockerfile
+    expose:
+      - "8080"
+    read_only: true
+    tmpfs:
+      - /tmp
+    pids_limit: 50
+    mem_limit: 64m
+    cap_drop: ["ALL"]
+    security_opt: ["no-new-privileges:true"]
+    restart: unless-stopped

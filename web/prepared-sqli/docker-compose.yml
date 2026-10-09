@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  prepared-sqli:
+    build: .
+    ports:
+      - "8008:80"
+    depends_on:
+      - prepared-sqli-db
+    pids_limit: 100
+    mem_limit: 256m
+    restart: unless-stopped
+
+  prepared-sqli-db:
+    build:
+      context: .
+      dockerfile: db.Dockerfile
+    environment:
+      MYSQL_ROOT_PASSWORD: root_pw_2024
+      MYSQL_DATABASE: shop
+      MYSQL_USER: webapp
+      MYSQL_PASSWORD: webapp_pw_2024
+    expose:
+      - "3306"
+    pids_limit: 100
+    mem_limit: 512m
+    restart: unless-stopped
