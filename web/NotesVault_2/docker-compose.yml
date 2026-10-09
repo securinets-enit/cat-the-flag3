@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  cspt-hard:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: cspt_NotesVault2_hard_challenge
+    ports:
+      - "3002:3000"
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production

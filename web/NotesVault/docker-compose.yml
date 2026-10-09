@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  cspt-medium:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: cspt_Nodes_vault_medium_challenge
+    ports:
+      - "3001:3000"
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production

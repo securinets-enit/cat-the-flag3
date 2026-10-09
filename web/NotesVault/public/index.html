@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Notes Vault</title>
+  <style>
+    body { font-family: sans-serif; margin: 2rem; background: #f4f4f9; }
+    .card { background: #fff; padding: 1.5rem; border-radius: 8px; max-width: 500px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    code { background: #eee; padding: 2px 5px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1 id="title">Loading...</h1>
+    <p id="content">Fetching note content...</p>
+  </div>
+
+  <script>
+    // Fetch note parameter from URL hash (e.g. #note=welcome)
+    const params = new URLSearchParams(window.location.hash.slice(1));
+    const noteId = params.get('note') || 'default';
+
+    // Vulnerable fetch construct vulnerable to CSPT
+    const apiEndpoint = `/api/note/${noteId}`;
+
+    fetch(apiEndpoint)
+      .then(res => res.json())
+      .then(data => {
+        document.getElementById('title').innerText = data.title;
+        document.getElementById('content').innerText = data.content;
+      })
+      .catch(err => {
+        document.getElementById('title').innerText = "Error";
+        document.getElementById('content').innerText = "Failed to load note.";
+      });
+  </script>
+</body>
+</html>
