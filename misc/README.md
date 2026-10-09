@@ -10,6 +10,7 @@
 | AZERTY Cat | `azerty-cat/` | r3t0x | Easy (100) | File | `azerty-cat/dist/` |
 | Cat Jail v1 | `cat-jail-v1/` | r3t0x | Easy–medium (200) | nc service, port 1337 | Host and port only |
 | Cat Jail v2 | `cat-jail-v2/` | r3t0x | Hard (400) | nc service, port 1338 | Host and port only |
+| Scattered Kittens | `scattered-kittens/` | r3t0x | Easy (100) | File | `scattered-kittens/dist/` |
 
 Flag format: `SecurinetsENIT{...}`
 
