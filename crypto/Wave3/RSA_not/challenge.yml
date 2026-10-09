@@ -9,8 +9,6 @@ description: |-
   Alone, each ciphertext is useless. But this is a co-op game:
   make the two robots work **together** and the message will reveal itself.
 
-  *Hint*: look up the **common modulus attack**.
-
   **Author**: [Zanpakto](https://jedjmili.github.io/)
 
 attribution: '[Zanpakto](https://jedjmili.github.io/)'
