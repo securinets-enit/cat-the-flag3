@@ -15,7 +15,7 @@ WORKDIR /home/ctf
 
 # Copy source code and flag
 COPY src/ /home/ctf/
-COPY deploy/flag.txt /home/ctf/flag.txt
+COPY flag.txt /home/ctf/flag.txt
 
 # Ensure certs exist (generate if needed)
 RUN python /home/ctf/gen_cert.py

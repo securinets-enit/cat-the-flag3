@@ -22,7 +22,19 @@ try:
 except ImportError:
     pyfiglet = None
 
-FLAG = "Securinets{d3sp1t3_all_OuR_rag3_w3_ar3_all_ju5t_rat5_1n_a_maz3}"
+def _load_flag():
+    """Read the flag from flag.txt next to the server (or $FLAG_PATH), so the
+    deployed flag always matches the one registered in CTFd."""
+    path = os.environ.get("FLAG_PATH", os.path.join(os.path.dirname(os.path.abspath(__file__)), "flag.txt"))
+    try:
+        with open(path) as f:
+            return f.read().strip()
+    except OSError:
+        print(f"[-] Warning: could not read flag from {path}")
+        return "SecurinetsENIT{flag_missing_contact_admin}"
+
+
+FLAG = _load_flag()
 TOTAL_ROUNDS = int(os.environ.get("ROUNDS", 100))
 ROUND_TIMEOUT = 5.0
 POW_DIFFICULTY = 100  # ~1.0s in pure Python, instantaneous in C/Go

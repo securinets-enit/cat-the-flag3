@@ -89,7 +89,7 @@ def is_valid_audio_file(file: UploadFile) -> tuple[bool, str]:
         
         if duration_seconds > MAX_AUDIO_DURATION:
             os.remove(unique_filename)
-            raise HTTPException(status_code=400, detail="Audio duration exceeds 20 seconds.")
+            raise HTTPException(status_code=400, detail="Audio duration exceeds 31 seconds.")
 
         # Verify file format
         if audio.frame_rate is None or audio.channels < 1:
@@ -113,7 +113,7 @@ async def audio_response(audio: UploadFile = File(...)):
         try:
             result = subprocess.run(
                 [
-                    "python3", "whisper.py", "--model", "tiny.en", audio_file_path,
+                    "python3", "transcribe.py", "--model", "tiny.en", audio_file_path,
                     "--language", "English", "--best_of", "5", "--beam_size", "None"
                 ],
                 stdout=subprocess.PIPE,

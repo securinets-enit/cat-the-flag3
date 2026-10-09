@@ -46,7 +46,7 @@ The challenge introduces several sophisticated layers:
      render identically.
    - The lyric clue ("despite all our rage, we're all just rats in a maze") confirms the word
      is "OuR", yielding the final flag:
-     Securinets{d3sp1t3_all_OuR_rag3_w3_ar3_all_ju5t_rat5_1n_a_maz3}
+     SecurinetsENIT{d3sp1t3_all_OuR_rag3_w3_ar3_all_ju5t_rat5_1n_a_maz3}
 """
 
 import socket
@@ -376,7 +376,7 @@ def main():
     print("In FIGlet standard font, capital 'O' and digit '0' are visually identical.")
     print("From the lyric clue: 'despite all our rage, we are all just rats in a maze'")
     print("The word 'our' disambiguates as 'OuR'.")
-    print("Correct Flag: Securinets{d3sp1t3_all_OuR_rag3_w3_ar3_all_ju5t_rat5_1n_a_maz3}")
+    print("Correct Flag: SecurinetsENIT{d3sp1t3_all_OuR_rag3_w3_ar3_all_ju5t_rat5_1n_a_maz3}")
     print("=" * 60)
 
     tls_sock.close()

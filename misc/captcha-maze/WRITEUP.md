@@ -3,7 +3,7 @@
 **Author:** MrXFuji  
 **Category:** Misc / Automation / Algorithmic  
 **Difficulty:** ⭐⭐⭐ Hard  
-**Target Flag:** `Securinets{d3sp1t3_all_OuR_rag3_w3_ar3_all_ju5t_rat5_1n_a_maz3}`
+**Target Flag:** `SecurinetsENIT{d3sp1t3_all_OuR_rag3_w3_ar3_all_ju5t_rat5_1n_a_maz3}`
 
 ---
 
@@ -178,7 +178,7 @@ In standard FIGlet:
 The uppercase letter **`O`** and the digit **`0`** render with **100% identical ASCII glyphs**!
 
 Examining the flag:
-`Securinets{d3sp1t3_all_???_rag3_w3_ar3_all_ju5t_rat5_1n_a_maz3}`
+`SecurinetsENIT{d3sp1t3_all_???_rag3_w3_ar3_all_ju5t_rat5_1n_a_maz3}`
 
 The challenge banner includes the hint:
 > *"Despite all our rage, we're all just rats in a maze."*
@@ -187,4 +187,4 @@ This is the famous lyric from the Smashing Pumpkins song *Bullet with Butterfly 
 The word is `"our"`, which in leetspeak/case formatting is **`OuR`** (Capital O, lowercase u, Capital R).
 
 Submitting the case-sensitive string gives the confirmed flag:
-**`Securinets{d3sp1t3_all_OuR_rag3_w3_ar3_all_ju5t_rat5_1n_a_maz3}`**
+**`SecurinetsENIT{d3sp1t3_all_OuR_rag3_w3_ar3_all_ju5t_rat5_1n_a_maz3}`**

@@ -1,0 +1,5 @@
+services:
+  signal-lost:
+    build: .
+    stdin_open: true
+    tty: true
