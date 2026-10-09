@@ -13,6 +13,7 @@
 | Scattered Kittens | `scattered-kittens/` | r3t0x | Easy (100) | File | `scattered-kittens/dist/` |
 | Mimi's Budget | `mimi-budget/` | r3t0x | Easy–medium (150) | File | `mimi-budget/dist/` |
 | Meowdle | `meowdle/` | r3t0x | Medium (250) | nc service, port 1339 | `meowdle/dist/words.txt` + host and port |
+| Copycat | `copycat/` | r3t0x | Easy (100) | File | `copycat/dist/` |
 
 Flag format: `SecurinetsENIT{...}`
 
