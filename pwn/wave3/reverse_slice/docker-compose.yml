@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  reverse_slice:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "1352:1352"
+    restart: unless-stopped
+    read_only: true
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    pids_limit: 32
+    tmpfs:
+      - /tmp:size=10M,mode=1777

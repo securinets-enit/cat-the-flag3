@@ -1,0 +1,18 @@
+name: "::-1"
+author: "r3t0x"
+attribution: 'Written by [r3t0x](https://r3t0x.me/)'
+category: pwn
+description: |-
+  Jujutsu High reviewed your technique twice and certified it completely harmless. Please try to look surprised when the paperwork catches fire.
+type: dynamic
+extra:
+  function: linear
+  initial: 700
+  decay: 5
+  minimum: 200
+connection_info: nc localhost 1352
+flags:
+  - SecurinetsENIT{r3v3rs3_th3_f0rm4t_n0t_th3_d4m4g3}
+files:
+  - main
+version: "0.1"
