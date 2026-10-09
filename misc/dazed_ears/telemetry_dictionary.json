@@ -1,0 +1,67 @@
+{
+  "protocol": {
+    "name": "CCSDS Space Packet Protocol",
+    "standard": "CCSDS 133.0-B-2",
+    "asm": "1acffc1d",
+    "primary_header_bytes": 6,
+    "packet_length_definition": "The Packet Data Length field stores (data field length - 1)."
+  },
+  "primary_header": {
+    "word0": {
+      "packet_version": "bits 15-13",
+      "packet_type": "bit 12",
+      "secondary_header_flag": "bit 11",
+      "apid": "bits 10-0"
+    },
+    "word1": {
+      "sequence_flags": "bits 15-14",
+      "packet_sequence_count": "bits 13-0"
+    },
+    "word2": {
+      "packet_data_length": "bits 15-0"
+    }
+  },
+  "packets": {
+    "50": {
+      "name": "SYSLOG",
+      "description": "Free-form ASCII system log messages",
+      "payload": "variable-length ASCII"
+    },
+    "100": {
+      "name": "HK_NOMINAL",
+      "description": "Nominal housekeeping telemetry",
+      "payload": {
+        "length": 14,
+        "fields": {
+          "mode": {
+            "offset": 0,
+            "size": 1,
+            "valid_range": "0-7"
+          },
+          "voltage": {
+            "offset": 1,
+            "size": 2,
+            "encoding": "unsigned millivolts"
+          },
+          "temperature": {
+            "offset": 3,
+            "size": 2,
+            "encoding": "signed centidegrees Celsius"
+          },
+          "remaining": {
+            "offset": 5,
+            "size": 9,
+            "encoding": "reserved telemetry"
+          }
+        }
+      }
+    },
+    "200": {
+      "name": "ADCS_STATUS",
+      "description": "Attitude determination and control status",
+      "payload": {
+        "length": 8
+      }
+    }
+  }
+}
