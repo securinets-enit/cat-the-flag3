@@ -25,7 +25,6 @@ Clear all 100 rounds, and the Oracle will project the flag into your terminal.
 - **Protocol:** 100 consecutive 11×11 weighted mazes
 - **Time limit:** 5.0 seconds per maze
 - **Move vocabulary:** `U` (Up), `D` (Down), `L` (Left), `R` (Right)
-- **Flag Format:** `SecurinetsENIT{...}` (Case-sensitive!)
 
 ---
 

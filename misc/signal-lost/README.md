@@ -33,10 +33,4 @@ The source is intentionally available: the intended solve is to understand the
 signal representation, inspect the target, and reverse the encoding. Do not
 brute-force the flag.
 
-## Flag format
-
-```text
-SecurinetsENIT{...}
-```
-
 The checker accepts the complete flag, including the prefix and braces.
