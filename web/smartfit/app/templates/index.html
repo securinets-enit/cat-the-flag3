@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartFit - AI Health & Wellness Assistant</title>
+    <!-- Tailwind CSS CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .chat-scroll::-webkit-scrollbar { width: 6px; }
+        .chat-scroll::-webkit-scrollbar-thumb { background-color: #cbd5e1; border-radius: 3px; }
+    </style>
+</head>
+<body class="bg-slate-50 font-sans antialiased text-slate-800">
+
+    <!-- Top Navigation Bar -->
+    <nav class="bg-white border-b border-slate-200 sticky top-0 z-30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center gap-2">
+                        <div class="bg-emerald-500 text-white p-2 rounded-lg">
+                            <i class="fa-solid font-bold fa-heart-pulse text-xl"></i>
+                        </div>
+                        <span class="font-bold text-xl text-slate-900 tracking-tight">SmartFit <span class="text-xs bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-full font-semibold ml-1">v2.4 Pro</span></span>
+                    </div>
+                    <div class="hidden md:ml-8 md:flex md:space-x-6">
+                        <a href="#" class="border-emerald-500 text-slate-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Dashboard</a>
+                        <a href="#" class="border-transparent text-slate-500 hover:text-slate-700 border-b-2 px-1 pt-1 text-sm font-medium">Nutrition Log</a>
+                        <a href="#" class="border-transparent text-slate-500 hover:text-slate-700 border-b-2 px-1 pt-1 text-sm font-medium">Analytics</a>
+                        <a href="#" class="border-transparent text-slate-500 hover:text-slate-700 border-b-2 px-1 pt-1 text-sm font-medium">Reports</a>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3">
+                    <button id="openSettingsBtn" class="text-slate-500 hover:text-slate-700 p-2 rounded-lg hover:bg-slate-100 transition">
+                        <i class="fa-solid fa-gear text-lg"></i>
+                    </button>
+                    <div class="flex items-center gap-3 pl-3 border-l border-slate-200">
+                        <div class="w-8 h-8 rounded-full bg-emerald-600 text-white flex items-center justify-center font-bold text-sm">
+                            AH
+                        </div>
+                        <span class="text-sm font-medium text-slate-700 hidden sm:inline" id="navUsername">{{ profile.username }}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            
+            <!-- Left & Middle Column: Dashboard Overview -->
+            <div class="lg:col-span-2 space-y-6">
+                <!-- Welcome Banner -->
+                <div class="bg-gradient-to-r from-slate-900 to-slate-800 rounded-2xl p-6 text-white shadow-sm flex justify-between items-center">
+                    <div>
+                        <h1 class="text-2xl font-bold">Welcome back, <span id="welcomeName">{{ profile.username }}</span>! 👋</h1>
+                        <p class="text-slate-300 text-sm mt-1">You are 82% towards your weekly fitness goal. Keep up the momentum!</p>
+                    </div>
+                    <div class="hidden sm:block">
+                        <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+                            Goal: <span id="goalBadge" class="ml-1 font-semibold">{{ profile.weight_goal }}</span>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Stats Overview Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+                        <div class="flex items-center justify-between text-slate-500 mb-2">
+                            <span class="text-xs font-semibold uppercase tracking-wider">Daily Target</span>
+                            <i class="fa-solid fa-fire text-amber-500"></i>
+                        </div>
+                        <div class="text-2xl font-bold text-slate-900"><span id="targetCalories">{{ profile.daily_calories }}</span> <span class="text-sm font-normal text-slate-500">kcal</span></div>
+                    </div>
+                    <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+                        <div class="flex items-center justify-between text-slate-500 mb-2">
+                            <span class="text-xs font-semibold uppercase tracking-wider">Avg Water Intake</span>
+                            <i class="fa-solid fa-droplet text-blue-500"></i>
+                        </div>
+                        <div class="text-2xl font-bold text-slate-900">2.5 <span class="text-sm font-normal text-slate-500">L/day</span></div>
+                    </div>
+                    <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+                        <div class="flex items-center justify-between text-slate-500 mb-2">
+                            <span class="text-xs font-semibold uppercase tracking-wider">Model Node</span>
+                            <i class="fa-solid fa-server text-emerald-500"></i>
+                        </div>
+                        <div class="text-xs font-mono text-slate-600 truncate mt-2 bg-slate-50 p-1.5 rounded border border-slate-100" id="nodeEndpointDisplay">
+                            {{ profile.llm_endpoint }}
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Activity Table -->
+                <div class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden">
+                    <div class="p-5 border-b border-slate-100 flex justify-between items-center">
+                        <h2 class="font-bold text-slate-900">Weekly Activity Log</h2>
+                        <button class="text-sm text-emerald-600 hover:text-emerald-700 font-medium">+ Add Entry</button>
+                    </div>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left text-sm text-slate-600">
+                            <thead class="bg-slate-50 text-slate-400 font-semibold uppercase text-xs border-b border-slate-100">
+                                <tr>
+                                    <th class="px-6 py-3">Day</th>
+                                    <th class="px-6 py-3">Calories Consumed</th>
+                                    <th class="px-6 py-3">Water Intake</th>
+                                    <th class="px-6 py-3">Status</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-100" id="logsTableBody">
+                                {% for log in logs %}
+                                <tr>
+                                    <td class="px-6 py-4 font-medium text-slate-900">{{ log.day }}</td>
+                                    <td class="px-6 py-4">{{ log.calories }} kcal</td>
+                                    <td class="px-6 py-4">{{ log.water_l }} L</td>
+                                    <td class="px-6 py-4">
+                                        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-100 text-emerald-800">
+                                            Optimal
+                                        </span>
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Interactive AI Assistant Chat -->
+            <div class="lg:col-span-1">
+                <div class="bg-white rounded-2xl border border-slate-200 shadow-sm flex flex-col h-[600px]">
+                    <!-- Chat Header -->
+                    <div class="p-4 border-b border-slate-100 flex items-center justify-between bg-slate-50 rounded-t-2xl">
+                        <div class="flex items-center gap-3">
+                            <div class="w-9 h-9 rounded-full bg-emerald-500 text-white flex items-center justify-center">
+                                <i class="fa-solid fa-robot text-sm"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-slate-900 text-sm">SmartFit Assistant</h3>
+                                <p class="text-xs text-slate-500 flex items-center gap-1">
+                                    <span class="w-2 h-2 rounded-full bg-emerald-500"></span> Online
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Chat Output Scroll Area -->
+                    <div id="chatBox" class="flex-1 p-4 overflow-y-auto space-y-4 chat-scroll text-sm">
+                        <!-- Initial Greeting Message -->
+                        <div class="flex gap-3">
+                            <div class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center text-xs shrink-0 mt-1">
+                                <i class="fa-solid fa-robot"></i>
+                            </div>
+                            <div class="bg-slate-100 p-3 rounded-2xl rounded-tl-none text-slate-700 max-w-[85%]">
+                                Hello! I can help you analyze your dietary progress or export custom health summary reports. How can I assist you today?
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Chat Input Controls -->
+                    <div class="p-3 border-t border-slate-100">
+                        <form id="chatForm" class="flex items-center gap-2">
+                            <input type="text" id="chatInput" placeholder="Ask about metrics or export reports..." 
+                                   class="flex-1 px-4 py-2 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent">
+                            <button type="submit" class="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-xl text-sm font-medium transition">
+                                Send
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Settings Modal -->
+    <div id="settingsModal" class="fixed inset-0 bg-slate-900/50 backdrop-blur-sm hidden flex items-center justify-center z-50">
+        <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-xl border border-slate-100">
+            <div class="flex justify-between items-center mb-4">
+                <h3 class="text-lg font-bold text-slate-900">User & System Settings</h3>
+                <button id="closeSettingsBtn" class="text-slate-400 hover:text-slate-600">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+            
+            <form id="settingsForm" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-semibold uppercase text-slate-500 mb-1">Target Goal</label>
+                    <input type="text" id="settingGoal" value="{{ profile.weight_goal }}" class="w-full px-3 py-2 border border-slate-200 rounded-lg text-sm focus:ring-2 focus:ring-emerald-500 focus:outline-none">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold uppercase text-slate-500 mb-1">Daily Calorie Target</label>
+                    <input type="number" id="settingCalories" value="{{ profile.daily_calories }}" class="w-full px-3 py-2 border border-slate-200 rounded-lg text-sm focus:ring-2 focus:ring-emerald-500 focus:outline-none">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold uppercase text-slate-500 mb-1">Custom Model Endpoint (Telemetry / LLM)</label>
+                    <input type="text" id="settingEndpoint" value="{{ profile.llm_endpoint }}" class="w-full px-3 py-2 border border-slate-200 rounded-lg text-sm font-mono text-xs focus:ring-2 focus:ring-emerald-500 focus:outline-none">
+                    <p class="text-[11px] text-slate-400 mt-1">Advanced: Configure custom inference servers or API proxies.</p>
+                </div>
+                <div class="pt-4 flex justify-end gap-2">
+                    <button type="button" id="cancelSettingsBtn" class="px-4 py-2 border border-slate-200 text-slate-600 rounded-lg text-sm font-medium hover:bg-slate-50">Cancel</button>
+                    <button type="submit" class="px-4 py-2 bg-emerald-600 text-white rounded-lg text-sm font-medium hover:bg-emerald-700">Save Changes</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Client-side Logic -->
+    <script>
+        // DOM Elements
+        const settingsModal = document.getElementById('settingsModal');
+        const openSettingsBtn = document.getElementById('openSettingsBtn');
+        const closeSettingsBtn = document.getElementById('closeSettingsBtn');
+        const cancelSettingsBtn = document.getElementById('cancelSettingsBtn');
+        const settingsForm = document.getElementById('settingsForm');
+        const chatForm = document.getElementById('chatForm');
+        const chatInput = document.getElementById('chatInput');
+        const chatBox = document.getElementById('chatBox');
+
+        // Modal Controls
+        openSettingsBtn.addEventListener('click', () => settingsModal.classList.remove('hidden'));
+        const closeModal = () => settingsModal.classList.add('hidden');
+        closeSettingsBtn.addEventListener('click', closeModal);
+        cancelSettingsBtn.addEventListener('click', closeModal);
+
+        // Update Profile Settings via API
+        settingsForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const goal = document.getElementById('settingGoal').value;
+            const calories = document.getElementById('settingCalories').value;
+            const endpoint = document.getElementById('settingEndpoint').value;
+
+            try {
+                const res = await fetch('/api/profile', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        weight_goal: goal,
+                        daily_calories: calories,
+                        llm_endpoint: endpoint
+                    })
+                });
+                const data = await res.json();
+                if (data.status === 'updated') {
+                    document.getElementById('goalBadge').innerText = data.profile.weight_goal;
+                    document.getElementById('targetCalories').innerText = data.profile.daily_calories;
+                    document.getElementById('nodeEndpointDisplay').innerText = data.profile.llm_endpoint;
+                    closeModal();
+                }
+            } catch (err) {
+                alert('Error updating profile settings');
+            }
+        });
+
+        // Chat Form Handler
+        chatForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const msg = chatInput.value.trim();
+            if (!msg) return;
+
+            // Append User Message
+            appendMessage('user', msg);
+            chatInput.value = '';
+
+            // Append Loading Indicator
+            const loadingId = appendLoading();
+
+            try {
+                const res = await fetch('/api/chat', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ message: msg })
+                });
+                const data = await res.json();
+                
+                removeLoading(loadingId);
+
+                if (data.assistant) {
+                    appendMessage('assistant', data.assistant);
+                } else if (data.error) {
+                    appendMessage('assistant', 'Error: ' + data.error);
+                }
+            } catch (err) {
+                removeLoading(loadingId);
+                appendMessage('assistant', 'Network error encountered.');
+            }
+        });
+
+        function appendMessage(sender, text) {
+            const wrapper = document.createElement('div');
+            wrapper.className = 'flex gap-3 ' + (sender === 'user' ? 'justify-end' : '');
+
+            if (sender === 'assistant') {
+                wrapper.innerHTML = `
+                    <div class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center text-xs shrink-0 mt-1">
+                        <i class="fa-solid fa-robot"></i>
+                    </div>
+                    <div class="bg-slate-100 p-3 rounded-2xl rounded-tl-none text-slate-700 max-w-[85%]">
+                        ${escapeHtml(text)}
+                    </div>
+                `;
+            } else {
+                wrapper.innerHTML = `
+                    <div class="bg-emerald-600 p-3 rounded-2xl rounded-tr-none text-white max-w-[85%]">
+                        ${escapeHtml(text)}
+                    </div>
+                `;
+            }
+
+            chatBox.appendChild(wrapper);
+            chatBox.scrollTop = chatBox.scrollHeight;
+        }
+
+        function appendLoading() {
+            const id = 'loading-' + Date.now();
+            const wrapper = document.createElement('div');
+            wrapper.id = id;
+            wrapper.className = 'flex gap-3';
+            wrapper.innerHTML = `
+                <div class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center text-xs shrink-0 mt-1">
+                    <i class="fa-solid fa-robot"></i>
+                </div>
+                <div class="bg-slate-100 p-3 rounded-2xl rounded-tl-none text-slate-500 max-w-[85%] flex items-center gap-2">
+                    <i class="fa-solid fa-circle-notch fa-spin text-xs"></i> Processing request...
+                </div>
+            `;
+            chatBox.appendChild(wrapper);
+            chatBox.scrollTop = chatBox.scrollHeight;
+            return id;
+        }
+
+        function removeLoading(id) {
+            const el = document.getElementById(id);
+            if (el) el.remove();
+        }
+
+        function escapeHtml(str) {
+            return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+        }
+    </script>
+</body>
+</html>
