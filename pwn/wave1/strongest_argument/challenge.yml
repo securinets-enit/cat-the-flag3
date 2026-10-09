@@ -1,0 +1,23 @@
+name: "Strongest Argument"
+author: "r3t0x"
+attribution: 'Written by [r3t0x](https://r3t0x.me/)'
+category: pwn
+description: |-
+  Gojo said a strong argument wins every debate. You brought confidence; the CPU is still waiting for an actual value.
+type: dynamic
+extra:
+  function: linear
+  initial: 150
+  decay: 5
+  minimum: 50
+connection_info: nc localhost 1355
+flags:
+  - SecurinetsENIT{0n3_str0ng_4rgum3nt_b34ts_th3_st4ck}
+tags:
+  - stack-overflow
+  - rop
+  - calling-convention
+files:
+  - main
+  - main.c
+version: "0.1"

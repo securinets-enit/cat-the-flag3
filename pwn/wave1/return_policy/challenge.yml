@@ -1,0 +1,22 @@
+name: "Return Policy"
+author: "r3t0x"
+attribution: 'Written by [r3t0x](https://r3t0x.me/)'
+category: pwn
+description: |-
+  Jujutsu High guarantees every trainee returns safely. The guarantee was written by the same people who approved this program.
+type: dynamic
+extra:
+  function: linear
+  initial: 100
+  decay: 5
+  minimum: 50
+connection_info: nc localhost 1354
+flags:
+  - SecurinetsENIT{th3_r3turn_p0l1cy_w4s_0pt10n4l}
+tags:
+  - stack-overflow
+  - ret2win
+files:
+  - main
+  - main.c
+version: "0.1"
