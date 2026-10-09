@@ -12,6 +12,7 @@
 | Cat Jail v2 | `cat-jail-v2/` | r3t0x | Hard (400) | nc service, port 1338 | Host and port only |
 | Scattered Kittens | `scattered-kittens/` | r3t0x | Easy (100) | File | `scattered-kittens/dist/` |
 | Mimi's Budget | `mimi-budget/` | r3t0x | Easy–medium (150) | File | `mimi-budget/dist/` |
+| Meowdle | `meowdle/` | r3t0x | Medium (250) | nc service, port 1339 | `meowdle/dist/words.txt` + host and port |
 
 Flag format: `SecurinetsENIT{...}`
 
@@ -33,6 +34,9 @@ cd misc/cat-jail-v1 && docker compose up --build -d
 
 # Cat Jail v2 (nc on 1338)
 cd misc/cat-jail-v2 && docker compose up --build -d
+
+# Meowdle (nc on 1339)
+cd misc/meowdle && docker compose up --build -d
 
 # Don't Whisper (HTTP on 8005)
 cd misc/dont_whisper/src && docker build -t dont-whisper . && docker run -d -p 8005:8005 dont-whisper
