@@ -1,0 +1,43 @@
+name: Encrypted Shard
+
+category: Cryptography
+
+description: |-
+  Night City, 2077. You just looted a data shard from a dead corpo netrunner.
+  The shard is locked with **AES**, the strongest encryption Arasaka could buy...
+  But the netrunner was sloppy: the **Key** and the **IV** are written right next to the ciphertext.
+
+  Jack in, decrypt the shard and claim your eddies, choom.
+
+  *Hint*: AES needs a key, an IV and a mode. **CBC** is a classic.
+
+  **Author**: [Zanpakto](https://jedjmili.github.io/)
+
+attribution: '[Zanpakto](https://jedjmili.github.io/)'
+
+value: 300
+
+type: dynamic
+
+extra:
+  initial: 300
+  decay: 15
+  minimum: 50
+
+logic: any
+
+flags:
+  - SecurinetsENIT{AES_w3ld_3am_3l_cho9chm3n}
+
+files:
+  - dist/chall.txt
+
+tags:
+  - AES
+  - Symmetric
+
+requirements:
+  prerequisites: []
+  anonymize: false
+
+version: '0.1'

@@ -1,0 +1,41 @@
+name: GG EZ
+
+category: Cryptography
+
+description: |-
+  After losing a ranked match, your teammate rage typed something in the chat...
+  But it's total gibberish! You check his setup and notice the letters on his keyboard are in a **strange order**.
+  Not QWERTY, not AZERTY... something way more exotic.
+
+  Figure out what he really typed (it's probably not nice).
+
+  **Author**: [Zanpakto](https://jedjmili.github.io/)
+
+attribution: '[Zanpakto](https://jedjmili.github.io/)'
+
+value: 300
+
+type: dynamic
+
+extra:
+  initial: 300
+  decay: 15
+  minimum: 50
+
+logic: any
+
+flags:
+  - SecurinetsENIT{Wh0_us3s_DV0R4K_L3ayout_!!!!}
+
+files:
+  - dist/chall.txt
+
+tags:
+  - Encoding
+  - Keyboard
+
+requirements:
+  prerequisites: []
+  anonymize: false
+
+version: '0.1'

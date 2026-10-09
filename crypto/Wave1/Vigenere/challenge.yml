@@ -1,0 +1,43 @@
+name: Guild Password
+
+category: Cryptography
+
+description: |-
+  You just joined a new guild in World of Warcraft! The guild master sent you a welcome message,
+  but it's encrypted with an old trick from the 16th century, by a French guy named **Vigenère**.
+
+  To read it, you need a key. The guild master said:
+  *"The key is the name of the guild you just joined."*
+
+  Hmm... which club is organizing this CTF again?
+
+  **Author**: [Zanpakto](https://jedjmili.github.io/)
+
+attribution: '[Zanpakto](https://jedjmili.github.io/)'
+
+value: 200
+
+type: dynamic
+
+extra:
+  initial: 200
+  decay: 15
+  minimum: 50
+
+logic: any
+
+flags:
+  - SecurinetsENIT{tala3_lfou9_yalla_m3aya}
+
+files:
+  - dist/chall.txt
+
+tags:
+  - Encoding
+  - Vigenere
+
+requirements:
+  prerequisites: []
+  anonymize: false
+
+version: '0.1'

@@ -1,0 +1,41 @@
+name: Boss Weak Point
+
+category: Cryptography
+
+description: |-
+  Every boss looks unbeatable... until you find its **weak point**.
+  This one is protected by **RSA** armor: `n`, `e` and `c` are rock solid.
+  But the boss made a rookie mistake and dropped one of its secret primes, `p`, on the floor.
+
+  You know the rules, little warrior: if you know one factor, you know them all.
+  Finish the boss!
+
+  **Author**: [Zanpakto](https://jedjmili.github.io/)
+
+attribution: '[Zanpakto](https://jedjmili.github.io/)'
+
+value: 200
+
+type: dynamic
+
+extra:
+  initial: 200
+  decay: 15
+  minimum: 50
+
+logic: any
+
+flags:
+  - SecurinetsENIT{S1mple_RSA_l1ttle_W4rrior}
+
+files:
+  - dist/chall.txt
+
+tags:
+  - RSA
+
+requirements:
+  prerequisites: []
+  anonymize: false
+
+version: '0.1'

@@ -1,0 +1,43 @@
+name: Silent Lobby
+
+category: Cryptography
+
+description: |-
+  Emergency meeting! Your crewmate's mic is broken, but they saw who the **impostor** is.
+  Instead of typing in chat, they sent a screenshot of hand signs...
+  Apparently they learned the **American** way.
+
+  Read their hands and vote the impostor out before it's too late!
+
+  **Flag Format**: SecurinetsENIT{decoded_message}
+
+  **Author**: [Zanpakto](https://jedjmili.github.io/)
+
+attribution: '[Zanpakto](https://jedjmili.github.io/)'
+
+value: 200
+
+type: dynamic
+
+extra:
+  initial: 200
+  decay: 15
+  minimum: 50
+
+logic: any
+
+flags:
+  - SecurinetsENIT{4m3ric4n_s1gn_3asy_stuff}
+
+files:
+  - dist/chall.png
+
+tags:
+  - Sign Language
+  - Encoding
+
+requirements:
+  prerequisites: []
+  anonymize: false
+
+version: '0.1'

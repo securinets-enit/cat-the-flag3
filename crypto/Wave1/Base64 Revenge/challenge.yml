@@ -1,0 +1,42 @@
+name: Elden Runes
+
+category: Cryptography
+
+description: |-
+  Rise, Tarnished. Bowser was defeated, so his message took a darker path...
+  It's the same old trick, but now it's carved in strange gothic runes, like an ancient **Fraktur** inscription found in the Lands Between.
+
+  A font is not a cipher... or is it?
+  Turn the runes back into normal letters, and the rest should feel familiar.
+
+  **Author**: [Zanpakto](https://jedjmili.github.io/)
+
+attribution: '[Zanpakto](https://jedjmili.github.io/)'
+
+value: 200
+
+type: dynamic
+
+extra:
+  initial: 200
+  decay: 15
+  minimum: 50
+
+logic: any
+
+flags:
+  - SecurinetsENIT{F0nt_c4n_b3_4_c1ph3r_u_kn0w}
+
+files:
+  - dist/chall.txt
+
+tags:
+  - Encoding
+  - Base64
+  - Unicode
+
+requirements:
+  prerequisites: []
+  anonymize: false
+
+version: '0.1'

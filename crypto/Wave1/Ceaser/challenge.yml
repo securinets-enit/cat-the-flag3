@@ -1,0 +1,41 @@
+name: Assassin's Shift
+
+category: Cryptography
+
+description: |-
+  Rome, 1500. Ezio found an old message in the ruins of the Colosseum.
+  The Templars hid it using a trick older than the Brotherhood itself, the one used by **Julius** himself:
+  every letter was simply **shifted** a few steps in the alphabet.
+
+  Nothing is true, everything is permitted... except leaving this flag unsolved.
+
+  **Author**: [Zanpakto](https://jedjmili.github.io/)
+
+attribution: '[Zanpakto](https://jedjmili.github.io/)'
+
+value: 200
+
+type: dynamic
+
+extra:
+  initial: 200
+  decay: 15
+  minimum: 50
+
+logic: any
+
+flags:
+  - SecurinetsENIT{C4as3r_C1ph3r_f0r_Th3_win}
+
+files:
+  - dist/chall.txt
+
+tags:
+  - Encoding
+  - Caesar
+
+requirements:
+  prerequisites: []
+  anonymize: false
+
+version: '0.1'

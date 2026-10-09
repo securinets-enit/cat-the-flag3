@@ -1,0 +1,44 @@
+name: Kamehameha
+
+category: Cryptography
+
+description: |-
+  Goku is charging his **Kamehameha** in Dragon Ball: Sparking! Zero, and the message is locked with **RSA**.
+  But Goku was in a hurry and picked a tiny public exponent: `e = 3`.
+
+  The modulus `n` is huge, so huge that the message to the power of 3 never even wrapped around it...
+
+  Power up and break through the weak exponent!
+
+  *Hint*: what is the inverse of raising a number to the power of 3?
+
+  **Author**: [Zanpakto](https://jedjmili.github.io/)
+
+attribution: '[Zanpakto](https://jedjmili.github.io/)'
+
+value: 500
+
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 15
+  minimum: 50
+
+logic: any
+
+flags:
+  - SecurinetsENIT{k4m3h4m3h4_RSA_d3str0ys_th3_3xp0n3nt}
+
+files:
+  - dist/output.txt
+
+tags:
+  - RSA
+  - Small Exponent
+
+requirements:
+  prerequisites: []
+  anonymize: false
+
+version: '0.1'

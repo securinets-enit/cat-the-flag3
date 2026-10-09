@@ -1,0 +1,43 @@
+name: RobCo Terminal
+
+category: Cryptography
+
+description: |-
+  You found an old RobCo terminal in a Vault. On the screen: only **0s and 1s**.
+  You decode it... and get another weird string. And another one. And another one.
+  The Overseer wrapped his password in layer after layer of encodings.
+
+  Luckily, a wise Vault Dweller once told you about a magic **Chef** that cooks any data.
+  Peel the layers and unlock the terminal!
+
+  **Author**: [Zanpakto](https://jedjmili.github.io/)
+
+attribution: '[Zanpakto](https://jedjmili.github.io/)'
+
+value: 300
+
+type: dynamic
+
+extra:
+  initial: 300
+  decay: 15
+  minimum: 50
+
+logic: any
+
+flags:
+  - SecurinetsENIT{Cyb3rch3f_d3t3ct5_3v3ry_b4s3}
+
+files:
+  - dist/chall.txt
+
+tags:
+  - Encoding
+  - CyberChef
+  - Bases
+
+requirements:
+  prerequisites: []
+  anonymize: false
+
+version: '0.1'

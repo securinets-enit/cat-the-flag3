@@ -1,0 +1,44 @@
+name: Co-op Mode
+
+category: Cryptography
+
+description: |-
+  Welcome to the co-op chamber! Atlas and P-body both encrypted the **same** message,
+  with the **same** modulus `n`... but each robot used its own exponent.
+
+  Alone, each ciphertext is useless. But this is a co-op game:
+  make the two robots work **together** and the message will reveal itself.
+
+  *Hint*: look up the **common modulus attack**.
+
+  **Author**: [Zanpakto](https://jedjmili.github.io/)
+
+attribution: '[Zanpakto](https://jedjmili.github.io/)'
+
+value: 500
+
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 15
+  minimum: 50
+
+logic: any
+
+flags:
+  - SecurinetsENIT{mult1pl3_3xpo3nts_4r3_n0t_s3cur3}
+
+files:
+  - dist/chall.py
+  - dist/output.txt
+
+tags:
+  - RSA
+  - Common Modulus
+
+requirements:
+  prerequisites: []
+  anonymize: false
+
+version: '0.1'

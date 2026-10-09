@@ -1,0 +1,45 @@
+name: Hesitation is Defeat
+
+category: Cryptography
+
+description: |-
+  The Wolf intercepted three secret messages from the Ashina clan.
+  All three were encrypted with **XOR** using the **same key**... a big mistake, shinobi.
+
+  Our spy managed to read the first message before it was burned:
+
+  `There is no shame in losing one battle...`
+
+  Use it to recover the key, then read the remaining messages.
+  Hesitation is defeat.
+
+  **Author**: [Zanpakto](https://jedjmili.github.io/)
+
+attribution: '[Zanpakto](https://jedjmili.github.io/)'
+
+value: 500
+
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 15
+  minimum: 50
+
+logic: any
+
+flags:
+  - SecurinetsENIT{Mult1pl3_XOR_d3str0y_th3_k3y}
+
+files:
+  - dist/output.txt
+
+tags:
+  - XOR
+  - Known Plaintext
+
+requirements:
+  prerequisites: []
+  anonymize: false
+
+version: '0.1'

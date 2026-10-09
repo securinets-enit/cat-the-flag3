@@ -1,0 +1,42 @@
+name: Defuse the Spike
+
+category: Cryptography
+
+description: |-
+  The spike is planted! 30 seconds left on the clock!
+  The defuse code is protected with a simple **XOR**, using a repeating key...
+  And the key? It's the name of the game you're playing right now.
+
+  Your team is counting on you, agent. Defuse it!
+
+  *Hint*: the flag always starts with `SecurinetsENIT{`. XOR works both ways ;)
+
+  **Author**: [Zanpakto](https://jedjmili.github.io/)
+
+attribution: '[Zanpakto](https://jedjmili.github.io/)'
+
+value: 200
+
+type: dynamic
+
+extra:
+  initial: 200
+  decay: 15
+  minimum: 50
+
+logic: any
+
+flags:
+  - SecurinetsENIT{d3fus3_th3_5p1k3_1n_t1m3}
+
+files:
+  - dist/chall.txt
+
+tags:
+  - XOR
+
+requirements:
+  prerequisites: []
+  anonymize: false
+
+version: '0.1'

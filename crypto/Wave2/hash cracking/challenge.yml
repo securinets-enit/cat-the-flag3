@@ -1,0 +1,46 @@
+name: Watch Dogs
+
+category: Cryptography
+
+description: |-
+  DedSec intercepted a photo leaving a ctOS server in San Francisco.
+  It looks like pure static noise... because it was **encrypted with a password**.
+
+  Our hackers couldn't find the password, only its **hash** in the server logs.
+  Lucky for us, Blume's admins are lazy and use weak passwords.
+
+  Crack the hash to get the password, then use it to decrypt the photo and expose Blume!
+
+  *Hint*: you don't always need to crack a hash yourself. Someone may have already done it online.
+
+  **Author**: [Zanpakto](https://jedjmili.github.io/)
+
+attribution: '[Zanpakto](https://jedjmili.github.io/)'
+
+value: 300
+
+type: dynamic
+
+extra:
+  initial: 300
+  decay: 15
+  minimum: 50
+
+logic: any
+
+flags:
+  - SecurinetsENIT{D3crypt_th3_c1ph3r_cr4ck_th3_h4sh}
+
+files:
+  - dist/encrypted-photo.png
+  - dist/hash.txt
+
+tags:
+  - Hash
+  - Cracking
+
+requirements:
+  prerequisites: []
+  anonymize: false
+
+version: '0.1'

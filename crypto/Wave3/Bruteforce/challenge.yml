@@ -1,0 +1,48 @@
+name: Master Lockpick
+
+category: Cryptography
+
+description: |-
+  You found a **Master** level chest in a Skyrim dungeon. The guard laughs:
+  *"Don't even think about guessing it. You'll never pick that lock."*
+
+  But every real lockpicker knows: you don't open a lock all at once... you feel **one pin at a time**.
+  The chest tells you as soon as a pin is wrong.
+
+  Read the source, connect to the chest and grab the loot, Dragonborn.
+
+  *Hint*: a small script is better than a thousand broken lockpicks.
+
+  **Author**: [Zanpakto](https://jedjmili.github.io/)
+
+attribution: '[Zanpakto](https://jedjmili.github.io/)'
+
+value: 500
+
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 15
+  minimum: 50
+
+connection_info: nc <HOST> 1337
+
+logic: any
+
+flags:
+  - SecurinetsENIT{brut3_f0rc3_1s_n0t_4ll0w3d_1n_s3curinets}
+
+
+files:
+  - dist/chall.py
+
+tags:
+  - Bruteforce
+  - Scripting
+
+requirements:
+  prerequisites: []
+  anonymize: false
+
+version: '0.1'
