@@ -14,6 +14,7 @@
 | Mimi's Budget | `mimi-budget/` | r3t0x | Easy–medium (150) | File | `mimi-budget/dist/` |
 | Meowdle | `meowdle/` | r3t0x | Medium (250) | nc service, port 1339 | `meowdle/dist/words.txt` + host and port |
 | Copycat | `copycat/` | r3t0x | Easy (100) | File | `copycat/dist/` |
+| Cat Stairs | `cat-stairs/` | r3t0x | Medium (250) | nc service, port 1340 | Host and port only |
 
 Flag format: `SecurinetsENIT{...}`
 
@@ -38,6 +39,9 @@ cd misc/cat-jail-v2 && docker compose up --build -d
 
 # Meowdle (nc on 1339)
 cd misc/meowdle && docker compose up --build -d
+
+# Cat Stairs (nc on 1340)
+cd misc/cat-stairs && docker compose up --build -d
 
 # Don't Whisper (HTTP on 8005)
 cd misc/dont_whisper/src && docker build -t dont-whisper . && docker run -d -p 8005:8005 dont-whisper
