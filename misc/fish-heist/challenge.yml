@@ -1,0 +1,18 @@
+name: "Fish Heist"
+author: "r3t0x"
+attribution: 'Written by [r3t0x](https://r3t0x.me/)'
+category: misc
+description: |-
+  You and Mimi share piles of fish. You take turns stealing from one pile at a time.
+  Mimi has never lost a game. Beat her 20 times in a row.
+
+  Flag format: `SecurinetsENIT{...}`
+type: standard
+value: 250
+connection_info: nc localhost 1341
+flags:
+  - SecurinetsENIT{x0r_y0ur_w4y_t0_th3_f15h}
+tags:
+  - scripting
+  - game
+version: "0.1"
