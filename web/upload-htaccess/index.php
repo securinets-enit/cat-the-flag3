@@ -5,8 +5,15 @@ $blacklist = ['php','php3','php4','php5','php7','phtml','pht','phar'];
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['file'])) {
     $name = basename($_FILES['file']['name']);
     $ext  = strtolower(pathinfo($name, PATHINFO_EXTENSION));
+    $data = @file_get_contents($_FILES['file']['tmp_name']);
+    if ($data === false) {
+        $data = '';
+    }
     if (in_array($ext, $blacklist, true)) {
         $msg = "Blocked: PHP files are not allowed.";
+    } elseif (preg_match('/<\?php/i', $data)) {
+        // Content scan: reject anything that looks like a PHP script.
+        $msg = "Blocked: file contents look like PHP code.";
     } else {
         move_uploaded_file($_FILES['file']['tmp_name'], __DIR__ . "/uploads/" . $name);
         $msg = "Stored uploads/" . htmlspecialchars($name);
@@ -33,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['file'])) {
   <input type="file" name="file">
   <button>Upload</button>
 </form>
-<p>Uploads are served from <a href="/uploads/">/uploads/</a>. PHP uploads are blocked.</p>
+<p>Uploads are served from <a href="/uploads/">/uploads/</a>. PHP files and PHP code are blocked.</p>
 </section>
 </main>
 </body></html>
