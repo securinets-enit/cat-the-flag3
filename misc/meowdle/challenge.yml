@@ -8,8 +8,12 @@ description: |-
   She also gets grumpy when she's losing.
 
   Flag format: `SecurinetsENIT{...}`
-type: standard
-value: 250
+type: dynamic
+extra:
+  function: linear
+  initial: 250
+  decay: 5
+  minimum: 100
 connection_info: nc localhost 1339
 flags:
   - SecurinetsENIT{m1m1_l13s_but_r0b0t5_d0nt_c4r3}

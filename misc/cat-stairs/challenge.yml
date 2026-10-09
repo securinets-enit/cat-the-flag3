@@ -7,8 +7,12 @@ description: |-
   Tell her how many different ways she can get there... the buildings keep getting taller.
 
   Flag format: `SecurinetsENIT{...}`
-type: standard
-value: 250
+type: dynamic
+extra:
+  function: linear
+  initial: 250
+  decay: 5
+  minimum: 100
 connection_info: nc localhost 1340
 flags:
   - SecurinetsENIT{m1m1_cl1mb5_1n_l0g_t1m3}

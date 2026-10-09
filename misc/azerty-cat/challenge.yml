@@ -9,8 +9,12 @@ description: |-
   My friend didn't notice and typed me the flag by hand anyway. All I got is this.
 
   Flag format: `SecurinetsENIT{...}`
-type: standard
-value: 100
+type: dynamic
+extra:
+  function: linear
+  initial: 100
+  decay: 5
+  minimum: 100
 flags:
   - SecurinetsENIT{4ZERTY_m4k3s_m3_w4nn4_qu1t_m30w}
 files:

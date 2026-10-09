@@ -7,8 +7,12 @@ description: |-
   Mimi has never lost a game. Beat her 20 times in a row.
 
   Flag format: `SecurinetsENIT{...}`
-type: standard
-value: 250
+type: dynamic
+extra:
+  function: linear
+  initial: 250
+  decay: 5
+  minimum: 100
 connection_info: nc localhost 1341
 flags:
   - SecurinetsENIT{x0r_y0ur_w4y_t0_th3_f15h}

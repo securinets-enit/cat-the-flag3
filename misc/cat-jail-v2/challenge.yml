@@ -7,8 +7,12 @@ description: |-
   The treats are still in there, and so is she.
 
   Flag format: `SecurinetsENIT{...}`
-type: standard
-value: 400
+type: dynamic
+extra:
+  function: linear
+  initial: 400
+  decay: 5
+  minimum: 100
 connection_info: nc localhost 1338
 flags:
   - SecurinetsENIT{n0_qu0t35_n0_d0t5_ju5t_tru3_4nd_chr}

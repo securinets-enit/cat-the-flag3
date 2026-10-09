@@ -7,8 +7,12 @@ description: |-
   Mimi says the spreadsheet is boring. Mimi is lying.
 
   Flag format: `SecurinetsENIT{...}`
-type: standard
-value: 150
+type: dynamic
+extra:
+  function: linear
+  initial: 150
+  decay: 5
+  minimum: 100
 flags:
   - SecurinetsENIT{c4t_f00d_1s_n3v3r_ch34p}
 files:

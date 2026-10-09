@@ -7,8 +7,12 @@ description: |-
   They ran across my screen so fast I couldn't even count them.
 
   Flag format: `SecurinetsENIT{...}`
-type: standard
-value: 100
+type: dynamic
+extra:
+  function: linear
+  initial: 100
+  decay: 5
+  minimum: 100
 flags:
   - SecurinetsENIT{n1n3_k1tt3n5_0n3_qr_c0d3}
 files:

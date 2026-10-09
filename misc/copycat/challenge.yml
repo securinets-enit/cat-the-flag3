@@ -6,8 +6,12 @@ description: |-
   Mimi has an evil twin. They look exactly the same in every photo... almost.
 
   Flag format: `SecurinetsENIT{...}`
-type: standard
-value: 100
+type: dynamic
+extra:
+  function: linear
+  initial: 100
+  decay: 5
+  minimum: 100
 flags:
   - SecurinetsENIT{3v1l_tw1n_0ff_by_0n3}
 files:
