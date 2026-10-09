@@ -8,6 +8,7 @@
 | Don't Whisper | `dont_whisper/` | MrXFuji | Medium | Web service, port 8005 | URL only |
 | Captcha: Rats in a Maze | `captcha-maze/` | MrXFuji | Hard | TLS service, port 5000 | Host and port only |
 | AZERTY Cat | `azerty-cat/` | r3t0x | Easy (100) | File | `azerty-cat/dist/` |
+| Cat Jail v1 | `cat-jail-v1/` | r3t0x | Easy–medium (200) | nc service, port 1337 | Host and port only |
 
 Flag format: `SecurinetsENIT{...}`
 
@@ -23,6 +24,9 @@ Flag format: `SecurinetsENIT{...}`
 ```bash
 # Captcha: Rats in a Maze (TLS on 5000)
 cd misc/captcha-maze && docker compose up --build -d
+
+# Cat Jail v1 (nc on 1337)
+cd misc/cat-jail-v1 && docker compose up --build -d
 
 # Don't Whisper (HTTP on 8005)
 cd misc/dont_whisper/src && docker build -t dont-whisper . && docker run -d -p 8005:8005 dont-whisper
