@@ -14,7 +14,5 @@ USER ctf
 WORKDIR /app
 EXPOSE 1342
 
-ENV ROUNDS=40 ROUND_TIME=3
-
 # One fresh game per connection, killed after 120 seconds
 CMD ["socat", "-T120", "TCP-LISTEN:1342,reuseaddr,fork", "EXEC:timeout -s KILL 120 python3 -u /app/server.py,stderr"]
