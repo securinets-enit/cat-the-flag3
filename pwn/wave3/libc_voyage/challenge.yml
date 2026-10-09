@@ -18,4 +18,5 @@ tags:
 files:
   - libc_voyage
   - libc_voyage.c
+  - libc.so.6
 version: "0.1"

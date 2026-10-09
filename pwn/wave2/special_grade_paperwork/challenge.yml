@@ -1,0 +1,20 @@
+name: "Special Grade Paperwork"
+author: "r3t0x"
+attribution: 'Written by [r3t0x](https://r3t0x.me/)'
+category: pwn
+description: |-
+  Jujutsu High hired a special-grade security committee and gave it a clipboard. Your data has never been safer, statistically speaking.
+type: dynamic
+extra:
+  function: linear
+  initial: 500
+  decay: 5
+  minimum: 150
+connection_info: nc localhost 1353
+flags:
+  - SecurinetsENIT{c4n4ry_l34k_t0_l1bc_r3t2l1bc}
+files:
+  - main
+  - libc.so.6
+  - ld-linux-x86-64.so.2
+version: "0.1"
