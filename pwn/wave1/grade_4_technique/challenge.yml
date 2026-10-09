@@ -1,0 +1,21 @@
+name: "Grade 4 Technique"
+author: "r3t0x"
+attribution: 'Written by [r3t0x](https://r3t0x.me/)'
+category: pwn
+description: |-
+  Your cursed technique has finally been approved for live demonstration. The evaluators have lowered their expectations accordingly. Try not to embarrass the CPU.
+type: dynamic
+extra:
+  function: linear
+  initial: 100
+  decay: 5
+  minimum: 50
+connection_info: nc localhost 1349
+flags:
+  - SecurinetsENIT{gr4d3_4_t3chn1qu3_st1ll_g0t_4_sh3ll}
+tags:
+  - shellcode
+  - x86-64
+files:
+  - main
+version: "0.1"
