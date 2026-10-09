@@ -1,0 +1,13 @@
+# Cloud series — TCP askers for both tasks.
+name: cloud
+
+services:
+  cloudtrail:
+    build: ./01-cloudtrail/asker
+    ports: ["9995:9995"]
+    restart: always
+
+  ssrf:
+    build: ./02-ssrf/asker
+    ports: ["9994:9994"]
+    restart: always

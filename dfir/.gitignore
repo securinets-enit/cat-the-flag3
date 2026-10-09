@@ -1,0 +1,8 @@
+**/.env
+logs/
+certs/
+**/site/downloads/*.tar.gz
+**/site/downloads/*.zip
+**/site/downloads/*.deb
+__pycache__/
+*.pyc

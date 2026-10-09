@@ -30,7 +30,7 @@ The chain walks through the entire intrusion lifecycle:
 ## Handout
 
 Evidence is served from the fake site at cdnjs-mirror.net/evidence/.
-Each task's writeup lists exactly which files are needed.
+Each task's WALKTHROUGH.md lists exactly which files are needed.
 
 Task 2, 3, 4, and 5 interact via a TCP asker:
 
@@ -58,3 +58,15 @@ Task 2, 3, 4, and 5 interact via a TCP asker:
 ## Flag format
 
 SecurinetsENIT{...}
+
+## Layout
+
+    01-the-bait/    README.md  WALKTHROUGH.md  Dockerfile  evidence/
+    02..05-*/       README.md  WALKTHROUGH.md  asker/ (Dockerfile, asker.go, flag.txt)
+    infra/          fake gh-cli download site (nginx) + handout assets
+    docker-compose.yml   starts the four askers (9999-9996)
+
+## Deploy
+
+    docker compose up -d --build      # from this directory
+    # or: make -C .. up SERIES=mreya

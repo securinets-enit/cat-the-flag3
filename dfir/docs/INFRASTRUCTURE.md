@@ -166,9 +166,9 @@ Recovery:
 
 Build sources on disk:
 
-- ~/securinets/ctf/cat-the-flag3/dfir/containers/docker-basics
-- ~/securinets/ctf/cat-the-flag3/dfir/containers/docker-2
-- ~/securinets/ctf/cat-the-flag3/dfir/containers/webhook-relay
+- ~/securinets/ctf/cat-the-flag3/dfir/containers/01-docker-basics
+- ~/securinets/ctf/cat-the-flag3/dfir/containers/02-sysdiag
+- ~/securinets/ctf/cat-the-flag3/dfir/containers/03-webhook-relay
 
 ## gh-cli-supply-chain
 
@@ -248,7 +248,7 @@ Change a flag:
 | Image | sitaha/docker-basics:1.0 |
 | Difficulty | Easy |
 | Flags | 3 |
-| Source | ~/securinets/ctf/cat-the-flag3/dfir/containers/docker-basics |
+| Source | ~/securinets/ctf/cat-the-flag3/dfir/containers/01-docker-basics |
 
 Flags:
 
@@ -260,7 +260,7 @@ Flags:
 
 Rebuild:
 
-    cd ~/securinets/ctf/cat-the-flag3/dfir/containers/docker-basics
+    cd ~/securinets/ctf/cat-the-flag3/dfir/containers/01-docker-basics
     ./build.sh
     docker push sitaha/docker-basics:1.0
 
@@ -271,7 +271,7 @@ Rebuild:
 | Image | sitaha/sysdiag:3.1.2 |
 | Difficulty | Medium |
 | Flags | 5 |
-| Source | ~/securinets/ctf/cat-the-flag3/dfir/containers/docker-2 |
+| Source | ~/securinets/ctf/cat-the-flag3/dfir/containers/02-sysdiag |
 
 Flags:
 
@@ -285,7 +285,7 @@ Flags:
 
 Rebuild:
 
-    cd ~/securinets/ctf/cat-the-flag3/dfir/containers/docker-2
+    cd ~/securinets/ctf/cat-the-flag3/dfir/containers/02-sysdiag
     ./build.sh
     ./solver.sh
     docker push sitaha/sysdiag:3.1.2
@@ -300,7 +300,7 @@ not in */layer.tar. The solver handles both.
 | Image | sitaha/webhook-relay:2.4.0 |
 | Difficulty | Medium-Hard |
 | Flags | 5 |
-| Source | ~/securinets/ctf/cat-the-flag3/dfir/containers/webhook-relay |
+| Source | ~/securinets/ctf/cat-the-flag3/dfir/containers/03-webhook-relay |
 
 Flags:
 
@@ -314,7 +314,7 @@ Flags:
 
 Rebuild:
 
-    cd ~/securinets/ctf/cat-the-flag3/dfir/containers/webhook-relay
+    cd ~/securinets/ctf/cat-the-flag3/dfir/containers/03-webhook-relay
     ./build.sh
     ./solver.sh
     docker push sitaha/webhook-relay:2.4.0
@@ -359,16 +359,16 @@ If rebuilding from scratch:
    - SSL modes: Flexible for all proxied zones
 
 7. Docker Hub
-   - cd each container dir
+   - make build-containers (or cd each containers/0N-* dir)
    - ./build.sh
    - docker push sitaha/<image>
 
 8. Test
    - ./solve-enitt.sh
    - ./solve-dns-revenge.sh
-   - cd docker-basics && docker run -it --rm sitaha/docker-basics:1.0
-   - cd docker-2 && ./solver.sh
-   - cd webhook-relay && ./solver.sh
+   - cd containers/01-docker-basics && docker run -it --rm sitaha/docker-basics:1.0
+   - cd containers/02-sysdiag && ./solver.sh
+   - cd containers/03-webhook-relay && ./solver.sh
 
 ## Points Summary
 

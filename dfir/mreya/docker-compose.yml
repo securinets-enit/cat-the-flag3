@@ -1,0 +1,24 @@
+# Mreya (gh-cli supply chain) — TCP askers for tasks 2-5.
+# Task 1 is a handout/container only (see 01-the-bait/).
+name: mreya
+
+services:
+  recon:
+    build: ./02-the-recon/asker
+    ports: ["9999:9999"]
+    restart: always
+
+  dropper:
+    build: ./03-the-dropper/asker
+    ports: ["9998:9998"]
+    restart: always
+
+  implant:
+    build: ./04-the-implant/asker
+    ports: ["9997:9997"]
+    restart: always
+
+  beacon:
+    build: ./05-the-beacon/asker
+    ports: ["9996:9996"]
+    restart: always
