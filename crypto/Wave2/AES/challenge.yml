@@ -9,8 +9,6 @@ description: |-
 
   Jack in, decrypt the shard and claim your eddies, choom.
 
-  *Hint*: AES needs a key, an IV and a mode. **CBC** is a classic.
-
   **Author**: [Zanpakto](https://jedjmili.github.io/)
 
 attribution: '[Zanpakto](https://jedjmili.github.io/)'
