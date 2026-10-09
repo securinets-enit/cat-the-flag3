@@ -1,0 +1,60 @@
+services:
+  sea-turtle:
+    build: ./sea-turtle
+    ports:
+      - "5010:5010"
+    restart: always
+
+  zebrocy:
+    build: ./zebrocy
+    ports:
+      - "5011:5011"
+    restart: always
+
+  slingshot:
+    build: ./slingshot
+    ports:
+      - "5012:5012"
+    restart: always
+
+  moonbounce:
+    build: ./moonbounce
+    ports:
+      - "5013:5013"
+    restart: always
+
+  sunburst:
+    build: ./sunburst
+    ports:
+      - "5014:5014"
+    restart: always
+
+  bluenoroff:
+    build: ./bluenoroff
+    ports:
+      - "5015:5015"
+    restart: always
+
+  arcanedoor:
+    build: ./arcanedoor
+    ports:
+      - "5016:5016"
+    restart: always
+
+  applejeus:
+    build: ./applejeus
+    ports:
+      - "5017:5017"
+    restart: always
+
+  triton:
+    build: ./triton
+    ports:
+      - "5018:5018"
+    restart: always
+
+  triangulation:
+    build: ./triangulation
+    ports:
+      - "5019:5019"
+    restart: always
