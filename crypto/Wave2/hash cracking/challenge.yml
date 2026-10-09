@@ -11,8 +11,6 @@ description: |-
 
   Crack the hash to get the password, then use it to decrypt the photo and expose Blume!
 
-  *Hint*: you don't always need to crack a hash yourself. Someone may have already done it online.
-
   **Author**: [Zanpakto](https://jedjmili.github.io/)
 
 attribution: '[Zanpakto](https://jedjmili.github.io/)'
