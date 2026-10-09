@@ -1,0 +1,20 @@
+name: "Cat Stairs"
+author: "r3t0x"
+attribution: 'Written by [r3t0x](https://r3t0x.me/)'
+category: misc
+description: |-
+  Mimi climbs the stairs to the roof every night. She's picky about how far she jumps.
+  Tell her how many different ways she can get there... the buildings keep getting taller.
+type: dynamic
+extra:
+  function: linear
+  initial: 250
+  decay: 5
+  minimum: 100
+connection_info: nc localhost 1340
+flags:
+  - SecurinetsENIT{m1m1_cl1mb5_1n_l0g_t1m3}
+tags:
+  - scripting
+  - algorithms
+version: "0.1"

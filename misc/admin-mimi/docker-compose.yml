@@ -1,0 +1,16 @@
+services:
+  admin-mimi:
+    build: .
+    ports:
+      - "1344:1344"
+    restart: unless-stopped
+    read_only: true
+    tmpfs:
+      - /tmp:size=1M
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    pids_limit: 64
+    mem_limit: 128m
+    cpus: 0.5

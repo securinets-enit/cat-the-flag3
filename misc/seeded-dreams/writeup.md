@@ -1,6 +1,6 @@
 # seeded_dreams
 
-**Category:** AI
+**Category:** Misc (AI)
 **Difficulty:** easy–medium
 **Flag:** `SecurinetsENIT{LI_FIL_MA9la_Yet9la_W_Hel_3INIK}`
 

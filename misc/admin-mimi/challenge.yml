@@ -1,0 +1,19 @@
+name: "Admin Mimi"
+author: "r3t0x"
+attribution: 'Written by [r3t0x](https://r3t0x.me/)'
+category: misc
+description: |-
+  Welcome to Catbook, the social network for cats.
+  Only the admin can open the admin panel, and the name "admin" is already taken.
+type: dynamic
+extra:
+  function: linear
+  initial: 150
+  decay: 5
+  minimum: 100
+connection_info: nc localhost 1344
+flags:
+  - SecurinetsENIT{4dm1n_1s_ju5t_4_c4t_w1th_c4p5_l0ck}
+tags:
+  - easy
+version: "0.1"

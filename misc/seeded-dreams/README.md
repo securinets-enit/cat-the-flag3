@@ -1,6 +1,6 @@
 # seeded_dreams
 
-**Category:** AI
+**Category:** Misc (AI)
 **Points:** 75 (suggested — tune to your scoring curve)
 
 We recovered a fragment exported from an old, half-abandoned model

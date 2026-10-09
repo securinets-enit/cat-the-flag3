@@ -1,0 +1,20 @@
+name: "Kitten Split"
+author: "r3t0x"
+attribution: 'Written by [r3t0x](https://r3t0x.me/)'
+category: misc
+description: |-
+  You beat Mimi at Fish Heist. She was furious.
+  She came back with new rules, and she swears nobody will ever beat her again.
+type: dynamic
+extra:
+  function: linear
+  initial: 1000
+  decay: 5
+  minimum: 400
+connection_info: nc localhost 1347
+flags:
+  - SecurinetsENIT{spr4gu3_grundy_t4m35_th3_k1tt3n5}
+tags:
+  - insane
+  - game
+version: "0.1"

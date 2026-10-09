@@ -230,7 +230,7 @@ In the FIGlet `standard` font, the characters `O` (Latin capital letter O) and `
 ```
 
 A pure ASCII OCR tool cannot distinguish between:
-$$\verb|Securinets{d3sp1t3_all_OuR_rag3...}| \quad \text{and} \quad \verb|Securinets{d3sp1t3_all_0uR_rag3...}|$$
+$$\verb|SecurinetsENIT{d3sp1t3_all_OuR_rag3...}| \quad \text{and} \quad \verb|SecurinetsENIT{d3sp1t3_all_0uR_rag3...}|$$
 
 However, humans recognize cultural and linguistic semantic context:
 The text references the Smashing Pumpkins lyric:

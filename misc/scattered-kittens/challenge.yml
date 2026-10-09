@@ -1,0 +1,20 @@
+name: "Scattered Kittens"
+author: "r3t0x"
+attribution: 'Written by [r3t0x](https://r3t0x.me/)'
+category: misc
+description: |-
+  Mimi had nine kittens and they never sit still.
+  They ran across my screen so fast I couldn't even count them.
+type: dynamic
+extra:
+  function: linear
+  initial: 100
+  decay: 5
+  minimum: 100
+flags:
+  - SecurinetsENIT{n1n3_k1tt3n5_0n3_qr_c0d3}
+files:
+  - dist/kittens.gif
+tags:
+  - easy
+version: "0.1"

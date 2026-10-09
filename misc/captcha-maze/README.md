@@ -25,7 +25,6 @@ Clear all 100 rounds, and the Oracle will project the flag into your terminal.
 - **Protocol:** 100 consecutive 11×11 weighted mazes
 - **Time limit:** 5.0 seconds per maze
 - **Move vocabulary:** `U` (Up), `D` (Down), `L` (Left), `R` (Right)
-- **Flag Format:** `Securinets{...}` (Case-sensitive!)
 
 ---
 
@@ -37,8 +36,9 @@ Clear all 100 rounds, and the Oracle will project the flag into your terminal.
 | `src/maze_gen.py` | 11×11 maze generator with unique Dijkstra path guarantee |
 | `src/pieces.py` | Board-game piece definitions & Unicode cost models |
 | `src/pow_engine.py` | Pure Python redpwn-compatible VDF Proof-of-Work engine |
-| `deploy/` | Standalone Docker container deployment files |
-| `solution/solve.py` | Complete educational automated solver |
+| `Dockerfile`, `docker-compose.yml` | Docker deployment (organizers only) |
+| `flag.txt` | The flag read by the server (organizers only, never give to players) |
+| `solve.py` | Complete educational automated solver |
 | `WRITEUP.md` | Step-by-step challenge writeup |
 | `CONCEPT_GUIDE.md` | Academic deep dive into Terminal emulation, UAX #11, Dijkstra & PoW |
 
@@ -49,7 +49,7 @@ Clear all 100 rounds, and the Oracle will project the flag into your terminal.
 To launch the challenge service locally:
 
 ```bash
-cd deploy
+cd misc/captcha-maze
 docker compose up --build -d
 ```
 
