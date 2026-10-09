@@ -1,0 +1,21 @@
+name: "Liar's Treat"
+author: "r3t0x"
+attribution: 'Written by [r3t0x](https://r3t0x.me/)'
+category: misc
+description: |-
+  Mimi hides a treat in one of her many boxes and lets you ask questions.
+  She never said she would tell the truth.
+
+  Flag format: `SecurinetsENIT{...}`
+type: dynamic
+extra:
+  function: linear
+  initial: 800
+  decay: 5
+  minimum: 300
+connection_info: nc localhost 1343
+flags:
+  - SecurinetsENIT{3rr0r_c0rr3ct1ng_c4t_c4tch3s_l13s}
+tags:
+  - hard
+version: "0.1"

@@ -17,6 +17,7 @@
 | Cat Stairs | `cat-stairs/` | r3t0x | Medium (250) | nc service, port 1340 | Host and port only |
 | Fish Heist | `fish-heist/` | r3t0x | Medium (250) | nc service, port 1341 | Host and port only |
 | Mimi's Vending Machine | `vending-machine/` | r3t0x | Easy (150) | nc service, port 1342 | Host and port only |
+| Liar's Treat | `liars-treat/` | r3t0x | Very hard (800) | nc service, port 1343 | Host and port only |
 
 Flag format: `SecurinetsENIT{...}`
 
@@ -50,6 +51,9 @@ cd misc/fish-heist && docker compose up --build -d
 
 # Mimi's Vending Machine (nc on 1342)
 cd misc/vending-machine && docker compose up --build -d
+
+# Liar's Treat (nc on 1343)
+cd misc/liars-treat && docker compose up --build -d
 
 # Don't Whisper (HTTP on 8005)
 cd misc/dont_whisper/src && docker build -t dont-whisper . && docker run -d -p 8005:8005 dont-whisper
