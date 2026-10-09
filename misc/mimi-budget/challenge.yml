@@ -5,8 +5,6 @@ category: misc
 description: |-
   Mimi's owner tracks every coin she spends on cat food.
   Mimi says the spreadsheet is boring. Mimi is lying.
-
-  Flag format: `SecurinetsENIT{...}`
 type: dynamic
 extra:
   function: linear

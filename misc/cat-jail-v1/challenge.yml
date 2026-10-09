@@ -5,8 +5,6 @@ category: misc
 description: |-
   Mimi built a sandbox to keep humans away from her treats.
   She'll happily run your Python... as long as you don't say any of the words she hates.
-
-  Flag format: `SecurinetsENIT{...}`
 type: dynamic
 extra:
   function: linear

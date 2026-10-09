@@ -5,8 +5,6 @@ category: misc
 description: |-
   Mimi opened a vending machine with the finest cat products.
   The Golden Flag is right there on the menu. Too bad you only have 50 coins.
-
-  Flag format: `SecurinetsENIT{...}`
 type: dynamic
 extra:
   function: linear

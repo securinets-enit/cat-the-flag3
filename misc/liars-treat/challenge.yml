@@ -5,8 +5,6 @@ category: misc
 description: |-
   Mimi hides a treat in one of her many boxes and lets you ask questions.
   She never said she would tell the truth.
-
-  Flag format: `SecurinetsENIT{...}`
 type: dynamic
 extra:
   function: linear

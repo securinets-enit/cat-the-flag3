@@ -4,8 +4,6 @@ attribution: 'Written by [r3t0x](https://r3t0x.me/)'
 category: misc
 description: |-
   Mimi has an evil twin. They look exactly the same in every photo... almost.
-
-  Flag format: `SecurinetsENIT{...}`
 type: dynamic
 extra:
   function: linear

@@ -5,8 +5,6 @@ category: misc
 description: |-
   Mimi climbs the stairs to the roof every night. She's picky about how far she jumps.
   Tell her how many different ways she can get there... the buildings keep getting taller.
-
-  Flag format: `SecurinetsENIT{...}`
 type: dynamic
 extra:
   function: linear

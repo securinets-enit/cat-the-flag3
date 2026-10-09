@@ -6,8 +6,6 @@ description: |-
   Mimi got addicted to Wordle, so she made her own.
   She says no human can beat her 30 times in a row.
   She also gets grumpy when she's losing.
-
-  Flag format: `SecurinetsENIT{...}`
 type: dynamic
 extra:
   function: linear

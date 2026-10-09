@@ -5,8 +5,6 @@ category: misc
 description: |-
   Mimi had nine kittens and they never sit still.
   They ran across my screen so fast I couldn't even count them.
-
-  Flag format: `SecurinetsENIT{...}`
 type: dynamic
 extra:
   function: linear

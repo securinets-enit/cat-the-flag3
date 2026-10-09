@@ -5,8 +5,6 @@ category: misc
 description: |-
   Welcome to Catbook, the social network for cats.
   Only the admin can open the admin panel, and the name "admin" is already taken.
-
-  Flag format: `SecurinetsENIT{...}`
 type: dynamic
 extra:
   function: linear

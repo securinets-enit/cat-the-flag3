@@ -5,8 +5,6 @@ category: misc
 description: |-
   Mimi read every writeup of her first jail. She is not amused.
   The treats are still in there, and so is she.
-
-  Flag format: `SecurinetsENIT{...}`
 type: dynamic
 extra:
   function: linear

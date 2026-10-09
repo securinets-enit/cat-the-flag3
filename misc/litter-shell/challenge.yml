@@ -5,8 +5,6 @@ category: misc
 description: |-
   Mimi built a perfectly safe shell. Only harmless commands, no tricks allowed.
   Somewhere on that machine, her treats are hidden.
-
-  Flag format: `SecurinetsENIT{...}`
 type: dynamic
 extra:
   function: linear

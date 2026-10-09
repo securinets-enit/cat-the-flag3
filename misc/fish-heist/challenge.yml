@@ -5,8 +5,6 @@ category: misc
 description: |-
   You and Mimi share piles of fish. You take turns stealing from one pile at a time.
   Mimi has never lost a game. Beat her 20 times in a row.
-
-  Flag format: `SecurinetsENIT{...}`
 type: dynamic
 extra:
   function: linear

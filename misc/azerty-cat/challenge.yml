@@ -7,8 +7,6 @@ description: |-
   Mimi didn't type much, but she managed to switch the keyboard layout to English.
 
   My friend didn't notice and typed me the flag by hand anyway. All I got is this.
-
-  Flag format: `SecurinetsENIT{...}`
 type: dynamic
 extra:
   function: linear
