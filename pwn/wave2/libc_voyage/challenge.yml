@@ -19,4 +19,5 @@ files:
   - libc_voyage
   - libc_voyage.c
   - libc.so.6
+  - ld-linux-x86-64.so.2
 version: "0.1"
