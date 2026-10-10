@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  read_it_and_weep:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "1356:1356"
+    restart: unless-stopped
+    read_only: true
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    pids_limit: 32
+    tmpfs:
+      - /tmp:size=10M,mode=1777
