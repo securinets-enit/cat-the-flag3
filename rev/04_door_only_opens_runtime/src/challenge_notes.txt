@@ -1,0 +1,2 @@
+Primary concept: Inspect `strcmp` arguments to recover the password.
+Expected flag: SecurinetsENIT{runtime_keys_open_doors}

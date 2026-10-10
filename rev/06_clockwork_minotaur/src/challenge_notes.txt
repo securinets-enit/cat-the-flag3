@@ -1,0 +1,2 @@
+Primary concept: Emulate a four-opcode bytecode machine.
+Expected flag: SecurinetsENIT{the_minotaur_has_four_opcodes}

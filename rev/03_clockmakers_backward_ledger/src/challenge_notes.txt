@@ -1,0 +1,2 @@
+Primary concept: Undo a reverse loop and per-byte shift.
+Expected flag: SecurinetsENIT{the_clock_runs_backward}

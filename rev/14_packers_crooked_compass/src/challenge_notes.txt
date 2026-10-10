@@ -1,0 +1,2 @@
+Primary concept: Repair a nonessential ELF field before unpacking.
+Expected flag: SecurinetsENIT{repair_before_unpacking}

@@ -1,0 +1,2 @@
+Primary concept: Repair the ELF magic bytes.
+Expected flag: SecurinetsENIT{a_name_is_only_four_bytes}

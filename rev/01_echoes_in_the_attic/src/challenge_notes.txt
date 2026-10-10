@@ -1,0 +1,2 @@
+Primary concept: Find the live `puts` argument among decoys.
+Expected flag: SecurinetsENIT{the_attic_echo_is_live}

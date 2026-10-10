@@ -1,0 +1,2 @@
+Primary concept: Recover a single-byte XOR key from a decoder loop.
+Expected flag: SecurinetsENIT{sunlight_cannot_hide_xor}

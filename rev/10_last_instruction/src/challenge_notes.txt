@@ -1,0 +1,2 @@
+Primary concept: Track a rotating state machine at runtime.
+Expected flag: SecurinetsENIT{the_last_state_is_the_key}

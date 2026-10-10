@@ -1,0 +1,2 @@
+Primary concept: Follow a virtual call to the real decoder.
+Expected flag: SecurinetsENIT{ghosts_can_call_virtual_methods}

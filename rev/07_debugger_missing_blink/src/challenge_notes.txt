@@ -1,0 +1,2 @@
+Primary concept: Compare normal and watched execution paths.
+Expected flag: SecurinetsENIT{watch_the_branch_not_the_banner}

@@ -1,0 +1,2 @@
+Primary concept: Trace mmap/mprotect and dump decoded bytes.
+Expected flag: SecurinetsENIT{follow_the_music_box}

@@ -1,0 +1,2 @@
+Primary concept: Infer and reverse a whole-file byte rotation.
+Expected flag: SecurinetsENIT{rotate_the_relic_back}

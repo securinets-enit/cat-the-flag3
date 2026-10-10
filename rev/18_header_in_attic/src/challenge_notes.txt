@@ -1,0 +1,2 @@
+Primary concept: Find a restored ELF header in memory.
+Expected flag: SecurinetsENIT{the_header_waits_in_memory}

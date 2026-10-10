@@ -1,0 +1,2 @@
+Primary concept: Identify and load a mislabeled assembly.
+Expected flag: SecurinetsENIT{extensions_do_not_define_formats}

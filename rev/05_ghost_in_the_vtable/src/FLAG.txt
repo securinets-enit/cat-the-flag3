@@ -1,0 +1,1 @@
+SecurinetsENIT{ghosts_can_call_virtual_methods}

@@ -1,0 +1,2 @@
+Primary concept: Repair an entry point using program headers.
+Expected flag: SecurinetsENIT{entry_points_must_land}

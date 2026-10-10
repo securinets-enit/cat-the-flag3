@@ -1,0 +1,2 @@
+Primary concept: Repair a PE signature offset.
+Expected flag: SecurinetsENIT{the_pe_points_to_itself}
