@@ -1,0 +1,7 @@
+Boxic shipped the auth binary Thursday night and left for vacation Friday morning.
+He didn’t document anything. He barely remembers what he built.
+
+Good luck.
+
+Flag format: SecurinetsENIT{...}
+
