@@ -1,0 +1,53 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Thermal Tumble</title>
+<style>
+  body { background: #10151c; color: #dbe8ff; font-family: sans-serif; }
+  canvas { image-rendering: pixelated; width: 860px; height: 10px; border: 1px solid #52627a; }
+  label { margin-right: 1rem; }
+</style>
+<h1>Thermal Tumble</h1>
+<label>Cycle <input id="cycle" type="number" min="0" max="7" value="0"></label>
+<label>Temperature <input id="temperature" type="number" min="30" max="90" value="30"></label>
+<button id="start">Start tumble</button>
+<p id="status">Idle</p>
+<canvas id="thermal" width="86" height="1"></canvas>
+<script>
+const encodedStream = [
+  0, 21, 238, 223, 181, 141, 111, 123, 79, 43, 48, 220,
+  230, 152, 146, 110, 70, 33, 41, 37, 244, 205, 178, 130,
+  110, 91, 26, 10, 22, 248, 220, 137, 135, 120, 72, 21,
+  6, 234, 210, 201, 190, 138, 104
+];
+const canvas = document.getElementById("thermal");
+const context = canvas.getContext("2d");
+
+function selector(cycle, temperature) {
+  return ((cycle * 0x31 + temperature * 0x17 + 0x29) ^
+          ((cycle + 3) * temperature)) & 0xfff;
+}
+
+function render(cycle, temperature) {
+  const image = context.createImageData(86, 1);
+  const key = selector(cycle, temperature);
+  const band = (cycle * 13 + temperature * 5) % 17;
+  const ready = key === 0x54f && band === 1;
+  for (let i = 0; i < 86; i++) {
+    const noise = (i * 73 + cycle * 29 + temperature * 11) & 0xff;
+    image.data[i * 4] = ready && i < encodedStream.length
+      ? encodedStream[i] : noise;
+    image.data[i * 4 + 1] = (i * 7 + 0x42) & 0xff;
+    image.data[i * 4 + 2] = cycle;
+    image.data[i * 4 + 3] = 0xff;
+  }
+  context.putImageData(image, 0, 0);
+  document.getElementById("status").textContent =
+    ready ? "cycle complete" : "warming up";
+}
+
+document.getElementById("start").onclick = () => {
+  render(Number(document.getElementById("cycle").value),
+         Number(document.getElementById("temperature").value));
+};
+render(0, 30);
+</script>
