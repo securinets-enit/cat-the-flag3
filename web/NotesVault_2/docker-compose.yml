@@ -1,13 +1,20 @@
 version: '3.8'
 
 services:
-  cspt-hard:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    container_name: cspt_NotesVault2_hard_challenge
+  notes-vault-cspt:
+    build: .
     ports:
       - "3002:3000"
+    cap_drop: ["ALL"]
+    cap_add: ["NET_ADMIN", "NET_RAW", "SETUID", "SETGID", "CHOWN", "DAC_OVERRIDE", "FOWNER"]
+    security_opt: ["no-new-privileges:true"]
+    pids_limit: 250
+    mem_limit: 640m
     restart: unless-stopped
-    environment:
-      - NODE_ENV=production
+    # environment:
+    #   PUBLIC_ORIGIN: "http://<HOST_IP>:3002"
+
+networks:
+  default:
+    driver_opts:
+      com.docker.network.bridge.enable_ip_masquerade: "false"
