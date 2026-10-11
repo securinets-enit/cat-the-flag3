@@ -1,0 +1,2 @@
+The player attachment is attachments/slot_pusher.py.
+The organizer flag is in this directory for challenge administration.
