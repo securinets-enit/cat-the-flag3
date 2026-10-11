@@ -1,0 +1,5 @@
+This is an Android source handout. Build it with an Android SDK/NDK and place
+the resulting libironlocker.so beside the Java application classes.
+
+The challenge repository also includes a Dockerfile for preparing a portable
+analysis environment. It does not download the Android SDK automatically.
