@@ -1,0 +1,5 @@
+Forged
+
+The gate has been sealed... and there is no way to enter.
+
+Flag format: SecurinetsENIT{...}

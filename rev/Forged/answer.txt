@@ -1,0 +1,6 @@
+KEY=84484c004b71150046b67f00f9391100
+MAGIC=0x5eed1e57
+reveal=0x400a4c
+POS=[3, 6, 8]
+target=bf571eed5eb84c0a4000ffe0
+FLAG=SecurinetsENIT{c0d3_f0rg3d_fr0m_1ts_0wn_h4sh_1s_th3_0nly_judg3}
